@@ -1,6 +1,6 @@
 ﻿namespace PIProjetpCards
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -33,20 +33,21 @@
             // 
             // sideBarUser1
             // 
+            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
             this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sideBarUser1.Location = new System.Drawing.Point(0, 0);
             this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(800, 450);
+            this.sideBarUser1.Size = new System.Drawing.Size(800, 749);
             this.sideBarUser1.TabIndex = 0;
             // 
-            // Form1
+            // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(800, 749);
             this.Controls.Add(this.sideBarUser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
