@@ -46,22 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Screens\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Screens\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SideBarUser.cs">
+    <Compile Include="Screens\SettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SettingsScreen.Designer.cs">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SideBarUser\SideBarUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SideBarUser.Designer.cs">
+    <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Screens\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -72,7 +78,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SideBarUser.resx">
+    <EmbeddedResource Include="Screens\SettingsScreen.resx">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

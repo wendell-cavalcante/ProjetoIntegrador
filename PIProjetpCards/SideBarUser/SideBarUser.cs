@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIProjetpCards.Screens;
 
 namespace PIProjetpCards
 {
@@ -111,9 +112,25 @@ namespace PIProjetpCards
             // Atualiza a largura dos painéis dentro da sidebar
             pnSettings.Width = sidebar.Width;
             pnLogout.Width = sidebar.Width;
+            pnmainmenu.Width = sidebar.Width;
             menuContainer.Width = sidebar.Width;
         }
 
+        public void btnsettings_Click(object sender, EventArgs e)
+        {
+            SettingsScreen settingsScreen = new SettingsScreen();
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Hide();
+            settingsScreen.Show();
 
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            SettingsScreen settingsScreen = new SettingsScreen();
+            settingsScreen.Hide();
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+        }
     }
 }

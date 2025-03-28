@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PIProjetpCards
 {
-    public partial class Form1: Form
+    public partial class MainMenu: Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
             this.FormClosing += applicationClose;
@@ -31,5 +31,9 @@ namespace PIProjetpCards
             }
         }
 
+        private void sideBarUser1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

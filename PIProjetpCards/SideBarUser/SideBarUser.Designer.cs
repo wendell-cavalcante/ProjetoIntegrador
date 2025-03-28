@@ -31,13 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideBarUser));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar = new System.Windows.Forms.Panel();
             this.pnLogout = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnSettings = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnsettings = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.menuContainer = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,12 +43,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
+            this.pnmainmenu = new System.Windows.Forms.Panel();
+            this.btnMainMenu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
             this.pnLogout.SuspendLayout();
             this.pnSettings.SuspendLayout();
             this.menuContainer.SuspendLayout();
+            this.pnmainmenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -63,40 +65,31 @@
             this.panel2.Size = new System.Drawing.Size(1141, 44);
             this.panel2.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.sidebarOpen_Click);
-            // 
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.Color.White;
+            this.sidebar.Controls.Add(this.pnmainmenu);
             this.sidebar.Controls.Add(this.pnLogout);
-            this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.pnSettings);
             this.sidebar.Controls.Add(this.menuContainer);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 44);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(200, 1006);
+            this.sidebar.Size = new System.Drawing.Size(200, 713);
             this.sidebar.TabIndex = 2;
             // 
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.button6);
-            this.pnLogout.Location = new System.Drawing.Point(3, 939);
+            this.pnLogout.Location = new System.Drawing.Point(3, 638);
             this.pnLogout.Name = "pnLogout";
             this.pnLogout.Size = new System.Drawing.Size(194, 58);
             this.pnLogout.TabIndex = 5;
             // 
             // button6
             // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(3, 3);
@@ -106,35 +99,33 @@
             this.button6.Text = "Log Out";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 79);
-            this.panel1.TabIndex = 8;
-            // 
             // pnSettings
             // 
-            this.pnSettings.Controls.Add(this.button2);
+            this.pnSettings.Controls.Add(this.btnsettings);
             this.pnSettings.Controls.Add(this.button1);
             this.pnSettings.Location = new System.Drawing.Point(3, 151);
             this.pnSettings.Name = "pnSettings";
             this.pnSettings.Size = new System.Drawing.Size(194, 107);
             this.pnSettings.TabIndex = 3;
             // 
-            // button2
+            // btnsettings
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 49);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Configurações";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnsettings.FlatAppearance.BorderSize = 0;
+            this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsettings.Image = ((System.Drawing.Image)(resources.GetObject("btnsettings.Image")));
+            this.btnsettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsettings.Location = new System.Drawing.Point(3, 55);
+            this.btnsettings.Name = "btnsettings";
+            this.btnsettings.Size = new System.Drawing.Size(173, 49);
+            this.btnsettings.TabIndex = 7;
+            this.btnsettings.Text = "Configurações";
+            this.btnsettings.UseVisualStyleBackColor = true;
+            this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(3, 3);
@@ -197,20 +188,56 @@
             this.menuTransition.Interval = 10;
             this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
             // 
+            // pnmainmenu
+            // 
+            this.pnmainmenu.Controls.Add(this.btnMainMenu);
+            this.pnmainmenu.Location = new System.Drawing.Point(3, 37);
+            this.pnmainmenu.Name = "pnmainmenu";
+            this.pnmainmenu.Size = new System.Drawing.Size(194, 48);
+            this.pnmainmenu.TabIndex = 6;
+            // 
+            // btnMainMenu
+            // 
+            this.btnMainMenu.FlatAppearance.BorderSize = 0;
+            this.btnMainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMainMenu.Image")));
+            this.btnMainMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMainMenu.Location = new System.Drawing.Point(3, 3);
+            this.btnMainMenu.Name = "btnMainMenu";
+            this.btnMainMenu.Size = new System.Drawing.Size(173, 42);
+            this.btnMainMenu.TabIndex = 7;
+            this.btnMainMenu.Text = "Main Menu";
+            this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.sidebarOpen_Click);
+            // 
             // SideBarUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel2);
             this.Name = "SideBarUser";
-            this.Size = new System.Drawing.Size(1141, 1050);
+            this.Size = new System.Drawing.Size(1141, 757);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.PerformLayout();
             this.sidebar.ResumeLayout(false);
             this.pnLogout.ResumeLayout(false);
             this.pnSettings.ResumeLayout(false);
             this.menuContainer.ResumeLayout(false);
+            this.pnmainmenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,12 +252,13 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel pnmainmenu;
+        private System.Windows.Forms.Button btnMainMenu;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
