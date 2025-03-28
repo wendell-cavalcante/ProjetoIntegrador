@@ -37,6 +37,7 @@ namespace PIProjetpCards.Login___Criar_Conta
             LoginScreen login = new LoginScreen();
             login.Show();
             this.Hide();
+            
         }
     }
 }

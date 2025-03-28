@@ -27,8 +27,8 @@ namespace PIProjetpCards.Login___Criar_Conta
             }
             else
             {
-                LoginScreen login = new LoginScreen();
-                login.Show();
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.Show();
                 this.Hide();
             }
         }
