@@ -34,7 +34,7 @@
             // createAcc1
             // 
             this.createAcc1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.createAcc1.Location = new System.Drawing.Point(525, 150);
+            this.createAcc1.Location = new System.Drawing.Point(545, 150);
             this.createAcc1.Name = "createAcc1";
             this.createAcc1.Size = new System.Drawing.Size(292, 447);
             this.createAcc1.TabIndex = 0;

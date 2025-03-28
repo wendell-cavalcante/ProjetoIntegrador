@@ -35,7 +35,7 @@ namespace PIProjetpCards.Login___Criar_Conta
 
         private void label2_Click(object sender, EventArgs e)
         {
-            CreateAcc createAcc = new CreateAcc();
+            CreateAccScreen createAcc = new CreateAccScreen();
             createAcc.Show();
             this.Hide();
         }
