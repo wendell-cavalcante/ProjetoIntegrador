@@ -35,9 +35,30 @@ namespace PIProjetpCards.Login___Criar_Conta
 
         private void label2_Click(object sender, EventArgs e)
         {
-            CreateAccScreen createAcc = new CreateAccScreen();
-            createAcc.Show();
-            this.Hide();
+            if (lblnaoconta.Text == "Possui uma conta?")
+            {
+                
+                lblnaoconta.Text = "Não possui uma conta?";
+                btnCreate.Visible = false;
+                return;
+            }
+            
+            lblnaoconta.Text = "Possui uma conta?";
+            btnCreate.Visible = true;
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUsername.Text) || (string.IsNullOrEmpty(txtPassword.Text)))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.Show();
+                this.Hide();
+            }
         }
     }
 }

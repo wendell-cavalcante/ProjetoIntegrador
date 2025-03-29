@@ -86,7 +86,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 44);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(200, 713);
+            this.sidebar.Size = new System.Drawing.Size(50, 1070);
             this.sidebar.TabIndex = 2;
             // 
             // pnmainmenu
@@ -114,7 +114,7 @@
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.button6);
-            this.pnLogout.Location = new System.Drawing.Point(3, 638);
+            this.pnLogout.Location = new System.Drawing.Point(3, 952);
             this.pnLogout.Name = "pnLogout";
             this.pnLogout.Size = new System.Drawing.Size(194, 58);
             this.pnLogout.TabIndex = 5;
@@ -229,7 +229,7 @@
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel2);
             this.Name = "SideBarUser";
-            this.Size = new System.Drawing.Size(1141, 757);
+            this.Size = new System.Drawing.Size(1141, 1114);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
