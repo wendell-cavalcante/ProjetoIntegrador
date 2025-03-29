@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
+            this.sideBarUser2 = new PIProjetpCards.SideBarUser();
             this.SuspendLayout();
             // 
-            // sideBarUser1
+            // sideBarUser2
             // 
-            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideBarUser1.Location = new System.Drawing.Point(0, 0);
-            this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(800, 749);
-            this.sideBarUser1.TabIndex = 0;
+            this.sideBarUser2.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sideBarUser2.Location = new System.Drawing.Point(0, 0);
+            this.sideBarUser2.Name = "sideBarUser2";
+            this.sideBarUser2.Size = new System.Drawing.Size(800, 749);
+            this.sideBarUser2.TabIndex = 0;
             // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 749);
-            this.Controls.Add(this.sideBarUser1);
+            this.Controls.Add(this.sideBarUser2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -56,6 +56,7 @@
         #endregion
 
         private SideBarUser sideBarUser1;
+        private SideBarUser sideBarUser2;
     }
 }
 

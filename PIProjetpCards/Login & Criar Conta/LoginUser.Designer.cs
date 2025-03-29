@@ -37,8 +37,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblnaoconta = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,22 +118,24 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(96, 14);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(73, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 114);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lblnaoconta
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Indigo;
-            this.label2.Location = new System.Drawing.Point(28, 290);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Não tem uma conta?";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblnaoconta.AutoSize = true;
+            this.lblnaoconta.ForeColor = System.Drawing.Color.Indigo;
+            this.lblnaoconta.Location = new System.Drawing.Point(28, 290);
+            this.lblnaoconta.Name = "lblnaoconta";
+            this.lblnaoconta.Size = new System.Drawing.Size(106, 13);
+            this.lblnaoconta.TabIndex = 17;
+            this.lblnaoconta.Text = "Não tem uma conta?";
+            this.lblnaoconta.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -144,13 +147,29 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Fechar";
             // 
+            // btnCreate
+            // 
+            this.btnCreate.BackColor = System.Drawing.Color.Indigo;
+            this.btnCreate.FlatAppearance.BorderSize = 0;
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.ForeColor = System.Drawing.Color.White;
+            this.btnCreate.Location = new System.Drawing.Point(27, 320);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(236, 35);
+            this.btnCreate.TabIndex = 19;
+            this.btnCreate.Text = "Criar conta";
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Visible = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // LoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblnaoconta);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnLogin);
@@ -179,7 +198,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblnaoconta;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
