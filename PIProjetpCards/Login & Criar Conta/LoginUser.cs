@@ -60,5 +60,17 @@ namespace PIProjetpCards.Login___Criar_Conta
                 this.Hide();
             }
         }
+
+        private void showPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(showPassword.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

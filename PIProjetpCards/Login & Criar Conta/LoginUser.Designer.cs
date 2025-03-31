@@ -40,6 +40,7 @@
             this.lblnaoconta = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.showPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +72,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.Indigo;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(28, 320);
             this.btnLogin.Name = "btnLogin";
@@ -119,9 +121,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(73, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(116, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -140,10 +142,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(117, 358);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Indigo;
+            this.label3.Location = new System.Drawing.Point(119, 358);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Fechar";
             // 
@@ -152,21 +155,36 @@
             this.btnCreate.BackColor = System.Drawing.Color.Indigo;
             this.btnCreate.FlatAppearance.BorderSize = 0;
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(27, 320);
+            this.btnCreate.Location = new System.Drawing.Point(28, 320);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(236, 35);
             this.btnCreate.TabIndex = 19;
-            this.btnCreate.Text = "Criar conta";
+            this.btnCreate.Text = "Criar Conta";
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Visible = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // showPassword
+            // 
+            this.showPassword.AutoSize = true;
+            this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPassword.Location = new System.Drawing.Point(171, 290);
+            this.showPassword.Name = "showPassword";
+            this.showPassword.Size = new System.Drawing.Size(90, 17);
+            this.showPassword.TabIndex = 20;
+            this.showPassword.Text = "Mostrar senha";
+            this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
             // LoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.showPassword);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblnaoconta);
@@ -178,6 +196,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "LoginUser";
             this.Size = new System.Drawing.Size(292, 447);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -201,5 +220,6 @@
         private System.Windows.Forms.Label lblnaoconta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.CheckBox showPassword;
     }
 }
