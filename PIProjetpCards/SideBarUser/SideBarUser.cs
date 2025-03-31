@@ -20,7 +20,6 @@ namespace PIProjetpCards
         public SideBarUser()
         {
             InitializeComponent();
-            
         }
 
 
@@ -71,7 +70,6 @@ namespace PIProjetpCards
                 }
                 else
                 {
-                    
                     pnSettings.Location = new Point(3, 151);
                 }
             }
@@ -131,6 +129,16 @@ namespace PIProjetpCards
             settingsScreen.Hide();
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+           if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginScreen loginScreen = new LoginScreen();
+                loginScreen.Show();
+                this.Hide();
+            }
         }
     }
 }
