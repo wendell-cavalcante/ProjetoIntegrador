@@ -114,9 +114,10 @@
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.button6);
-            this.pnLogout.Location = new System.Drawing.Point(3, 952);
+            this.pnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnLogout.Location = new System.Drawing.Point(0, 1012);
             this.pnLogout.Name = "pnLogout";
-            this.pnLogout.Size = new System.Drawing.Size(194, 58);
+            this.pnLogout.Size = new System.Drawing.Size(50, 58);
             this.pnLogout.TabIndex = 5;
             // 
             // button6
