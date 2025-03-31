@@ -36,7 +36,7 @@
             this.pnmainmenu = new System.Windows.Forms.Panel();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.pnLogout = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pnSettings = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -113,25 +113,26 @@
             // 
             // pnLogout
             // 
-            this.pnLogout.Controls.Add(this.button6);
+            this.pnLogout.Controls.Add(this.btnLogout);
             this.pnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnLogout.Location = new System.Drawing.Point(0, 1012);
             this.pnLogout.Name = "pnLogout";
             this.pnLogout.Size = new System.Drawing.Size(50, 58);
             this.pnLogout.TabIndex = 5;
             // 
-            // button6
+            // btnLogout
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 49);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Log Out";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(3, 3);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(173, 49);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pnSettings
             // 
@@ -256,7 +257,7 @@
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel pnmainmenu;
         private System.Windows.Forms.Button btnMainMenu;
