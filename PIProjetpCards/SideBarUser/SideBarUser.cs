@@ -135,9 +135,9 @@ namespace PIProjetpCards
         {
            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                this.Hide();
                 LoginScreen loginScreen = new LoginScreen();
                 loginScreen.Show();
-                this.Hide();
             }
         }
     }
