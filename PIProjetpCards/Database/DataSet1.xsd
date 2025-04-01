@@ -14,9 +14,18 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="User" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_TablePropName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_RowClassName="UserRow" msprop:Generator_TableVarName="tableUser" msprop:Generator_UserTableName="User">
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="login" msprop:Generator_ColumnPropNameInRow="login" msprop:Generator_ColumnPropNameInTable="loginColumn" msprop:Generator_ColumnVarNameInTable="columnlogin" msprop:Generator_UserColumnName="login" type="xs:string" minOccurs="0" />
+              <xs:element name="senha" msprop:Generator_ColumnPropNameInRow="senha" msprop:Generator_ColumnPropNameInTable="senhaColumn" msprop:Generator_ColumnVarNameInTable="columnsenha" msprop:Generator_UserColumnName="senha" type="xs:string" minOccurs="0" />
+              <xs:element name="idUser" msprop:Generator_ColumnPropNameInRow="idUser" msprop:Generator_ColumnPropNameInTable="idUserColumn" msprop:Generator_ColumnVarNameInTable="columnidUser" msprop:Generator_UserColumnName="idUser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="UserKey1">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:idUser" />
+    </xs:unique>
   </xs:element>
 </xs:schema>

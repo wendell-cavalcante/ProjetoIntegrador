@@ -39,6 +39,7 @@
             this.sideBarUser1.Name = "sideBarUser1";
             this.sideBarUser1.Size = new System.Drawing.Size(893, 749);
             this.sideBarUser1.TabIndex = 0;
+            this.sideBarUser1.Load += new System.EventHandler(this.sideBarUser1_Load);
             // 
             // SettingsScreen
             // 
