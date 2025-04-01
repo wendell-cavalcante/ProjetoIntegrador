@@ -58,6 +58,14 @@
     <Compile Include="Login &amp; Criar Conta\LoginUser.Designer.cs">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Screens\CreateAccScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +128,17 @@
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Database\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Database\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
