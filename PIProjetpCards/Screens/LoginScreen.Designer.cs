@@ -51,6 +51,7 @@
             this.loginUser2.Name = "loginUser2";
             this.loginUser2.Size = new System.Drawing.Size(292, 447);
             this.loginUser2.TabIndex = 1;
+            this.loginUser2.Load += new System.EventHandler(this.loginUser2_Load_1);
             // 
             // LoginScreen
             // 
