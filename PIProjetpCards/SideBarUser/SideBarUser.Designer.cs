@@ -62,7 +62,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1141, 44);
+            this.panel2.Size = new System.Drawing.Size(874, 44);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -231,7 +231,7 @@
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel2);
             this.Name = "SideBarUser";
-            this.Size = new System.Drawing.Size(1141, 1114);
+            this.Size = new System.Drawing.Size(874, 1114);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
