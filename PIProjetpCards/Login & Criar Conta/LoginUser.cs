@@ -27,9 +27,9 @@ namespace PIProjetpCards.Login___Criar_Conta
             }
             else
             {
+                this.ParentForm.Hide();
                 MainMenu mainMenu = new MainMenu();
                 mainMenu.Show();
-                this.Hide();
             }
         }
 
@@ -55,9 +55,9 @@ namespace PIProjetpCards.Login___Criar_Conta
             }
             else
             {
+                this.ParentForm.Hide();
                 MainMenu mainMenu = new MainMenu();
                 mainMenu.Show();
-                this.Hide();
             }
         }
 
