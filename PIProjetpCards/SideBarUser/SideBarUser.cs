@@ -44,12 +44,12 @@ namespace PIProjetpCards
                 if (menuContainer.Height == menuMaxHeight) // Atualizqa a posição dos painéis
                 {
                     
-                    pnSettings.Location = new Point(3, 253);
+                    pnSettings.Location = new Point(3, 323);
                 }
                 else
                 {
                     
-                    pnSettings.Location = new Point(3, 151);
+                    pnSettings.Location = new Point(3, 218);
                 }
             }
             else
@@ -66,11 +66,11 @@ namespace PIProjetpCards
                 if (menuContainer.Height == menuMaxHeight) // Atualizqa a posição dos painéis
                 {
                     
-                    pnSettings.Location = new Point(3, 253);
+                    pnSettings.Location = new Point(3, 323);
                 }
                 else
                 {
-                    pnSettings.Location = new Point(3, 151);
+                    pnSettings.Location = new Point(3, 218);
                 }
             }
         }

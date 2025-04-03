@@ -29,21 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsScreen));
-            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
             this.SuspendLayout();
-            // 
-            // sideBarUser1
-            // 
-            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideBarUser1.Location = new System.Drawing.Point(0, 0);
-            this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(1854, 943);
-            this.sideBarUser1.TabIndex = 0;
             // 
             // button1
             // 
@@ -81,20 +72,34 @@
             this.button4.Text = "Ajuda";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // sideBarUser1
+            // 
+            this.sideBarUser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser1.Location = new System.Drawing.Point(0, 0);
+            this.sideBarUser1.Name = "sideBarUser1";
+            this.sideBarUser1.Size = new System.Drawing.Size(1370, 749);
+            this.sideBarUser1.TabIndex = 0;
+            // 
             // SettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1854, 943);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.sideBarUser1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsScreem";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
