@@ -34,7 +34,7 @@
             // loginUser1
             // 
             this.loginUser1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.loginUser1.Location = new System.Drawing.Point(545, 150);
+            this.loginUser1.Location = new System.Drawing.Point(196, 0);
             this.loginUser1.Name = "loginUser1";
             this.loginUser1.Size = new System.Drawing.Size(292, 447);
             this.loginUser1.TabIndex = 0;
@@ -48,7 +48,6 @@
             this.Controls.Add(this.loginUser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginScreen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

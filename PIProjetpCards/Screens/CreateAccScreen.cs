@@ -16,5 +16,10 @@ namespace PIProjetpCards.Screens
         {
             InitializeComponent();
         }
+
+        private void createAcc1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

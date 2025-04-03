@@ -51,7 +51,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsScreen";
             this.Text = "SettingsScreem";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.SettingsScreen_Load);
             this.ResumeLayout(false);
 
         }

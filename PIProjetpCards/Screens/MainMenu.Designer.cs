@@ -33,6 +33,7 @@
             // 
             // sideBarUser1
             // 
+            this.sideBarUser1.AutoScroll = true;
             this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
             this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sideBarUser1.Location = new System.Drawing.Point(0, 0);

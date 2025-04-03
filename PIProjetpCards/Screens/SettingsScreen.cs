@@ -21,5 +21,10 @@ namespace PIProjetpCards.Screens
         {
 
         }
+
+        private void SettingsScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

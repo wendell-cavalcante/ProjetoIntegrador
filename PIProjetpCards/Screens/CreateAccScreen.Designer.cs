@@ -34,21 +34,21 @@
             // createAcc1
             // 
             this.createAcc1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.createAcc1.Location = new System.Drawing.Point(545, 150);
+            this.createAcc1.Location = new System.Drawing.Point(93, 12);
             this.createAcc1.Name = "createAcc1";
             this.createAcc1.Size = new System.Drawing.Size(292, 447);
             this.createAcc1.TabIndex = 0;
+            this.createAcc1.Load += new System.EventHandler(this.createAcc1_Load);
             // 
             // CreateAccScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(489, 480);
             this.Controls.Add(this.createAcc1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CreateAccScreen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
