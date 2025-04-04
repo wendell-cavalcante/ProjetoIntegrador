@@ -105,6 +105,8 @@
     <Compile Include="Login &amp; Criar Conta\LoginUser.Designer.cs">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="MySQL\UserController.cs" />
+    <Compile Include="MySQL\Usermodel.cs" />
     <Compile Include="Screens\LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="assets\definicoes.png" />
+    <Content Include="assets\saida %281%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

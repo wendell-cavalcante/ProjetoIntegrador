@@ -41,28 +41,31 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.showPassword = new System.Windows.Forms.CheckBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.ForeColor = System.Drawing.Color.Indigo;
-            this.txtPassword.Location = new System.Drawing.Point(56, 256);
+            this.txtPassword.Location = new System.Drawing.Point(56, 279);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(208, 24);
             this.txtPassword.TabIndex = 15;
-            //this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtUsername
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.ForeColor = System.Drawing.Color.Indigo;
-            this.txtUsername.Location = new System.Drawing.Point(56, 187);
+            this.txtUsername.Location = new System.Drawing.Point(56, 188);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(208, 24);
@@ -75,7 +78,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(28, 320);
+            this.btnLogin.Location = new System.Drawing.Point(28, 343);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(236, 35);
             this.btnLogin.TabIndex = 13;
@@ -86,7 +89,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Indigo;
-            this.panel2.Location = new System.Drawing.Point(28, 286);
+            this.panel2.Location = new System.Drawing.Point(28, 309);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(236, 1);
             this.panel2.TabIndex = 12;
@@ -94,7 +97,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(28, 253);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 276);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(22, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +107,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
-            this.panel1.Location = new System.Drawing.Point(28, 217);
+            this.panel1.Location = new System.Drawing.Point(28, 218);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 1);
             this.panel1.TabIndex = 10;
@@ -112,7 +115,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(28, 184);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 185);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(22, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +136,7 @@
             // 
             this.lblnaoconta.AutoSize = true;
             this.lblnaoconta.ForeColor = System.Drawing.Color.Indigo;
-            this.lblnaoconta.Location = new System.Drawing.Point(28, 290);
+            this.lblnaoconta.Location = new System.Drawing.Point(28, 313);
             this.lblnaoconta.Name = "lblnaoconta";
             this.lblnaoconta.Size = new System.Drawing.Size(106, 13);
             this.lblnaoconta.TabIndex = 17;
@@ -145,7 +148,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(119, 358);
+            this.label3.Location = new System.Drawing.Point(119, 381);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 18;
@@ -158,7 +161,7 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(28, 320);
+            this.btnCreate.Location = new System.Drawing.Point(28, 343);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(236, 35);
             this.btnCreate.TabIndex = 19;
@@ -172,7 +175,7 @@
             this.showPassword.AutoSize = true;
             this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showPassword.Location = new System.Drawing.Point(171, 290);
+            this.showPassword.Location = new System.Drawing.Point(171, 313);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(90, 17);
             this.showPassword.TabIndex = 20;
@@ -180,11 +183,42 @@
             this.showPassword.UseVisualStyleBackColor = true;
             this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.ForeColor = System.Drawing.Color.Indigo;
+            this.txtEmail.Location = new System.Drawing.Point(56, 232);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(208, 24);
+            this.txtEmail.TabIndex = 23;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Indigo;
+            this.panel3.Location = new System.Drawing.Point(28, 262);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(236, 1);
+            this.panel3.TabIndex = 22;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(28, 229);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(22, 27);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
             // LoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.showPassword);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label3);
@@ -203,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +257,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.CheckBox showPassword;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

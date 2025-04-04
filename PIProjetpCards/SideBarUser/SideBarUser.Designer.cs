@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideBarUser));
             this.sidebar = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnmainmenu = new System.Windows.Forms.Panel();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.pnLogout = new System.Windows.Forms.Panel();
@@ -44,15 +47,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnmainmenu.SuspendLayout();
             this.pnLogout.SuspendLayout();
             this.pnSettings.SuspendLayout();
             this.menuContainer.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -69,6 +69,34 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(50, 1114);
             this.sidebar.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(194, 48);
+            this.panel2.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(51, 48);
+            this.panel1.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 42);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.sidebarOpen_Click);
             // 
             // pnmainmenu
             // 
@@ -204,34 +232,6 @@
             this.menuTransition.Interval = 10;
             this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(51, 48);
-            this.panel1.TabIndex = 8;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 42);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.sidebarOpen_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 48);
-            this.panel2.TabIndex = 8;
-            // 
             // SideBarUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,11 +241,11 @@
             this.Name = "SideBarUser";
             this.Size = new System.Drawing.Size(874, 1114);
             this.sidebar.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.pnmainmenu.ResumeLayout(false);
             this.pnLogout.ResumeLayout(false);
             this.pnSettings.ResumeLayout(false);
             this.menuContainer.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
