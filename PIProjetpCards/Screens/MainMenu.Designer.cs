@@ -28,16 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sideBarUser2 = new PIProjetpCards.SideBarUser();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel1.Controls.Add(this.sideBarUser2, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 749);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // sideBarUser2
             // 
             this.sideBarUser2.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideBarUser2.Location = new System.Drawing.Point(0, 0);
+            this.sideBarUser2.Location = new System.Drawing.Point(3, 3);
             this.sideBarUser2.Name = "sideBarUser2";
-            this.sideBarUser2.Size = new System.Drawing.Size(800, 749);
+            this.sideBarUser2.Size = new System.Drawing.Size(181, 743);
             this.sideBarUser2.TabIndex = 0;
             // 
             // MainMenu
@@ -45,10 +61,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 749);
-            this.Controls.Add(this.sideBarUser2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -56,6 +73,7 @@
         #endregion
 
         private SideBarUser sideBarUser1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private SideBarUser sideBarUser2;
     }
 }
