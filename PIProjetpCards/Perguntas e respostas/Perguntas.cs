@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIProjetpCards.Screens
+namespace PIProjetpCards.Perguntas_e_respostas
 {
-    public partial class SettingsScreen : Form
+    public partial class Perguntas: Form
     {
-        public SettingsScreen()
+        public Perguntas()
         {
             InitializeComponent();
-            //kk
         }
     }
 }
