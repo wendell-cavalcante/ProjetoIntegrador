@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIProjetpCards.Screens;
+using usermanager.Controllers;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PIProjetpCards.Login___Criar_Conta
 {
     public partial class LoginUser : UserControl
     {
+        private UserController userController;
+
         public LoginUser()
         {
             InitializeComponent();
+            userController = new UserController();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -49,16 +53,15 @@ namespace PIProjetpCards.Login___Criar_Conta
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUsername.Text) || (string.IsNullOrEmpty(txtPassword.Text)))
-            {
-                MessageBox.Show("Por favor, preencha todos os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
+            string name = txtUsername.Text;
+            string password = txtPassword.Text;
+            string email = txtEmail.Text;
+
+            userController.CreateUser(name, password, email);
+
                 this.ParentForm.Hide();
                 MainMenu mainMenu = new MainMenu();
                 mainMenu.Show();
-            }
         }
 
         private void showPassword_CheckedChanged(object sender, EventArgs e)
