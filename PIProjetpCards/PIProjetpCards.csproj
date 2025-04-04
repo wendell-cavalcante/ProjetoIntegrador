@@ -98,6 +98,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\BancoDados.cs" />
+    <Compile Include="Database\BancoDadosBase.cs" />
     <Compile Include="Login &amp; Criar Conta\CreateAcc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -186,8 +188,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
