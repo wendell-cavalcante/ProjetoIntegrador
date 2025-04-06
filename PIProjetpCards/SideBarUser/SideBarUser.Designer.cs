@@ -40,7 +40,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pnSettings = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.menuContainer = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -146,7 +146,7 @@
             // pnSettings
             // 
             this.pnSettings.Controls.Add(this.btnsettings);
-            this.pnSettings.Controls.Add(this.button1);
+            this.pnSettings.Controls.Add(this.btnCreate);
             this.pnSettings.Location = new System.Drawing.Point(3, 218);
             this.pnSettings.Name = "pnSettings";
             this.pnSettings.Size = new System.Drawing.Size(194, 107);
@@ -166,18 +166,19 @@
             this.btnsettings.UseVisualStyleBackColor = true;
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             // 
-            // button1
+            // btnCreate
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Criar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCreate.FlatAppearance.BorderSize = 0;
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.Image = ((System.Drawing.Image)(resources.GetObject("btnCreate.Image")));
+            this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreate.Location = new System.Drawing.Point(3, 3);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(173, 49);
+            this.btnCreate.TabIndex = 6;
+            this.btnCreate.Text = "Criar";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // menuContainer
             // 
@@ -257,7 +258,7 @@
         private System.Windows.Forms.Panel pnLogout;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Timer menuTransition;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;

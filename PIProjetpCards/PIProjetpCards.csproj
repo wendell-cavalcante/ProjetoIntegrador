@@ -121,6 +121,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Notepad.Designer.cs">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\SettingsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screens\Notepad.resx">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\SettingsScreen.resx">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
     </EmbeddedResource>

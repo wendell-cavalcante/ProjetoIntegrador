@@ -140,5 +140,11 @@ namespace PIProjetpCards
                 loginScreen.Show();
             }
         }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+           Notepad notepad = new Notepad();
+            notepad.Show();
+        }
     }
 }
