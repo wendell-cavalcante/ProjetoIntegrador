@@ -117,9 +117,9 @@ namespace PIProjetpCards
         public void btnsettings_Click(object sender, EventArgs e)
         {
             SettingsScreen settingsScreen = new SettingsScreen();
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Hide();
             settingsScreen.Show();
+            this.ParentForm.Hide();
+
 
         }
 

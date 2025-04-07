@@ -49,7 +49,7 @@ namespace usermanager.Models
                 catch (Exception ex)
                 {
                     // Retorna a mensagem de erro caso ocorra uma exceção no banco de dados
-                    return "Erro ao conectar ao banco de dados: " + ex.Message;
+                    return "Esse usuário já está cadastrado em nosso sistema";
                 }
             }
         }
