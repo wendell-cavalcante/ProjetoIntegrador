@@ -46,7 +46,7 @@ namespace usermanager.Models
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     // Retorna a mensagem de erro caso ocorra uma exceção no banco de dados
                     return "Esse usuário já está cadastrado em nosso sistema";

@@ -30,10 +30,5 @@ namespace PIProjetpCards
                 Application.ExitThread();
             }
         }
-
-        private void sideBarUser1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -141,6 +141,12 @@
     <Compile Include="Screens\SettingsScreen.Designer.cs">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingsUser\SettingsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsUser\SettingsUser.Designer.cs">
+      <DependentUpon>SettingsUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="SideBarUser\SideBarUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\SettingsScreen.resx">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsUser\SettingsUser.resx">
+      <DependentUpon>SettingsUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
