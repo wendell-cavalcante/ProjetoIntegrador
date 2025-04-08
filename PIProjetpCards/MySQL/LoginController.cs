@@ -2,12 +2,13 @@
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
-namespace PIProjepCards.MySQL // Nome corrigido
+namespace PIProjepCards.MySQL
 {
     internal class LoginController
     {
         private string connectionString = "server=localhost;database=flashcards;uid=root;";
-        public string LoginUser(string password, string email)
+
+        public string LoginUser(string name, string password, string email)
         {
             try
             {
@@ -15,12 +16,14 @@ namespace PIProjepCards.MySQL // Nome corrigido
                 {
                     connection.Open();
 
-                    string query = "SELECT nome FROM user WHERE email = @email AND password = @password";
+                    // Consulta corrigida (usando AND em vez de vírgula)
+                    string query = "SELECT nome FROM user WHERE email = @email AND nome = @nome AND password = @password";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@email", email);
                         command.Parameters.AddWithValue("@password", password);
+                        command.Parameters.AddWithValue("@nome", name);
 
                         object result = command.ExecuteScalar();
 
@@ -28,18 +31,20 @@ namespace PIProjepCards.MySQL // Nome corrigido
                         {
                             string nomeUsuario = result.ToString();
                             MessageBox.Show($"Bem-vindo, {nomeUsuario}!");
-                            return "success"; // Retorna status de sucesso
+                            return "success";
                         }
                         else
                         {
-                            return "Email ou senha incorretos."; // Retorna mensagem de erro
+                            MessageBox.Show("Verifique se preencheu todos os dados corretamente e tente novamente."); return "error";
                         }
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex) // Adicionei a variável ex para melhor tratamento de erro
             {
-                return "Erro ao conectar ao banco de dados: ";
+                // Log do erro (opcional)
+                Console.WriteLine($"Erro: {ex.Message}");
+                return "Erro ao conectar ao banco de dados";
             }
         }
     }

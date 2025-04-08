@@ -72,7 +72,7 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 53);
+            this.panel2.Location = new System.Drawing.Point(0, 53);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 48);
             this.panel2.TabIndex = 8;
@@ -91,7 +91,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Location = new System.Drawing.Point(-3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 42);
             this.button2.TabIndex = 7;
@@ -101,7 +101,7 @@
             // pnmainmenu
             // 
             this.pnmainmenu.Controls.Add(this.btnMainMenu);
-            this.pnmainmenu.Location = new System.Drawing.Point(3, 104);
+            this.pnmainmenu.Location = new System.Drawing.Point(0, 104);
             this.pnmainmenu.Name = "pnmainmenu";
             this.pnmainmenu.Size = new System.Drawing.Size(194, 48);
             this.pnmainmenu.TabIndex = 6;
@@ -147,7 +147,7 @@
             // 
             this.pnSettings.Controls.Add(this.btnsettings);
             this.pnSettings.Controls.Add(this.button1);
-            this.pnSettings.Location = new System.Drawing.Point(3, 218);
+            this.pnSettings.Location = new System.Drawing.Point(0, 218);
             this.pnSettings.Name = "pnSettings";
             this.pnSettings.Size = new System.Drawing.Size(194, 107);
             this.pnSettings.TabIndex = 3;
@@ -184,7 +184,7 @@
             this.menuContainer.Controls.Add(this.button3);
             this.menuContainer.Controls.Add(this.btnCards);
             this.menuContainer.Controls.Add(this.btnNotes);
-            this.menuContainer.Location = new System.Drawing.Point(3, 155);
+            this.menuContainer.Location = new System.Drawing.Point(0, 155);
             this.menuContainer.Name = "menuContainer";
             this.menuContainer.Size = new System.Drawing.Size(194, 57);
             this.menuContainer.TabIndex = 4;
