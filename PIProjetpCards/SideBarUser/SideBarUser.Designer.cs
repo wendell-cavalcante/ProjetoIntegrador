@@ -43,8 +43,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuContainer = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCards = new System.Windows.Forms.Button();
+            this.btnNotes = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
@@ -182,8 +182,8 @@
             // menuContainer
             // 
             this.menuContainer.Controls.Add(this.button3);
-            this.menuContainer.Controls.Add(this.button5);
-            this.menuContainer.Controls.Add(this.button4);
+            this.menuContainer.Controls.Add(this.btnCards);
+            this.menuContainer.Controls.Add(this.btnNotes);
             this.menuContainer.Location = new System.Drawing.Point(3, 155);
             this.menuContainer.Name = "menuContainer";
             this.menuContainer.Size = new System.Drawing.Size(194, 57);
@@ -204,31 +204,33 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.menu_Click);
             // 
-            // button5
+            // btnCards
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 113);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 49);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Cards";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCards.FlatAppearance.BorderSize = 0;
+            this.btnCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCards.Image = ((System.Drawing.Image)(resources.GetObject("btnCards.Image")));
+            this.btnCards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCards.Location = new System.Drawing.Point(3, 113);
+            this.btnCards.Name = "btnCards";
+            this.btnCards.Size = new System.Drawing.Size(173, 49);
+            this.btnCards.TabIndex = 7;
+            this.btnCards.Text = "Cards";
+            this.btnCards.UseVisualStyleBackColor = true;
+            this.btnCards.Click += new System.EventHandler(this.btnCards_Click);
             // 
-            // button4
+            // btnNotes
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 58);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 49);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Anotações";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnNotes.FlatAppearance.BorderSize = 0;
+            this.btnNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotes.Image = ((System.Drawing.Image)(resources.GetObject("btnNotes.Image")));
+            this.btnNotes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotes.Location = new System.Drawing.Point(3, 58);
+            this.btnNotes.Name = "btnNotes";
+            this.btnNotes.Size = new System.Drawing.Size(173, 49);
+            this.btnNotes.TabIndex = 7;
+            this.btnNotes.Text = "Anotações";
+            this.btnNotes.UseVisualStyleBackColor = true;
+            this.btnNotes.Click += new System.EventHandler(this.btnNotes_Click);
             // 
             // sidebarTransition
             // 
@@ -267,8 +269,8 @@
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCards;
+        private System.Windows.Forms.Button btnNotes;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel pnmainmenu;
