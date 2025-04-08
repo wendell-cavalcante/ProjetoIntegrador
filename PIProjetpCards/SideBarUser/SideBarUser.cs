@@ -137,6 +137,7 @@ namespace PIProjetpCards
                 LoginScreen loginScreen = new LoginScreen();
                 loginScreen.Show();
                 this.ParentForm.Hide();
+                
             }
         }
         private void btnCards_Click(object sender, EventArgs e)

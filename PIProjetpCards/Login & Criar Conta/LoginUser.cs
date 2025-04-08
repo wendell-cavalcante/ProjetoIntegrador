@@ -26,16 +26,17 @@ namespace PIProjetpCards.Login___Criar_Conta
         {
             string password = txtPassword.Text;
             string email = txtEmail.Text;
+            string name = txtUsername.Text;
 
             // Verifica se os campos estão vazios
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(name))
             {
                 MessageBox.Show("Por favor, preencha todos os campos.");
                 return;
             }
 
             // Faz o login (agora usando a instância criada no construtor)
-            string result = loginController.LoginUser(password, email);
+            string result = loginController.LoginUser(name, password, email);
 
             if (result == "success") // Se o login foi bem-sucedido
             {
