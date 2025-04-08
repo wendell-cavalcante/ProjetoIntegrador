@@ -64,18 +64,18 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1186, 743);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // sideBarUser1
             // 
             this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
             this.sideBarUser1.Name = "sideBarUser1";
             this.sideBarUser1.Size = new System.Drawing.Size(172, 743);
