@@ -125,20 +125,31 @@ namespace PIProjetpCards
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
-            SettingsScreen settingsScreen = new SettingsScreen();
-            settingsScreen.Hide();
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
+            this.ParentForm.Hide();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                this.Hide();
                 LoginScreen loginScreen = new LoginScreen();
                 loginScreen.Show();
+                this.ParentForm.Hide();
             }
+        }
+        private void btnCards_Click(object sender, EventArgs e)
+        {
+            CardsScreen cardsScreen = new CardsScreen();
+            cardsScreen.Show();
+            this.ParentForm.Hide();
+        }
+        private void btnNotes_Click(object sender, EventArgs e)
+        {
+            NotesScreen notesScreen = new NotesScreen();
+            notesScreen.Show();
+            this.ParentForm.Hide();
         }
     }
 }
