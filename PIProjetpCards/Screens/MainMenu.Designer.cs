@@ -51,6 +51,7 @@
             // sideBarUser2
             // 
             this.sideBarUser2.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarUser2.Location = new System.Drawing.Point(3, 3);
             this.sideBarUser2.Name = "sideBarUser2";
             this.sideBarUser2.Size = new System.Drawing.Size(181, 743);
