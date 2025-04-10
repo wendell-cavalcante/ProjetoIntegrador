@@ -61,13 +61,6 @@ namespace PIProjetpCards.SettingsUser
                 {
                     MessageBox.Show(ex.Message);
                 }
-                finally
-                {
-                    if (conn.State == System.Data.ConnectionState.Open)
-                    {
-                        conn.Close();
-                    }
-                }
             }
             else
             {
