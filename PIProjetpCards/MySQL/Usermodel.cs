@@ -6,6 +6,10 @@ namespace usermanager.Models
 {
     public class UserModel
     {
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+
         // String de conexão com o banco de dados MySQL
         private string connectionString = "server=localhost;database=flashcards;uid=root;";
 
@@ -53,5 +57,20 @@ namespace usermanager.Models
                 }
             }
         }
+
+        public static UserModel UserFromDataReader(MySqlDataReader dataReader) {
+
+
+            return new UserModel { 
+            
+                   UserName = dataReader.GetString("nome"),
+                   Email = dataReader.GetString("email"),
+                   Password = dataReader.GetString("password"),
+
+            
+            };
+        
+        }
+
     }
 }

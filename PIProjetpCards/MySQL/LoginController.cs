@@ -1,6 +1,8 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using usermanager.Models;
+using PIProjetpCards.Login___Criar_Conta;
 
 namespace PIProjepCards.MySQL
 {
@@ -17,7 +19,7 @@ namespace PIProjepCards.MySQL
                     connection.Open();
 
                     // Consulta corrigida (usando AND em vez de vírgula)
-                    string query = "SELECT nome FROM user WHERE email = @email AND nome = @nome AND password = @password";
+                    string query = "SELECT * FROM user WHERE email = @email AND nome = @nome AND password = @password";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
@@ -25,11 +27,15 @@ namespace PIProjepCards.MySQL
                         command.Parameters.AddWithValue("@password", password);
                         command.Parameters.AddWithValue("@nome", name);
 
-                        object result = command.ExecuteScalar();
+                        MySqlDataReader result = command.ExecuteReader();
 
-                        if (result != null)
+                        if (result.Read())
                         {
-                            string nomeUsuario = result.ToString();
+
+                            UserModel userModel = UserModel.UserFromDataReader(result);
+                            UserSession.userLogado = userModel;
+
+                            string nomeUsuario = result["nome"].ToString();
                             MessageBox.Show($"Bem-vindo, {nomeUsuario}!");
                             return "success";
                         }
@@ -44,7 +50,7 @@ namespace PIProjepCards.MySQL
             {
                 // Log do erro (opcional)
                 Console.WriteLine($"Erro: {ex.Message}");
-                return "Erro ao conectar ao banco de dados";
+                return $"Erro ao conectar ao banco de dados {ex.Message}";
             }
         }
     }
