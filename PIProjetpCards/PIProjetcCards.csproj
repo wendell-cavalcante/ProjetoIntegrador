@@ -105,6 +105,7 @@
     <Compile Include="Login &amp; Criar Conta\LoginUser.Designer.cs">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login &amp; Criar Conta\UserSession.cs" />
     <Compile Include="MySQL\AuthController.cs" />
     <Compile Include="MySQL\LoginController.cs" />
     <Compile Include="MySQL\UserController.cs" />
