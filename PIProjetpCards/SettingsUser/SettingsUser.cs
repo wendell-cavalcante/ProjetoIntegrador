@@ -1,61 +1,77 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using usermanager.Models;
+using PIProjetpCards.Login___Criar_Conta; // Certifique-se de ter este using
 
 namespace PIProjetpCards.SettingsUser
 {
     public partial class SettingsUser : UserControl
     {
+        private string connectionString = "server=localhost;database=flashcards;uid=root;";
+
         public SettingsUser()
         {
             InitializeComponent();
-            UserModel userModel = new UserModel();
+            // Não precisa instanciar UserModel aqui
         }
 
-
-        private string connectionString = "server=localhost;database=flashcards;uid=root;";
+        private void SettingsUser_Load(object sender, EventArgs e)
+        {
+            CarregarInformacoesUsuarioLogado();
+        }
 
         private void btnProfileInfos_Click(object sender, EventArgs e)
         {
-             MySqlConnection conn = new MySqlConnection(connectionString);
+            CarregarInformacoesUsuarioLogado();
+        }
 
-            conn.Open();
-            try
+        private void CarregarInformacoesUsuarioLogado()
+        {
+            if (UserSession.userIdLogado.HasValue) // Verifica se userIdLogado tem um valor
             {
-                string query = "SELECT nome, email, password FROM user;";
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                MySqlConnection conn = new MySqlConnection(connectionString);
+                try
                 {
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    conn.Open();
+                    string query = "SELECT * FROM user WHERE idUser = @idUser;";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        if (reader.Read())
-                        {
-                            
-                            string nomeUsuario = reader["nome"].ToString();
-                            string emailUsuario = reader["email"].ToString();
-                            string senhaUsuario = reader["password"].ToString(); 
+                        cmd.Parameters.AddWithValue("@idUser", UserSession.userIdLogado.Value);
 
-                            string mensagem = $"Nome: {nomeUsuario}\nEmail: {emailUsuario}\nSenha: {senhaUsuario}";
-                            MessageBox.Show(mensagem, "Informações do seu perfil");
-                        }
-                        else
+                        using (MySqlDataReader result = cmd.ExecuteReader())
                         {
-                            MessageBox.Show("Usuário não encontrado.");
+                            if (result.Read())
+                            {
+                                UserModel userModel = UserModel.UserFromDataReader(result);
+                                UserSession.userLogado = userModel; // Atualiza a informação, se necessário
+
+                                string nomeUsuario = result["nome"].ToString();
+                                string emailUsuario = result["email"].ToString();
+                                MessageBox.Show($"Nome: {nomeUsuario}\nEmail: {emailUsuario}", "Informações do usuário");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Usuário logado não encontrado no banco de dados.");
+                            }
                         }
                     }
-
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Nenhum usuário está logado.");
             }
         }
     }

@@ -80,7 +80,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(51, 48);
             this.panel1.TabIndex = 8;
@@ -91,7 +91,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-3, 3);
+            this.button2.Location = new System.Drawing.Point(3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 42);
             this.button2.TabIndex = 7;
