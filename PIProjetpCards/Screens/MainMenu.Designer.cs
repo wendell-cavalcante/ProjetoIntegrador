@@ -73,7 +73,7 @@
 
         #endregion
 
-        private SideBarUser sideBarUser1;
+        
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private SideBarUser sideBarUser2;
     }
