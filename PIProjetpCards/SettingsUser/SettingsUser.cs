@@ -77,7 +77,7 @@ namespace PIProjetpCards.SettingsUser
         private void btnUserChanges_Click(object sender, EventArgs e)
         {
             UserChangeInfosScreen userChangeInfosScreen = new UserChangeInfosScreen();
-            userChangeInfosScreen.ShowDialog();
+            userChangeInfosScreen.Show();
             this.ParentForm.Hide();
         }
     }
