@@ -33,17 +33,23 @@ namespace PIProjetpCards.SettingsUser
             {
                 MySqlConnection conn = new MySqlConnection(connectionString);
                 try
-                {
+                { // Conexão com o banco de dados
                     conn.Open();
+
+                    // Comando SQL para selecionar o usuário logado
                     string query = "SELECT * FROM user WHERE idUser = @idUser;";
+
+                    // Cria um comando MySQL com a query e a conexão
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
+                        // Adiciona o parâmetro para evitar SQL Injection
                         cmd.Parameters.AddWithValue("@idUser", UserSession.userIdLogado.Value);
 
                         using (MySqlDataReader result = cmd.ExecuteReader())
                         {
                             if (result.Read())
                             {
+                                // Cria um novo objeto UserModel a partir do DataReader
                                 UserModel userModel = UserModel.UserFromDataReader(result);
                                 UserSession.userLogado = userModel; // Atualiza a informação, se necessário
 
