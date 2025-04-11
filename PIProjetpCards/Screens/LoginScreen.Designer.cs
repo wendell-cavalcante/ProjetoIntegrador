@@ -47,7 +47,7 @@
             // 
             this.loginUser2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginUser2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.loginUser2.Location = new System.Drawing.Point(330, 77);
+            this.loginUser2.Location = new System.Drawing.Point(325, 73);
             this.loginUser2.Name = "loginUser2";
             this.loginUser2.Size = new System.Drawing.Size(292, 447);
             this.loginUser2.TabIndex = 1;
@@ -61,11 +61,11 @@
             this.ClientSize = new System.Drawing.Size(952, 600);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "LoginScreen";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

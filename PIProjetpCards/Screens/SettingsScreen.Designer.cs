@@ -30,8 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
             this.settingsUser1 = new PIProjetpCards.SettingsUser.SettingsUser();
+            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 749F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -61,15 +61,6 @@
             this.panel1.Size = new System.Drawing.Size(1186, 743);
             this.panel1.TabIndex = 1;
             // 
-            // sideBarUser1
-            // 
-            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
-            this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(172, 743);
-            this.sideBarUser1.TabIndex = 0;
-            // 
             // settingsUser1
             // 
             this.settingsUser1.BackColor = System.Drawing.Color.Transparent;
@@ -79,16 +70,25 @@
             this.settingsUser1.Size = new System.Drawing.Size(1186, 743);
             this.settingsUser1.TabIndex = 0;
             // 
+            // sideBarUser1
+            // 
+            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
+            this.sideBarUser1.Name = "sideBarUser1";
+            this.sideBarUser1.Size = new System.Drawing.Size(172, 743);
+            this.sideBarUser1.TabIndex = 0;
+            // 
             // SettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "SettingsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsScreen";

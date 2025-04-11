@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIProjetpCards.Screens;
 
 namespace PIProjetpCards.SettingsUser
 {
@@ -15,6 +16,14 @@ namespace PIProjetpCards.SettingsUser
         public SettingsUser()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            HelpScreen helpScreen = new HelpScreen();
+            helpScreen.Show();
         }
     }
 }

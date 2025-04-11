@@ -115,6 +115,7 @@
     <Compile Include="Screens\CardsScreen.Designer.cs">
       <DependentUpon>CardsScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\FAQ.cs" />
     <Compile Include="Screens\HelpScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +148,7 @@
     <Compile Include="Screens\SettingsScreen.Designer.cs">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingsUser\HelpScreen.cs" />
     <Compile Include="SettingsUser\SettingsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +161,7 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="System\Runtime\InteropServices\JavaScript.cs" />
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </EmbeddedResource>
