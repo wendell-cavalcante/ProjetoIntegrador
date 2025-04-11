@@ -2,7 +2,8 @@
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using usermanager.Models;
-using PIProjetpCards.Login___Criar_Conta; // Certifique-se de ter este using
+using PIProjetpCards.Login___Criar_Conta;
+using PIProjetpCards.Screens; // Certifique-se de ter este using
 
 namespace PIProjetpCards.SettingsUser
 {
@@ -61,18 +62,23 @@ namespace PIProjetpCards.SettingsUser
                 {
                     MessageBox.Show(ex.Message);
                 }
-                finally
-                {
-                    if (conn.State == System.Data.ConnectionState.Open)
-                    {
-                        conn.Close();
-                    }
-                }
             }
             else
             {
                 MessageBox.Show("Nenhum usuário está logado.");
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Em desenvolvimento!", "Em breve");
+        }
+
+        private void btnUserChanges_Click(object sender, EventArgs e)
+        {
+            UserChangeInfosScreen userChangeInfosScreen = new UserChangeInfosScreen();
+            userChangeInfosScreen.ShowDialog();
+            this.ParentForm.Hide();
         }
     }
 }

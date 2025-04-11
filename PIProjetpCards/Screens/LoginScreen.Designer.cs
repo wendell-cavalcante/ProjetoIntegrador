@@ -73,7 +73,7 @@
 
         #endregion
 
-        private Login___Criar_Conta.LoginUser loginUser1;
+        
         private System.Windows.Forms.Panel panel1;
         private Login___Criar_Conta.LoginUser loginUser2;
     }

@@ -37,8 +37,8 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.375F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.625F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.375F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.625F));
             this.tableLayoutPanel1.Controls.Add(this.sideBarUser2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -73,7 +73,7 @@
 
         #endregion
 
-        private SideBarUser sideBarUser1;
+        
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private SideBarUser sideBarUser2;
     }
