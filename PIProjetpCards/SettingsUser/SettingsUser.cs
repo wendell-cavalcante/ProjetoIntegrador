@@ -53,6 +53,7 @@ namespace PIProjetpCards.SettingsUser
                                 UserModel userModel = UserModel.UserFromDataReader(result);
                                 UserSession.userLogado = userModel; // Atualiza a informação, se necessário
 
+                                // Exibe as informações do usuário
                                 string nomeUsuario = result["nome"].ToString();
                                 string emailUsuario = result["email"].ToString();
                                 MessageBox.Show($"Nome: {nomeUsuario}\nEmail: {emailUsuario}", "Informações do usuário");
