@@ -18,6 +18,7 @@ namespace PIProjetpCards.MySQL.UserChange
                 {
                     connection.Open();
                     string query = "UPDATE user SET password = @password WHERE idUser = @idUser";
+                   
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@password", password);

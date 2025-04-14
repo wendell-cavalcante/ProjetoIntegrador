@@ -104,7 +104,15 @@ namespace PIProjetpCards.MySQL.UserChange
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            changeUser.ChangeUserInfos(txtNewPassword.Text);
+            if (txtUser.Text == "Nome" || txtEmail.Text == "Email" || txtPassword.Text == "Senha atual" || txtNewPassword.Text == "Nova senha")
+            {
+                MessageBox.Show("Por favor preencha todos os campos.");
+                return;
+            }
+            else
+            {
+                changeUser.ChangeUserInfos(txtNewPassword.Text);
+            }
         }
     }
 }
