@@ -238,6 +238,7 @@
             this.btnSave.TabIndex = 64;
             this.btnSave.Text = "Salvar";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox5
             // 

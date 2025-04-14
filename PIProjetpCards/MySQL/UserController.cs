@@ -1,5 +1,6 @@
 ﻿using usermanager.Models; // Importa o Model
-using System.Windows.Forms; // Importa recursos do Windows Forms
+using System.Windows.Forms;
+using PIProjetpCards.MySQL.UserChange; // Importa recursos do Windows Forms
 
 namespace usermanager.Controllers
 {
@@ -7,7 +8,7 @@ namespace usermanager.Controllers
     {
         // Instância do Model que será usada para interagir com o banco de dados
         private UserModel userModel;
-
+       
         // Construtor do Controller, inicializando o Model
         public UserController()
         {

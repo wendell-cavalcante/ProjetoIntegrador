@@ -7,19 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Xml.Linq;
+using usermanager.Controllers;
 
 namespace PIProjetpCards.MySQL.UserChange
 {
     public partial class ChangeUser: UserControl
     {
+        private ChangeUserController changeUser;
+
         public ChangeUser()
         {
             InitializeComponent();
+            changeUser = new ChangeUserController();
         }
         private void ChangeUser_Load(object sender, EventArgs e)
         {
             txtEmail.Text = "Email";
-            txtPassword.Text = "Senha";
+            txtPassword.Text = "Senha atual";
             txtUser.Text = "Nome";
             txtNewPassword.Text = "Nova senha";
         }
@@ -62,7 +68,7 @@ namespace PIProjetpCards.MySQL.UserChange
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Senha")
+            if (txtPassword.Text == "Senha atual")
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
@@ -73,7 +79,7 @@ namespace PIProjetpCards.MySQL.UserChange
         {
             if (txtPassword.Text == "")
             {
-                txtPassword.Text = "Senha";
+                txtPassword.Text = "Senha atual";
                 txtPassword.ForeColor = Color.Black;
             }
         }
@@ -96,5 +102,9 @@ namespace PIProjetpCards.MySQL.UserChange
             }
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            changeUser.ChangeUserInfos(txtUser.Text, txtPassword.Text, txtEmail.Text);
+        }
     }
 }
