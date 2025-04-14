@@ -118,7 +118,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 25);
             this.label2.TabIndex = 74;
-            this.label2.Text = "Alterar dados";
+            this.label2.Text = "Alterar senha";
             // 
             // panel4
             // 

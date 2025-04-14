@@ -97,14 +97,22 @@ namespace PIProjetpCards.MySQL.UserChange
         {
             if (txtNewPassword.Text == "")
             {
-                txtNewPassword.Text = "Nova Senha";
+                txtNewPassword.Text = "Nova senha";
                 txtNewPassword.ForeColor = Color.Black;
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            changeUser.ChangeUserInfos(txtUser.Text, txtPassword.Text, txtEmail.Text);
+            if (txtUser.Text == "Nome" || txtEmail.Text == "Email" || txtPassword.Text == "Senha atual" || txtNewPassword.Text == "Nova senha")
+            {
+                MessageBox.Show("Por favor preencha todos os campos.");
+                return;
+            }
+            else
+            {
+                changeUser.ChangeUserInfos(txtNewPassword.Text);
+            }
         }
     }
 }
