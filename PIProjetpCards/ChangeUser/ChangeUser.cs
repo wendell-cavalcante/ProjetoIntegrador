@@ -97,14 +97,14 @@ namespace PIProjetpCards.MySQL.UserChange
         {
             if (txtNewPassword.Text == "")
             {
-                txtNewPassword.Text = "Nova Senha";
+                txtNewPassword.Text = "Nova senha";
                 txtNewPassword.ForeColor = Color.Black;
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            changeUser.ChangeUserInfos(txtUser.Text, txtPassword.Text, txtEmail.Text);
+            changeUser.ChangeUserInfos(txtNewPassword.Text);
         }
     }
 }

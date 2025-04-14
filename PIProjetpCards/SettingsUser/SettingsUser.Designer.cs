@@ -74,7 +74,7 @@
             this.btnUserChanges.Name = "btnUserChanges";
             this.btnUserChanges.Size = new System.Drawing.Size(841, 52);
             this.btnUserChanges.TabIndex = 31;
-            this.btnUserChanges.Text = "Alterar dados";
+            this.btnUserChanges.Text = "Alterar senha";
             this.btnUserChanges.UseVisualStyleBackColor = false;
             this.btnUserChanges.Click += new System.EventHandler(this.btnUserChanges_Click);
             // 

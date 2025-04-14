@@ -2,6 +2,7 @@
 using System.Windows;
 using MySql.Data.MySqlClient;
 using PIProjetpCards.Login___Criar_Conta;
+using usermanager.Models;
 
 namespace PIProjetpCards.MySQL.UserChange
 {
@@ -9,19 +10,17 @@ namespace PIProjetpCards.MySQL.UserChange
     {      
         private string connectionString = "server=localhost;database=flashcards;uid=root;";
 
-        public void ChangeUserInfos(string name, string password, string email)
+        public void ChangeUserInfos(string password)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string query = "UPDATE user SET nome = @nome, password = @password, email = @email WHERE idUser = @idUser";
+                    string query = "UPDATE user SET password = @password WHERE idUser = @idUser";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@nome", name);
                         command.Parameters.AddWithValue("@password", password);
-                        command.Parameters.AddWithValue("@email", email);
                         command.Parameters.AddWithValue("@idUser", UserSession.userIdLogado.Value);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -41,6 +40,22 @@ namespace PIProjetpCards.MySQL.UserChange
                     MessageBox.Show($"Erro ao conectar ao banco de dados: {ex.Message}");
                 }
             }
+
+        }
+        public static UserModel UserFromDataReader(MySqlDataReader dataReader)
+        {
+
+
+            return new UserModel
+            {
+
+                UserName = dataReader.GetString("nome"),
+                Email = dataReader.GetString("email"),
+                Password = dataReader.GetString("password"),
+
+
+            };
+
         }
     }
 }
