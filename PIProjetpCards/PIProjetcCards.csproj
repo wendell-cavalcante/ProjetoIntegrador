@@ -117,6 +117,12 @@
     <Compile Include="Login &amp; Criar Conta\UserSession.cs" />
     <Compile Include="MySQL\AuthController.cs" />
     <Compile Include="MySQL\LoginController.cs" />
+    <Compile Include="MySQL\UserChange\ChangeUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MySQL\UserChange\ChangeUser.Designer.cs">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
     <Compile Include="Screens\CardsScreen.cs">
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MySQL\UserChange\ChangeUser.resx">
+      <DependentUpon>ChangeUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\CardsScreen.resx">
       <DependentUpon>CardsScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,8 +233,6 @@
     <Content Include="assets\definicoes.png" />
     <Content Include="assets\saida %281%29.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MySQL\UserChange\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

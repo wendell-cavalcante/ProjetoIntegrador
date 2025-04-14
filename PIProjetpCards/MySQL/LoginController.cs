@@ -26,10 +26,12 @@ namespace PIProjepCards.MySQL
                         command.Parameters.AddWithValue("@password", password);
                         command.Parameters.AddWithValue("@nome", name);
 
+                        // **Executa o comando e obtém o resultado**
                         MySqlDataReader result = command.ExecuteReader();
 
                         if (result.Read())
                         {
+                            // **Cria um novo objeto UserModel a partir do DataReader**
                             UserModel userModel = UserModel.UserFromDataReader(result);
 
                             // **Atribuição direta à propriedade estática**
@@ -38,6 +40,7 @@ namespace PIProjepCards.MySQL
                             // **Armazenando o ID do usuário**
                             UserSession.userIdLogado = Convert.ToInt32(result["idUser"]); // Assumindo que sua coluna de ID se chama "id"
 
+                            // **Exibe uma mensagem de boas-vindas**
                             string nomeUsuario = result["nome"].ToString();
                             MessageBox.Show($"Bem-vindo, {nomeUsuario}!");
                             return "success";
