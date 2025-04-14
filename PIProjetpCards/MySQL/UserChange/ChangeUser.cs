@@ -19,7 +19,7 @@ namespace PIProjetpCards.MySQL.UserChange
         private void ChangeUser_Load(object sender, EventArgs e)
         {
             txtEmail.Text = "Email";
-            txtPassword.Text = "Senha";
+            txtPassword.Text = "Senha atual";
             txtUser.Text = "Nome";
             txtNewPassword.Text = "Nova senha";
         }
@@ -62,7 +62,7 @@ namespace PIProjetpCards.MySQL.UserChange
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Senha")
+            if (txtPassword.Text == "Senha atual")
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
@@ -73,7 +73,7 @@ namespace PIProjetpCards.MySQL.UserChange
         {
             if (txtPassword.Text == "")
             {
-                txtPassword.Text = "Senha";
+                txtPassword.Text = "Senha atual";
                 txtPassword.ForeColor = Color.Black;
             }
         }
