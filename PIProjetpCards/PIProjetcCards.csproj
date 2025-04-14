@@ -110,6 +110,12 @@
     <Compile Include="MySQL\LoginController.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
+    <Compile Include="NotePads\NotesPadUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotePads\NotesPadUser.Designer.cs">
+      <DependentUpon>NotesPadUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\CardsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePads\NotesPadUser.resx">
+      <DependentUpon>NotesPadUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\CardsScreen.resx">
       <DependentUpon>CardsScreen.cs</DependentUpon>
