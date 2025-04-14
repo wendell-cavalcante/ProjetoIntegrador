@@ -117,12 +117,13 @@
     <Compile Include="Login &amp; Criar Conta\UserSession.cs" />
     <Compile Include="MySQL\AuthController.cs" />
     <Compile Include="MySQL\LoginController.cs" />
-    <Compile Include="MySQL\UserChange\ChangeUser.cs">
+    <Compile Include="ChangeUser\ChangeUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MySQL\UserChange\ChangeUser.Designer.cs">
+    <Compile Include="ChangeUser\ChangeUser.Designer.cs">
       <DependentUpon>ChangeUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="MySQL\UserChange\ChangeUsercontroller.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
     <Compile Include="Screens\CardsScreen.cs">
@@ -178,7 +179,7 @@
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MySQL\UserChange\ChangeUser.resx">
+    <EmbeddedResource Include="ChangeUser\ChangeUser.resx">
       <DependentUpon>ChangeUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\CardsScreen.resx">
