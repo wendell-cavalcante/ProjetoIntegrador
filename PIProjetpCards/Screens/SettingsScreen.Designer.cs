@@ -28,14 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
             this.settingsUser1 = new PIProjetpCards.SettingsUser.SettingsUser();
+            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // settingsUser1
+            // 
+            this.settingsUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.settingsUser1.BackColor = System.Drawing.Color.Transparent;
+            this.settingsUser1.Location = new System.Drawing.Point(289, 93);
+            this.settingsUser1.Name = "settingsUser1";
+            this.settingsUser1.Size = new System.Drawing.Size(969, 563);
+            this.settingsUser1.TabIndex = 1;
+            // 
+            // sideBarUser1
+            // 
+            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
+            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
+            this.sideBarUser1.Name = "sideBarUser1";
+            this.sideBarUser1.Size = new System.Drawing.Size(172, 743);
+            this.sideBarUser1.TabIndex = 0;
+            // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87F));
@@ -49,24 +68,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 749F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // sideBarUser1
-            // 
-            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
-            this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(172, 743);
-            this.sideBarUser1.TabIndex = 0;
-            // 
-            // settingsUser1
-            // 
-            this.settingsUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.settingsUser1.BackColor = System.Drawing.Color.Transparent;
-            this.settingsUser1.Location = new System.Drawing.Point(289, 93);
-            this.settingsUser1.Name = "settingsUser1";
-            this.settingsUser1.Size = new System.Drawing.Size(969, 563);
-            this.settingsUser1.TabIndex = 1;
             // 
             // SettingsScreen
             // 
@@ -89,8 +90,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private SideBarUser sideBarUser1;
         private SettingsUser.SettingsUser settingsUser1;
+        private SideBarUser sideBarUser1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

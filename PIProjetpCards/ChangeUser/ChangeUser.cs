@@ -111,7 +111,11 @@ namespace PIProjetpCards.MySQL.UserChange
             }
             else
             {
-                changeUser.ChangeUserInfos(txtNewPassword.Text);
+                changeUser.ChangeUserInfos(txtPassword.Text, txtEmail.Text, txtUser.Text, txtNewPassword.Text);
+                txtEmail.Clear();
+                txtUser.Clear();
+                txtPassword.Clear();
+                txtNewPassword.Clear();
             }
         }
     }
