@@ -76,11 +76,6 @@ namespace PIProjetpCards.SettingsUser
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Em desenvolvimento!", "Em breve");
-        }
-
         private void btnUserChanges_Click(object sender, EventArgs e)
         {
             UserChangeInfosScreen userChangeInfosScreen = new UserChangeInfosScreen();
