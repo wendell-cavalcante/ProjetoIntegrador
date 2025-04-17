@@ -28,54 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.sideBarUser1 = new PIProjetpCards.SideBarUser();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cardsUser1 = new PIProjetpCards.Cards.CardsUser();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // panel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.625F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.375F));
-            this.tableLayoutPanel1.Controls.Add(this.sideBarUser1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.cardsUser1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1142, 749);
+            this.panel1.TabIndex = 0;
             // 
-            // sideBarUser1
+            // cardsUser1
             // 
-            this.sideBarUser1.BackColor = System.Drawing.Color.Transparent;
-            this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
-            this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(167, 444);
-            this.sideBarUser1.TabIndex = 0;
+            this.cardsUser1.BackColor = System.Drawing.Color.Transparent;
+            this.cardsUser1.Location = new System.Drawing.Point(96, -68);
+            this.cardsUser1.Name = "cardsUser1";
+            this.cardsUser1.Size = new System.Drawing.Size(938, 814);
+            this.cardsUser1.TabIndex = 0;
             // 
             // CardsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1142, 749);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CardsScreen";
             this.ShowIcon = false;
             this.Text = "Cards";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private SideBarUser sideBarUser1;
+        private System.Windows.Forms.Panel panel1;
+        private Cards.CardsUser cardsUser1;
     }
 }

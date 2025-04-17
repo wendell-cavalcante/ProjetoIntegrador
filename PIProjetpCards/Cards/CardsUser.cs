@@ -66,16 +66,16 @@ namespace PIProjetpCards.Cards
             if (txtSubCategorie.Text == "Nome da Subcategoria")
             {
                 txtSubCategorie.Text = "";
-                txtCategorie.ForeColor = Color.Black;
+                txtSubCategorie.ForeColor = Color.Black;
             }
         }
 
         private void txtSubCategorie_MouseLeave(object sender, EventArgs e)
         {
-            if (txtNameCard.Text == "")
+            if (txtSubCategorie.Text == "")
             {
-                txtNameCard.Text = "Nome da Subcategoria";
-                txtNameCard.ForeColor = Color.Black;
+                txtSubCategorie.Text = "Nome da Subcategoria";
+                txtSubCategorie.ForeColor = Color.Black;
             }
         }
 

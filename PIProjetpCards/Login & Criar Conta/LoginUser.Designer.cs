@@ -135,6 +135,7 @@
             // lblnaoconta
             // 
             this.lblnaoconta.AutoSize = true;
+            this.lblnaoconta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblnaoconta.ForeColor = System.Drawing.Color.Indigo;
             this.lblnaoconta.Location = new System.Drawing.Point(28, 313);
             this.lblnaoconta.Name = "lblnaoconta";
@@ -157,6 +158,7 @@
             // btnCreate
             // 
             this.btnCreate.BackColor = System.Drawing.Color.Indigo;
+            this.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreate.FlatAppearance.BorderSize = 0;
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,6 +175,7 @@
             // showPassword
             // 
             this.showPassword.AutoSize = true;
+            this.showPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showPassword.Location = new System.Drawing.Point(171, 313);

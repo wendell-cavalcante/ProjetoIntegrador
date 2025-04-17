@@ -78,6 +78,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
@@ -99,6 +100,7 @@
             // 
             // btnMainMenu
             // 
+            this.btnMainMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMainMenu.FlatAppearance.BorderSize = 0;
             this.btnMainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMainMenu.Image")));
@@ -122,6 +124,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
@@ -145,6 +148,7 @@
             // 
             // btnsettings
             // 
+            this.btnsettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsettings.FlatAppearance.BorderSize = 0;
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsettings.Image = ((System.Drawing.Image)(resources.GetObject("btnsettings.Image")));
@@ -159,6 +163,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
@@ -183,6 +188,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
