@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideBarUser));
             this.sidebar = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.pnmainmenu = new System.Windows.Forms.Panel();
@@ -58,7 +57,6 @@
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.Color.White;
-            this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.pnmainmenu);
             this.sidebar.Controls.Add(this.pnLogout);
@@ -69,13 +67,6 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(50, 1114);
             this.sidebar.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(0, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 48);
-            this.panel2.TabIndex = 8;
             // 
             // panel1
             // 
@@ -94,7 +85,7 @@
             this.button2.Location = new System.Drawing.Point(3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 42);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.sidebarOpen_Click);
             // 
@@ -115,7 +106,7 @@
             this.btnMainMenu.Location = new System.Drawing.Point(3, 3);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(173, 42);
-            this.btnMainMenu.TabIndex = 7;
+            this.btnMainMenu.TabIndex = 0;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
@@ -138,7 +129,7 @@
             this.btnLogout.Location = new System.Drawing.Point(3, 3);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(173, 49);
-            this.btnLogout.TabIndex = 7;
+            this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -161,7 +152,7 @@
             this.btnsettings.Location = new System.Drawing.Point(3, 55);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Size = new System.Drawing.Size(173, 49);
-            this.btnsettings.TabIndex = 7;
+            this.btnsettings.TabIndex = 0;
             this.btnsettings.Text = "Configurações";
             this.btnsettings.UseVisualStyleBackColor = true;
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
@@ -175,7 +166,7 @@
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 49);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Criar";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -199,7 +190,7 @@
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(173, 49);
-            this.button3.TabIndex = 8;
+            this.button3.TabIndex = 0;
             this.button3.Text = "Estudos";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.menu_Click);
@@ -213,7 +204,7 @@
             this.btnCards.Location = new System.Drawing.Point(3, 113);
             this.btnCards.Name = "btnCards";
             this.btnCards.Size = new System.Drawing.Size(173, 49);
-            this.btnCards.TabIndex = 7;
+            this.btnCards.TabIndex = 5;
             this.btnCards.Text = "Cards";
             this.btnCards.UseVisualStyleBackColor = true;
             this.btnCards.Click += new System.EventHandler(this.btnCards_Click);
@@ -227,7 +218,7 @@
             this.btnNotes.Location = new System.Drawing.Point(3, 58);
             this.btnNotes.Name = "btnNotes";
             this.btnNotes.Size = new System.Drawing.Size(173, 49);
-            this.btnNotes.TabIndex = 7;
+            this.btnNotes.TabIndex = 4;
             this.btnNotes.Text = "Anotações";
             this.btnNotes.UseVisualStyleBackColor = true;
             this.btnNotes.Click += new System.EventHandler(this.btnNotes_Click);
@@ -277,6 +268,5 @@
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel2;
     }
 }

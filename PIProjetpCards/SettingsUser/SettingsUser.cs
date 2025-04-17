@@ -82,5 +82,12 @@ namespace PIProjetpCards.SettingsUser
             userChangeInfosScreen.Show();
             this.ParentForm.Hide();
         }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            StatistcsScreen statistcsScreen = new StatistcsScreen();
+            statistcsScreen.Show();
+            this.ParentForm.Hide();
+        }
     }
 }

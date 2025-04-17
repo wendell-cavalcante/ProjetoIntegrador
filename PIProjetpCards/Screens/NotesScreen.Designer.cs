@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 1061);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 749);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // sideBarUser1
@@ -56,7 +56,7 @@
             this.sideBarUser1.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarUser1.Location = new System.Drawing.Point(3, 3);
             this.sideBarUser1.Name = "sideBarUser1";
-            this.sideBarUser1.Size = new System.Drawing.Size(189, 1055);
+            this.sideBarUser1.Size = new System.Drawing.Size(189, 743);
             this.sideBarUser1.TabIndex = 0;
             // 
             // NotesScreen
@@ -64,11 +64,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(800, 1061);
+            this.ClientSize = new System.Drawing.Size(800, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "NotesScreen";
             this.ShowIcon = false;
+            this.Text = "Bloco de notas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
