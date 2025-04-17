@@ -66,11 +66,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Indigo;
             this.label1.Location = new System.Drawing.Point(275, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 39);
+            this.label1.Size = new System.Drawing.Size(459, 42);
             this.label1.TabIndex = 5;
             this.label1.Text = "Criar Novo cartão de Estudo";
             // 
@@ -78,12 +78,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 18F);
             this.label2.Location = new System.Drawing.Point(135, 678);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 29);
+            this.label2.Size = new System.Drawing.Size(118, 29);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Resposta";
+            this.label2.Text = "Resposta:";
             // 
             // txtAnswer
             // 
@@ -111,10 +111,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 18F);
             this.label3.Location = new System.Drawing.Point(135, 336);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 29);
+            this.label3.Size = new System.Drawing.Size(122, 29);
             this.label3.TabIndex = 8;
             this.label3.Text = "Categoria:";
             // 
@@ -133,12 +133,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 18F);
             this.label4.Location = new System.Drawing.Point(529, 336);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 29);
+            this.label4.Size = new System.Drawing.Size(160, 29);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Subcategoria";
+            this.label4.Text = "Subcategoria:";
             // 
             // txtSubCategorie
             // 
@@ -166,10 +166,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(135, 182);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(191, 29);
+            this.label5.Size = new System.Drawing.Size(189, 29);
             this.label5.TabIndex = 14;
             this.label5.Text = "Nome do cartão:";
             // 
@@ -177,10 +177,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Bahnschrift", 18F);
             this.label6.Location = new System.Drawing.Point(135, 486);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 29);
+            this.label6.Size = new System.Drawing.Size(115, 29);
             this.label6.TabIndex = 15;
             this.label6.Text = "Pergunta:";
             // 
