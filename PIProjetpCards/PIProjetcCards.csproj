@@ -105,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\CardsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cards\CardsUser.Designer.cs">
+      <DependentUpon>CardsUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login &amp; Criar Conta\LoginUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cards\CardsUser.resx">
+      <DependentUpon>CardsUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </EmbeddedResource>
