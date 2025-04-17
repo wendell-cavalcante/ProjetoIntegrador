@@ -99,8 +99,6 @@ namespace PIProjetpCards.MySQL.UserChange
                 }
                 return false;
             }
-
-
         }
     }
 }

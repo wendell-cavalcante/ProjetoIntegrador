@@ -105,7 +105,7 @@
             this.txtNewPassword.Multiline = true;
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Size = new System.Drawing.Size(249, 24);
-            this.txtNewPassword.TabIndex = 76;
+            this.txtNewPassword.TabIndex = 4;
             this.txtNewPassword.Enter += new System.EventHandler(this.txtNewPassword_Enter);
             this.txtNewPassword.Leave += new System.EventHandler(this.txtNewPassword_Leave);
             // 
@@ -186,7 +186,7 @@
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(249, 24);
-            this.txtUser.TabIndex = 68;
+            this.txtUser.TabIndex = 1;
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
@@ -199,7 +199,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(249, 24);
-            this.txtEmail.TabIndex = 67;
+            this.txtEmail.TabIndex = 2;
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
@@ -212,7 +212,7 @@
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(249, 24);
-            this.txtPassword.TabIndex = 66;
+            this.txtPassword.TabIndex = 3;
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
@@ -235,7 +235,7 @@
             this.btnSave.Location = new System.Drawing.Point(358, 379);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(279, 52);
-            this.btnSave.TabIndex = 64;
+            this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Salvar";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);

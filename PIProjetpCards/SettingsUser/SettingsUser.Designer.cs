@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsUser));
             this.btnProfileInfos = new System.Windows.Forms.Button();
             this.btnUserChanges = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnStatistics = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -55,7 +55,7 @@
             this.btnProfileInfos.Location = new System.Drawing.Point(79, 64);
             this.btnProfileInfos.Name = "btnProfileInfos";
             this.btnProfileInfos.Size = new System.Drawing.Size(841, 52);
-            this.btnProfileInfos.TabIndex = 30;
+            this.btnProfileInfos.TabIndex = 1;
             this.btnProfileInfos.Text = "Infromações perfil";
             this.btnProfileInfos.UseVisualStyleBackColor = false;
             this.btnProfileInfos.Click += new System.EventHandler(this.btnProfileInfos_Click);
@@ -71,25 +71,26 @@
             this.btnUserChanges.Location = new System.Drawing.Point(79, 133);
             this.btnUserChanges.Name = "btnUserChanges";
             this.btnUserChanges.Size = new System.Drawing.Size(841, 52);
-            this.btnUserChanges.TabIndex = 31;
+            this.btnUserChanges.TabIndex = 2;
             this.btnUserChanges.Text = "Alterar senha";
             this.btnUserChanges.UseVisualStyleBackColor = false;
             this.btnUserChanges.Click += new System.EventHandler(this.btnUserChanges_Click);
             // 
-            // button3
+            // btnStatistics
             // 
-            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(79, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(841, 52);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Estatísticas";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnStatistics.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStatistics.FlatAppearance.BorderSize = 0;
+            this.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistics.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Image")));
+            this.btnStatistics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistics.Location = new System.Drawing.Point(79, 200);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.Size = new System.Drawing.Size(841, 52);
+            this.btnStatistics.TabIndex = 3;
+            this.btnStatistics.Text = "Estatísticas";
+            this.btnStatistics.UseVisualStyleBackColor = false;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // button5
             // 
@@ -102,7 +103,7 @@
             this.button5.Location = new System.Drawing.Point(79, 265);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(841, 52);
-            this.button5.TabIndex = 34;
+            this.button5.TabIndex = 4;
             this.button5.Text = "Dúvidas";
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -158,7 +159,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnStatistics);
             this.panel1.Controls.Add(this.btnUserChanges);
             this.panel1.Controls.Add(this.btnProfileInfos);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -196,7 +197,7 @@
         #endregion
         private System.Windows.Forms.Button btnProfileInfos;
         private System.Windows.Forms.Button btnUserChanges;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnStatistics;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

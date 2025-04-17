@@ -59,7 +59,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(208, 24);
-            this.txtPassword.TabIndex = 15;
+            this.txtPassword.TabIndex = 3;
             // 
             // txtUsername
             // 
@@ -69,7 +69,7 @@
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(208, 24);
-            this.txtUsername.TabIndex = 14;
+            this.txtUsername.TabIndex = 1;
             // 
             // btnLogin
             // 
@@ -81,7 +81,7 @@
             this.btnLogin.Location = new System.Drawing.Point(28, 343);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(236, 35);
-            this.btnLogin.TabIndex = 13;
+            this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -139,7 +139,7 @@
             this.lblnaoconta.Location = new System.Drawing.Point(28, 313);
             this.lblnaoconta.Name = "lblnaoconta";
             this.lblnaoconta.Size = new System.Drawing.Size(106, 13);
-            this.lblnaoconta.TabIndex = 17;
+            this.lblnaoconta.TabIndex = 5;
             this.lblnaoconta.Text = "Não tem uma conta?";
             this.lblnaoconta.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -151,7 +151,7 @@
             this.label3.Location = new System.Drawing.Point(119, 381);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 16);
-            this.label3.TabIndex = 18;
+            this.label3.TabIndex = 7;
             this.label3.Text = "Fechar";
             // 
             // btnCreate
@@ -161,10 +161,10 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(28, 343);
+            this.btnCreate.Location = new System.Drawing.Point(28, 344);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(236, 35);
-            this.btnCreate.TabIndex = 19;
+            this.btnCreate.TabIndex = 6;
             this.btnCreate.Text = "Criar Conta";
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Visible = false;
@@ -178,7 +178,7 @@
             this.showPassword.Location = new System.Drawing.Point(171, 313);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(90, 17);
-            this.showPassword.TabIndex = 20;
+            this.showPassword.TabIndex = 4;
             this.showPassword.Text = "Mostrar senha";
             this.showPassword.UseVisualStyleBackColor = true;
             this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
@@ -191,7 +191,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(208, 24);
-            this.txtEmail.TabIndex = 23;
+            this.txtEmail.TabIndex = 2;
             // 
             // panel3
             // 

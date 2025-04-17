@@ -48,9 +48,6 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
-    <Reference Include="Krypton, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Krypton.2.0.0.0\lib\net40-Client\Krypton.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -158,6 +155,12 @@
     <Compile Include="Screens\SettingsScreen.Designer.cs">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\StatistcsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StatistcsScreen.Designer.cs">
+      <DependentUpon>StatistcsScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\UserChangeInfosScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\SettingsScreen.resx">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StatistcsScreen.resx">
+      <DependentUpon>StatistcsScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\UserChangeInfosScreen.resx">
       <DependentUpon>UserChangeInfosScreen.cs</DependentUpon>
