@@ -54,6 +54,7 @@
             this.btnSaveCard.FlatAppearance.BorderSize = 0;
             this.btnSaveCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveCard.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveCard.ForeColor = System.Drawing.Color.White;
             this.btnSaveCard.Location = new System.Drawing.Point(140, 867);
             this.btnSaveCard.Name = "btnSaveCard";
             this.btnSaveCard.Size = new System.Drawing.Size(744, 72);
