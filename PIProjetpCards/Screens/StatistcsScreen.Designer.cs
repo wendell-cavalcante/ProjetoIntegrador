@@ -67,7 +67,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Name = "StatistcsScreen";
-            this.Text = "Estátisticas";
+            this.ShowIcon = false;
+            this.Text = "Estatísticas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
