@@ -86,5 +86,11 @@ namespace PIProjetpCards.Login___Criar_Conta
                 txtPassword.PasswordChar = '*';
             }
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            //Natan "Fechar tudo"
+            Application.Exit();
+        }
     }
 }

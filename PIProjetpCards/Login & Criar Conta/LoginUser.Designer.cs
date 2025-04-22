@@ -38,12 +38,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblnaoconta = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.showPassword = new System.Windows.Forms.CheckBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -143,17 +143,6 @@
             this.lblnaoconta.Text = "Não tem uma conta?";
             this.lblnaoconta.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(119, 381);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Fechar";
-            // 
             // btnCreate
             // 
             this.btnCreate.BackColor = System.Drawing.Color.Indigo;
@@ -211,17 +200,27 @@
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
             // 
+            // btnFechar
+            // 
+            this.btnFechar.Location = new System.Drawing.Point(101, 384);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(75, 23);
+            this.btnFechar.TabIndex = 24;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // LoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.showPassword);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblnaoconta);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -254,11 +253,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblnaoconta;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.CheckBox showPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

@@ -110,12 +110,14 @@
     <Compile Include="MySQL\LoginController.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
+    <Compile Include="NotePads\listView1.cs" />
     <Compile Include="NotePads\NotesPadUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NotePads\NotesPadUser.Designer.cs">
       <DependentUpon>NotesPadUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotePads\notesPadUser1.cs" />
     <Compile Include="Screens\CardsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,7 +136,9 @@
     <Compile Include="Screens\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="..\..\..\..\OneDrive\11-Documentos\Projeto\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\NotesScreen.cs">
       <SubType>Form</SubType>
@@ -197,6 +201,24 @@
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MainMenu.datasource" />
+    <None Include="Properties\DataSources\PIProjepCards.MySQL.LoginController.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Login___Criar_Conta.LoginUser.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Login___Criar_Conta.UserSession.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.MySQL.AuthController.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.NotePads.NotesPadUser.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.NotePads.notesPadUser1.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Screens.CardsScreen.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Screens.LoginScreen.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Screens.NotesScreen.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.Screens.SettingsScreen.datasource" />
+    <None Include="Properties\DataSources\PIProjetpCards.SettingsUser.SettingsUser.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SideBarUser.datasource" />
+    <None Include="Properties\DataSources\usermanager.Controllers.UserController.datasource" />
+    <None Include="Properties\DataSources\usermanager.Models.UserModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
