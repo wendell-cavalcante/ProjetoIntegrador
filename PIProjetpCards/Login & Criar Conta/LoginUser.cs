@@ -86,5 +86,12 @@ namespace PIProjetpCards.Login___Criar_Conta
                 txtPassword.PasswordChar = '*';
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtEmail.Clear();
+        }
     }
 }
