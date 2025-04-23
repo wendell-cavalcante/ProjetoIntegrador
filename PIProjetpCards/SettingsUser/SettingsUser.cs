@@ -89,5 +89,12 @@ namespace PIProjetpCards.SettingsUser
             statistcsScreen.Show();
             this.ParentForm.Hide();
         }
+
+        private void btnDoubt_Click(object sender, EventArgs e)
+        {
+            HelpScreen helpScreen = new HelpScreen();
+            helpScreen.Show();
+            this.ParentForm.Hide();
+        }
     }
 }

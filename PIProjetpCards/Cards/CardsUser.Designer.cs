@@ -28,82 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSaveCard = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNameCard = new System.Windows.Forms.TextBox();
+            this.txtSubCategorie = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCategorie = new System.Windows.Forms.TextBox();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCategorie = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSubCategorie = new System.Windows.Forms.TextBox();
-            this.txtNameCard = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSaveCard = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // btnSaveCard
+            // panel5
             // 
-            this.btnSaveCard.BackColor = System.Drawing.Color.Indigo;
-            this.btnSaveCard.FlatAppearance.BorderSize = 0;
-            this.btnSaveCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveCard.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveCard.ForeColor = System.Drawing.Color.White;
-            this.btnSaveCard.Location = new System.Drawing.Point(141, 725);
-            this.btnSaveCard.Name = "btnSaveCard";
-            this.btnSaveCard.Size = new System.Drawing.Size(744, 52);
-            this.btnSaveCard.TabIndex = 3;
-            this.btnSaveCard.Text = "Salvar Cartão";
-            this.btnSaveCard.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.Color.LightGray;
+            this.panel5.Location = new System.Drawing.Point(414, 304);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(350, 1);
+            this.panel5.TabIndex = 60;
             // 
-            // label1
+            // panel4
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(275, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(459, 42);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Criar Novo cartão de Estudo";
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Location = new System.Drawing.Point(21, 304);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(350, 1);
+            this.panel4.TabIndex = 59;
             // 
-            // label2
+            // panel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label2.Location = new System.Drawing.Point(136, 559);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 29);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Resposta:";
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.Location = new System.Drawing.Point(20, 182);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(744, 1);
+            this.panel2.TabIndex = 58;
             // 
-            // txtAnswer
+            // panel1
             // 
-            this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAnswer.Location = new System.Drawing.Point(141, 608);
-            this.txtAnswer.Multiline = true;
-            this.txtAnswer.Name = "txtAnswer";
-            this.txtAnswer.Size = new System.Drawing.Size(744, 85);
-            this.txtAnswer.TabIndex = 7;
-            this.txtAnswer.MouseEnter += new System.EventHandler(this.txtAnswer_MouseEnter);
-            this.txtAnswer.MouseLeave += new System.EventHandler(this.txtAnswer_MouseLeave);
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Location = new System.Drawing.Point(21, 619);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(744, 1);
+            this.panel1.TabIndex = 57;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Location = new System.Drawing.Point(21, 464);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(744, 1);
+            this.panel3.TabIndex = 56;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift", 18F);
+            this.label6.Location = new System.Drawing.Point(16, 328);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 29);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Pergunta:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 75);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(189, 29);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "Nome do cartão:";
+            // 
+            // txtNameCard
+            // 
+            this.txtNameCard.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNameCard.Location = new System.Drawing.Point(20, 124);
+            this.txtNameCard.Multiline = true;
+            this.txtNameCard.Name = "txtNameCard";
+            this.txtNameCard.Size = new System.Drawing.Size(743, 52);
+            this.txtNameCard.TabIndex = 53;
+            this.txtNameCard.MouseEnter += new System.EventHandler(this.txtNameCard_MouseEnter);
+            this.txtNameCard.MouseLeave += new System.EventHandler(this.txtNameCard_MouseLeave);
+            // 
+            // txtSubCategorie
+            // 
+            this.txtSubCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSubCategorie.Location = new System.Drawing.Point(414, 245);
+            this.txtSubCategorie.Multiline = true;
+            this.txtSubCategorie.Name = "txtSubCategorie";
+            this.txtSubCategorie.Size = new System.Drawing.Size(350, 52);
+            this.txtSubCategorie.TabIndex = 52;
+            this.txtSubCategorie.MouseEnter += new System.EventHandler(this.txtSubCategorie_MouseEnter);
+            this.txtSubCategorie.MouseLeave += new System.EventHandler(this.txtSubCategorie_MouseLeave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 18F);
+            this.label4.Location = new System.Drawing.Point(410, 200);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 29);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Subcategoria:";
+            // 
+            // txtCategorie
+            // 
+            this.txtCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCategorie.Location = new System.Drawing.Point(21, 246);
+            this.txtCategorie.Multiline = true;
+            this.txtCategorie.Name = "txtCategorie";
+            this.txtCategorie.Size = new System.Drawing.Size(350, 52);
+            this.txtCategorie.TabIndex = 50;
+            this.txtCategorie.MouseEnter += new System.EventHandler(this.txtCategorie_MouseEnter);
+            this.txtCategorie.MouseLeave += new System.EventHandler(this.txtCategorie_MouseLeave);
             // 
             // txtQuestion
             // 
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtQuestion.Location = new System.Drawing.Point(141, 453);
+            this.txtQuestion.Location = new System.Drawing.Point(21, 373);
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.Size = new System.Drawing.Size(744, 85);
-            this.txtQuestion.TabIndex = 9;
+            this.txtQuestion.TabIndex = 49;
             this.txtQuestion.MouseEnter += new System.EventHandler(this.txtQuestion_MouseEnter);
             this.txtQuestion.MouseLeave += new System.EventHandler(this.txtQuestion_MouseLeave);
             // 
@@ -112,125 +170,67 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label3.Location = new System.Drawing.Point(136, 280);
+            this.label3.Location = new System.Drawing.Point(16, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 29);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 48;
             this.label3.Text = "Categoria:";
             // 
-            // txtCategorie
+            // txtAnswer
             // 
-            this.txtCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategorie.Location = new System.Drawing.Point(141, 326);
-            this.txtCategorie.Multiline = true;
-            this.txtCategorie.Name = "txtCategorie";
-            this.txtCategorie.Size = new System.Drawing.Size(350, 52);
-            this.txtCategorie.TabIndex = 10;
-            this.txtCategorie.MouseEnter += new System.EventHandler(this.txtCategorie_MouseEnter);
-            this.txtCategorie.MouseLeave += new System.EventHandler(this.txtCategorie_MouseLeave);
+            this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAnswer.Location = new System.Drawing.Point(21, 528);
+            this.txtAnswer.Multiline = true;
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.Size = new System.Drawing.Size(744, 85);
+            this.txtAnswer.TabIndex = 47;
+            this.txtAnswer.MouseEnter += new System.EventHandler(this.txtAnswer_MouseEnter);
+            this.txtAnswer.MouseLeave += new System.EventHandler(this.txtAnswer_MouseLeave);
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label4.Location = new System.Drawing.Point(530, 280);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 29);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Subcategoria:";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 18F);
+            this.label2.Location = new System.Drawing.Point(16, 479);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 29);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Resposta:";
             // 
-            // txtSubCategorie
+            // label1
             // 
-            this.txtSubCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSubCategorie.Location = new System.Drawing.Point(534, 325);
-            this.txtSubCategorie.Multiline = true;
-            this.txtSubCategorie.Name = "txtSubCategorie";
-            this.txtSubCategorie.Size = new System.Drawing.Size(350, 52);
-            this.txtSubCategorie.TabIndex = 12;
-            this.txtSubCategorie.MouseEnter += new System.EventHandler(this.txtSubCategorie_MouseEnter);
-            this.txtSubCategorie.MouseLeave += new System.EventHandler(this.txtSubCategorie_MouseLeave);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Indigo;
+            this.label1.Location = new System.Drawing.Point(162, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(459, 42);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Criar Novo cartão de Estudo";
             // 
-            // txtNameCard
+            // btnSaveCard
             // 
-            this.txtNameCard.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNameCard.Location = new System.Drawing.Point(140, 204);
-            this.txtNameCard.Multiline = true;
-            this.txtNameCard.Name = "txtNameCard";
-            this.txtNameCard.Size = new System.Drawing.Size(743, 52);
-            this.txtNameCard.TabIndex = 13;
-            this.txtNameCard.MouseEnter += new System.EventHandler(this.txtNameCard_MouseEnter);
-            this.txtNameCard.MouseLeave += new System.EventHandler(this.txtNameCard_MouseLeave);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(135, 155);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 29);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Nome do cartão:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label6.Location = new System.Drawing.Point(136, 408);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 29);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Pergunta:";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Location = new System.Drawing.Point(141, 544);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(744, 1);
-            this.panel3.TabIndex = 37;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Location = new System.Drawing.Point(141, 699);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(744, 1);
-            this.panel1.TabIndex = 38;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Location = new System.Drawing.Point(140, 262);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(744, 1);
-            this.panel2.TabIndex = 39;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.LightGray;
-            this.panel4.Location = new System.Drawing.Point(141, 384);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(350, 1);
-            this.panel4.TabIndex = 40;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.LightGray;
-            this.panel5.Location = new System.Drawing.Point(534, 384);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(350, 1);
-            this.panel5.TabIndex = 41;
+            this.btnSaveCard.BackColor = System.Drawing.Color.Indigo;
+            this.btnSaveCard.FlatAppearance.BorderSize = 0;
+            this.btnSaveCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveCard.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveCard.ForeColor = System.Drawing.Color.White;
+            this.btnSaveCard.Location = new System.Drawing.Point(21, 645);
+            this.btnSaveCard.Name = "btnSaveCard";
+            this.btnSaveCard.Size = new System.Drawing.Size(744, 52);
+            this.btnSaveCard.TabIndex = 44;
+            this.btnSaveCard.Text = "Salvar Cartão";
+            this.btnSaveCard.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Location = new System.Drawing.Point(118, 81);
+            this.panel6.Location = new System.Drawing.Point(-2, 1);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(798, 712);
-            this.panel6.TabIndex = 43;
+            this.panel6.TabIndex = 61;
             // 
             // CardsUser
             // 
@@ -256,7 +256,7 @@
             this.Controls.Add(this.btnSaveCard);
             this.Controls.Add(this.panel6);
             this.Name = "CardsUser";
-            this.Size = new System.Drawing.Size(938, 814);
+            this.Size = new System.Drawing.Size(803, 718);
             this.Load += new System.EventHandler(this.CardsUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,23 +264,24 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSaveCard;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAnswer;
+
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNameCard;
+        private System.Windows.Forms.TextBox txtSubCategorie;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCategorie;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCategorie;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSubCategorie;
-        private System.Windows.Forms.TextBox txtNameCard;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSaveCard;
         private System.Windows.Forms.Panel panel6;
     }
 }

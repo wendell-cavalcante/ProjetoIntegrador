@@ -40,6 +40,7 @@ namespace PIProjetpCards.Screens
         public HelpScreen()
         {
             InitializeComponent();
+            this.FormClosing += applicationClose;
         }
 
         private void HelpScreen_Load(object sender, EventArgs e)
@@ -62,8 +63,17 @@ namespace PIProjetpCards.Screens
                 textBox1.Text = "Opção inválida.";
             }
         }
-
-       
-
+        private void applicationClose(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultadoAcao = MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultadoAcao == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Application.ExitThread();
+            }
+        }
     }
 }
