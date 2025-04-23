@@ -142,7 +142,7 @@ namespace PIProjetpCards
         }
         private void btnCards_Click(object sender, EventArgs e)
         {
-            CardsScreen cardsScreen = new CardsScreen();
+            ShowCardsScreen cardsScreen = new ShowCardsScreen();
             cardsScreen.Show();
             this.ParentForm.Hide();
         }
@@ -150,6 +150,13 @@ namespace PIProjetpCards
         {
             NotesScreen notesScreen = new NotesScreen();
             notesScreen.Show();
+            this.ParentForm.Hide();
+        }
+
+        private void btnCreateCard_Click(object sender, EventArgs e)
+        {
+            CardsScreen cardsScreen = new CardsScreen();
+            cardsScreen.Show();
             this.ParentForm.Hide();
         }
     }
