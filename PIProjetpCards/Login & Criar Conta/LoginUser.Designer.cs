@@ -38,7 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblnaoconta = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.showPassword = new System.Windows.Forms.CheckBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -74,6 +74,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Indigo;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,16 +145,18 @@
             this.lblnaoconta.Text = "Não tem uma conta?";
             this.lblnaoconta.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // btnClear
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(119, 381);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Fechar";
+            this.btnClear.AutoSize = true;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.Indigo;
+            this.btnClear.Location = new System.Drawing.Point(119, 381);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(54, 16);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Limpar";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCreate
             // 
@@ -163,7 +166,7 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(28, 344);
+            this.btnCreate.Location = new System.Drawing.Point(28, 343);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(236, 35);
             this.btnCreate.TabIndex = 6;
@@ -224,7 +227,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.showPassword);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblnaoconta);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -257,7 +260,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblnaoconta;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label btnClear;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.CheckBox showPassword;
         private System.Windows.Forms.TextBox txtEmail;
