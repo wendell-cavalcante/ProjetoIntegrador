@@ -39,7 +39,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.pnSettings = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCreateCard = new System.Windows.Forms.Button();
             this.menuContainer = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.btnCards = new System.Windows.Forms.Button();
@@ -140,7 +140,7 @@
             // pnSettings
             // 
             this.pnSettings.Controls.Add(this.btnsettings);
-            this.pnSettings.Controls.Add(this.button1);
+            this.pnSettings.Controls.Add(this.btnCreateCard);
             this.pnSettings.Location = new System.Drawing.Point(0, 218);
             this.pnSettings.Name = "pnSettings";
             this.pnSettings.Size = new System.Drawing.Size(194, 107);
@@ -161,19 +161,20 @@
             this.btnsettings.UseVisualStyleBackColor = true;
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             // 
-            // button1
+            // btnCreateCard
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Criar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCreateCard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreateCard.FlatAppearance.BorderSize = 0;
+            this.btnCreateCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateCard.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateCard.Image")));
+            this.btnCreateCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateCard.Location = new System.Drawing.Point(3, 3);
+            this.btnCreateCard.Name = "btnCreateCard";
+            this.btnCreateCard.Size = new System.Drawing.Size(173, 49);
+            this.btnCreateCard.TabIndex = 0;
+            this.btnCreateCard.Text = "Criar Cards";
+            this.btnCreateCard.UseVisualStyleBackColor = true;
+            this.btnCreateCard.Click += new System.EventHandler(this.btnCreateCard_Click);
             // 
             // menuContainer
             // 
@@ -203,6 +204,7 @@
             // 
             // btnCards
             // 
+            this.btnCards.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCards.FlatAppearance.BorderSize = 0;
             this.btnCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCards.Image = ((System.Drawing.Image)(resources.GetObject("btnCards.Image")));
@@ -217,6 +219,7 @@
             // 
             // btnNotes
             // 
+            this.btnNotes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotes.FlatAppearance.BorderSize = 0;
             this.btnNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotes.Image = ((System.Drawing.Image)(resources.GetObject("btnNotes.Image")));
@@ -264,7 +267,7 @@
         private System.Windows.Forms.Panel pnLogout;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Timer menuTransition;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreateCard;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnCards;
         private System.Windows.Forms.Button btnNotes;

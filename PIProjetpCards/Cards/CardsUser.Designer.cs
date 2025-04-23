@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardsUser));
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -46,6 +47,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSaveCard = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -202,11 +206,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Impact", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(162, 17);
+            this.label1.Location = new System.Drawing.Point(187, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(459, 42);
+            this.label1.Size = new System.Drawing.Size(412, 43);
             this.label1.TabIndex = 45;
             this.label1.Text = "Criar Novo cartão de Estudo";
             // 
@@ -217,20 +221,36 @@
             this.btnSaveCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveCard.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveCard.ForeColor = System.Drawing.Color.White;
+            this.btnSaveCard.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCard.Image")));
+            this.btnSaveCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaveCard.Location = new System.Drawing.Point(21, 645);
             this.btnSaveCard.Name = "btnSaveCard";
             this.btnSaveCard.Size = new System.Drawing.Size(744, 52);
             this.btnSaveCard.TabIndex = 44;
             this.btnSaveCard.Text = "Salvar Cartão";
             this.btnSaveCard.UseVisualStyleBackColor = false;
+            this.btnSaveCard.Click += new System.EventHandler(this.btnSaveCard_Click);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.btnBack);
             this.panel6.Location = new System.Drawing.Point(-2, 1);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(798, 712);
             this.panel6.TabIndex = 61;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(22, 16);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(24, 24);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnBack.TabIndex = 0;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // CardsUser
             // 
@@ -258,6 +278,9 @@
             this.Name = "CardsUser";
             this.Size = new System.Drawing.Size(803, 718);
             this.Load += new System.EventHandler(this.CardsUser_Load);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,5 +306,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSaveCard;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }

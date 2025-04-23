@@ -47,6 +47,7 @@
             // btnProfileInfos
             // 
             this.btnProfileInfos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnProfileInfos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProfileInfos.FlatAppearance.BorderSize = 0;
             this.btnProfileInfos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfileInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,6 +64,7 @@
             // btnUserChanges
             // 
             this.btnUserChanges.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUserChanges.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUserChanges.FlatAppearance.BorderSize = 0;
             this.btnUserChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUserChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,6 +81,7 @@
             // btnStatistics
             // 
             this.btnStatistics.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatistics.FlatAppearance.BorderSize = 0;
             this.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +98,7 @@
             // btnDoubt
             // 
             this.btnDoubt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDoubt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDoubt.FlatAppearance.BorderSize = 0;
             this.btnDoubt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoubt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
