@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIProjetpCards.Screens;
 
 namespace PIProjetpCards.HelpÚser
 {
@@ -15,6 +17,15 @@ namespace PIProjetpCards.HelpÚser
         public HelpUser()
         {
             InitializeComponent();
+            this.Load += HelpUser_Load;
+        }
+
+        private void HelpUser_Load(object sender, EventArgs e)
+        {
+            if (panel1 != null) // Certifique-se de que o panel1 foi inicializado
+            {
+                panel1.ArredondarBordas(15); // Arredonda as bordas do panel1
+            }
         }
 
         Dictionary<int, string> questoes = new Dictionary<int, string>()
@@ -37,13 +48,6 @@ namespace PIProjetpCards.HelpÚser
             { 3, "EM ATUALIZAÇÃO" }
         };
 
-        private void HelpUser_Load(object sender, EventArgs e)
-        {
-            comboBox1.DataSource = new BindingSource(questoes, null);
-            comboBox1.DisplayMember = "Value";
-            comboBox1.ValueMember = "Key";
-        }
-
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int opcaoSelecionada = comboBox1.SelectedIndex;
@@ -61,7 +65,58 @@ namespace PIProjetpCards.HelpÚser
         {
             textBox1.Multiline = true;
             textBox1.ReadOnly = true;
-            textBox1.Enabled = false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            SettingsScreen settingsScreen = new SettingsScreen();
+            settingsScreen.Show();
+            this.ParentForm.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            int opcaoSelecionada = comboBox1.SelectedIndex;
+
+            if (respostas.ContainsKey(opcaoSelecionada))
+            {
+                textBox1.Text = respostas[opcaoSelecionada];
+            }
+            else
+            {
+                textBox1.Text = "Opção inválida.";
+            }
+        }
+
+        private void HelpUser_Load_1(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = new BindingSource(questoes, null);
+            comboBox1.DisplayMember = "Value";
+            comboBox1.ValueMember = "Key";
+        }
+    }
+
+    public static class PanelExtensions
+    {
+        public static void ArredondarBordas(this Panel panel, int raio)
+        {
+            if (panel != null)
+            {
+                if (raio <= 0)
+                {
+                    panel.Region = new Region(panel.ClientRectangle);
+                    return;
+                }
+
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(panel.ClientRectangle.Left, panel.ClientRectangle.Top, raio * 2, raio * 2, 180, 90); // Canto superior esquerdo
+                path.AddArc(panel.ClientRectangle.Right - (raio * 2), panel.ClientRectangle.Top, raio * 2, raio * 2, 270, 90); // Canto superior direito
+                path.AddArc(panel.ClientRectangle.Right - (raio * 2), panel.ClientRectangle.Bottom - (raio * 2), raio * 2, raio * 2, 0, 90); // Canto inferior direito
+                path.AddArc(panel.ClientRectangle.Left, panel.ClientRectangle.Bottom - (raio * 2), raio * 2, raio * 2, 90, 90); // Canto inferior esquerdo
+                path.CloseFigure();
+
+                panel.Region = new Region(path);
+            }
         }
     }
 }
