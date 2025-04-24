@@ -63,9 +63,9 @@
             // 
             this.settingsUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.settingsUser1.BackColor = System.Drawing.Color.Transparent;
-            this.settingsUser1.Location = new System.Drawing.Point(275, 79);
+            this.settingsUser1.Location = new System.Drawing.Point(202, 87);
             this.settingsUser1.Name = "settingsUser1";
-            this.settingsUser1.Size = new System.Drawing.Size(1007, 591);
+            this.settingsUser1.Size = new System.Drawing.Size(1152, 574);
             this.settingsUser1.TabIndex = 1;
             // 
             // SettingsScreen

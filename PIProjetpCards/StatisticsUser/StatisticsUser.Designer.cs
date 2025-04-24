@@ -39,7 +39,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Location = new System.Drawing.Point(204, 39);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(811, 410);
             this.panel1.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panel1);
             this.Name = "StatisticsUser";
-            this.Size = new System.Drawing.Size(1197, 475);
+            this.Size = new System.Drawing.Size(816, 424);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();

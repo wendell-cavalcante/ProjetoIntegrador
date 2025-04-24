@@ -17,16 +17,8 @@ namespace PIProjetpCards.HelpÚser
         public HelpUser()
         {
             InitializeComponent();
-            this.Load += HelpUser_Load;
         }
 
-        private void HelpUser_Load(object sender, EventArgs e)
-        {
-            if (panel1 != null) // Certifique-se de que o panel1 foi inicializado
-            {
-                panel1.ArredondarBordas(15); // Arredonda as bordas do panel1
-            }
-        }
 
         Dictionary<int, string> questoes = new Dictionary<int, string>()
         {
@@ -86,30 +78,6 @@ namespace PIProjetpCards.HelpÚser
             SettingsScreen settingsScreen = new SettingsScreen();
             settingsScreen.Show();
             this.ParentForm.Hide();
-        }
-    }
-
-    public static class PanelExtensions
-    {
-        public static void ArredondarBordas(this Panel panel, int raio)
-        {
-            if (panel != null)
-            {
-                if (raio <= 0)
-                {
-                    panel.Region = new Region(panel.ClientRectangle);
-                    return;
-                }
-
-                GraphicsPath path = new GraphicsPath();
-                path.AddArc(panel.ClientRectangle.Left, panel.ClientRectangle.Top, raio * 2, raio * 2, 180, 90); // Canto superior esquerdo
-                path.AddArc(panel.ClientRectangle.Right - (raio * 2), panel.ClientRectangle.Top, raio * 2, raio * 2, 270, 90); // Canto superior direito
-                path.AddArc(panel.ClientRectangle.Right - (raio * 2), panel.ClientRectangle.Bottom - (raio * 2), raio * 2, raio * 2, 0, 90); // Canto inferior direito
-                path.AddArc(panel.ClientRectangle.Left, panel.ClientRectangle.Bottom - (raio * 2), raio * 2, raio * 2, 90, 90); // Canto inferior esquerdo
-                path.CloseFigure();
-
-                panel.Region = new Region(path);
-            }
         }
     }
 }
