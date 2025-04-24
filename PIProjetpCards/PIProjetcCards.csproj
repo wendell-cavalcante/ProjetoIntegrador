@@ -205,6 +205,12 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatisticsUser\StatisticsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticsUser\StatisticsUser.Designer.cs">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cards\CardsUser.resx">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsUser\StatisticsUser.resx">
+      <DependentUpon>StatisticsUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -17,7 +17,7 @@ namespace PIProjetpCards
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HelpScreen());
+            Application.Run(new LoginScreen());
         }
     }
 }
