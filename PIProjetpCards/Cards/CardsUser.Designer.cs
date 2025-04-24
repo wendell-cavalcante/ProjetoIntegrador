@@ -122,8 +122,8 @@
             this.txtNameCard.Name = "txtNameCard";
             this.txtNameCard.Size = new System.Drawing.Size(743, 52);
             this.txtNameCard.TabIndex = 53;
-            this.txtNameCard.MouseEnter += new System.EventHandler(this.txtNameCard_MouseEnter);
-            this.txtNameCard.MouseLeave += new System.EventHandler(this.txtNameCard_MouseLeave);
+            this.txtNameCard.Enter += new System.EventHandler(this.txtNameCard_Enter);
+            this.txtNameCard.Leave += new System.EventHandler(this.txtNameCard_Leave);
             // 
             // txtSubCategorie
             // 
@@ -133,8 +133,8 @@
             this.txtSubCategorie.Name = "txtSubCategorie";
             this.txtSubCategorie.Size = new System.Drawing.Size(350, 52);
             this.txtSubCategorie.TabIndex = 52;
-            this.txtSubCategorie.MouseEnter += new System.EventHandler(this.txtSubCategorie_MouseEnter);
-            this.txtSubCategorie.MouseLeave += new System.EventHandler(this.txtSubCategorie_MouseLeave);
+            this.txtSubCategorie.Enter += new System.EventHandler(this.txtSubCategorie_Enter);
+            this.txtSubCategorie.Leave += new System.EventHandler(this.txtSubCategorie_Leave);
             // 
             // label4
             // 
@@ -155,8 +155,8 @@
             this.txtCategorie.Name = "txtCategorie";
             this.txtCategorie.Size = new System.Drawing.Size(350, 52);
             this.txtCategorie.TabIndex = 50;
-            this.txtCategorie.MouseEnter += new System.EventHandler(this.txtCategorie_MouseEnter);
-            this.txtCategorie.MouseLeave += new System.EventHandler(this.txtCategorie_MouseLeave);
+            this.txtCategorie.Enter += new System.EventHandler(this.txtCategorie_Enter);
+            this.txtCategorie.Leave += new System.EventHandler(this.txtCategorie_Leave);
             // 
             // txtQuestion
             // 
@@ -166,8 +166,8 @@
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.Size = new System.Drawing.Size(744, 85);
             this.txtQuestion.TabIndex = 49;
-            this.txtQuestion.MouseEnter += new System.EventHandler(this.txtQuestion_MouseEnter);
-            this.txtQuestion.MouseLeave += new System.EventHandler(this.txtQuestion_MouseLeave);
+            this.txtQuestion.Enter += new System.EventHandler(this.txtQuestion_Enter);
+            this.txtQuestion.Leave += new System.EventHandler(this.txtQuestion_Leave);
             // 
             // label3
             // 
@@ -188,8 +188,8 @@
             this.txtAnswer.Name = "txtAnswer";
             this.txtAnswer.Size = new System.Drawing.Size(744, 85);
             this.txtAnswer.TabIndex = 47;
-            this.txtAnswer.MouseEnter += new System.EventHandler(this.txtAnswer_MouseEnter);
-            this.txtAnswer.MouseLeave += new System.EventHandler(this.txtAnswer_MouseLeave);
+            this.txtAnswer.Enter += new System.EventHandler(this.txtAnswer_Enter);
+            this.txtAnswer.Leave += new System.EventHandler(this.txtAnswer_Leave);
             // 
             // label2
             // 
