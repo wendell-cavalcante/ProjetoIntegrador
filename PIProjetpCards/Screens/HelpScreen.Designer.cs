@@ -42,17 +42,17 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1312, 732);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // helpUser1
             // 
-            this.helpUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.helpUser1.BackColor = System.Drawing.Color.Transparent;
-            this.helpUser1.Location = new System.Drawing.Point(168, 155);
+            this.helpUser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.helpUser1.Location = new System.Drawing.Point(3, 3);
             this.helpUser1.Name = "helpUser1";
-            this.helpUser1.Size = new System.Drawing.Size(975, 422);
+            this.helpUser1.Size = new System.Drawing.Size(1306, 726);
             this.helpUser1.TabIndex = 0;
             // 
             // HelpScreen

@@ -77,6 +77,7 @@
             this.btnBack.Text = "Voltar";
             this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // textBox1
             // 
@@ -92,6 +93,7 @@
             this.textBox1.Size = new System.Drawing.Size(497, 210);
             this.textBox1.TabIndex = 63;
             this.textBox1.TabStop = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
@@ -104,6 +106,7 @@
             this.comboBox1.Size = new System.Drawing.Size(497, 28);
             this.comboBox1.TabIndex = 64;
             this.comboBox1.TabStop = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // panel1
             // 
@@ -146,7 +149,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "HelpUser";
             this.Size = new System.Drawing.Size(975, 650);
-            this.Load += new System.EventHandler(this.HelpUser_Load);
+            this.Load += new System.EventHandler(this.HelpUser_Load_1);
             this.panelCima.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
