@@ -28,9 +28,34 @@ namespace PIProjetpCards.Screens
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.helpUser1 = new PIProjetpCards.HelpÚser.HelpUser();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            //
+            // tableLayoutPanel1
+            //
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.helpUser1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1312, 732);
+            this.tableLayoutPanel1.TabIndex = 0;
+            //
+            // helpUser1
+            //
+            this.helpUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpUser1.BackColor = System.Drawing.Color.Transparent;
+            this.helpUser1.Location = new System.Drawing.Point(168, 155);
+            this.helpUser1.Name = "helpUser1";
+            this.helpUser1.Size = new System.Drawing.Size(975, 422);
+            this.helpUser1.TabIndex = 0;
             //
             // textBox1
             //
@@ -59,14 +84,15 @@ namespace PIProjetpCards.Screens
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1312, 732);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HelpScreen";
             this.Text = "HelpScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.HelpScreen_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,6 +100,8 @@ namespace PIProjetpCards.Screens
 
         #endregion
 
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private HelpÚser.HelpUser helpUser1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
