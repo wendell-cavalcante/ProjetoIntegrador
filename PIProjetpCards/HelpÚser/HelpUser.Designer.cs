@@ -32,7 +32,7 @@
             this.panelCima = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTexts = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -77,23 +77,23 @@
             this.btnBack.Text = "Voltar";
             this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
-            // textBox1
+            // txtTexts
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(245, 274);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(497, 210);
-            this.textBox1.TabIndex = 63;
-            this.textBox1.TabStop = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtTexts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTexts.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTexts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTexts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexts.Location = new System.Drawing.Point(245, 274);
+            this.txtTexts.Multiline = true;
+            this.txtTexts.Name = "txtTexts";
+            this.txtTexts.ReadOnly = true;
+            this.txtTexts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTexts.Size = new System.Drawing.Size(497, 210);
+            this.txtTexts.TabIndex = 63;
+            this.txtTexts.TabStop = false;
+            this.txtTexts.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
@@ -106,7 +106,7 @@
             this.comboBox1.Size = new System.Drawing.Size(497, 28);
             this.comboBox1.TabIndex = 64;
             this.comboBox1.TabStop = false;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -143,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panelCima);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTexts);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -164,7 +164,7 @@
         private System.Windows.Forms.Panel panelCima;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTexts;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
