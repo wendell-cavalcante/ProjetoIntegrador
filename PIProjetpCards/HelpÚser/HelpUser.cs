@@ -54,17 +54,17 @@ namespace PIProjetpCards.HelpÚser
 
             if (respostas.ContainsKey(opcaoSelecionada))
             {
-                textBox1.Text = respostas[opcaoSelecionada];
+                txtTexts.Text = respostas[opcaoSelecionada];
             }
             else
             {
-                textBox1.Text = "Opção inválida.";
+                txtTexts.Text = "Opção inválida.";
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Multiline = true;
-            textBox1.ReadOnly = true;
+            txtTexts.Multiline = true;
+            txtTexts.ReadOnly = true;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -74,25 +74,18 @@ namespace PIProjetpCards.HelpÚser
             this.ParentForm.Hide();
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            int opcaoSelecionada = comboBox1.SelectedIndex;
-
-            if (respostas.ContainsKey(opcaoSelecionada))
-            {
-                textBox1.Text = respostas[opcaoSelecionada];
-            }
-            else
-            {
-                textBox1.Text = "Opção inválida.";
-            }
-        }
-
         private void HelpUser_Load_1(object sender, EventArgs e)
         {
             comboBox1.DataSource = new BindingSource(questoes, null);
             comboBox1.DisplayMember = "Value";
             comboBox1.ValueMember = "Key";
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            SettingsScreen settingsScreen = new SettingsScreen();
+            settingsScreen.Show();
+            this.ParentForm.Hide();
         }
     }
 
