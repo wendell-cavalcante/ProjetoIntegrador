@@ -43,7 +43,7 @@ namespace PIProjetpCards.HelpÚser
                     " Em outras palavras, trata-se de um card com perguntas de um lado, e respostas de outro, no qual é possível se autodesafiar. " },
             { 1, "Usar flashcards é algo muito simples. Primeiro, você deve confeccioná-los à mão ou com a ajuda de sites e aplicativos." +
                     " Lembre-se de investir em perguntas e respostas dinâmicas associadas aos conteúdos de estudo. \r\n\r\nA pergunta fica de um lado, " +
-                    "a resposta do outro. Inclusive, a dica é apostar em cores e letras diferentes para uma melhor memorização dos tópicos. !" },
+                    "a resposta do outro. Inclusive, a dica é apostar em cores e letras diferentes para uma melhor memorização dos tópicos!" },
             { 2, "Para a alteração de dados, é necessário clicar no ícone de 'ajuda' e clicar no botão 'Dados' e fazer as alterações necessárias." },
             { 3, "EM ATUALIZAÇÃO" }
         };
