@@ -32,7 +32,7 @@
             this.btnProfileInfos = new System.Windows.Forms.Button();
             this.btnUserChanges = new System.Windows.Forms.Button();
             this.btnStatistics = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnDoubt = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -47,6 +47,7 @@
             // btnProfileInfos
             // 
             this.btnProfileInfos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnProfileInfos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProfileInfos.FlatAppearance.BorderSize = 0;
             this.btnProfileInfos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfileInfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,6 +64,7 @@
             // btnUserChanges
             // 
             this.btnUserChanges.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUserChanges.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUserChanges.FlatAppearance.BorderSize = 0;
             this.btnUserChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUserChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,6 +81,7 @@
             // btnStatistics
             // 
             this.btnStatistics.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatistics.FlatAppearance.BorderSize = 0;
             this.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,20 +95,22 @@
             this.btnStatistics.UseVisualStyleBackColor = false;
             this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
-            // button5
+            // btnDoubt
             // 
-            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(79, 265);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(841, 52);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Dúvidas";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDoubt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDoubt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoubt.FlatAppearance.BorderSize = 0;
+            this.btnDoubt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoubt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoubt.Image = ((System.Drawing.Image)(resources.GetObject("btnDoubt.Image")));
+            this.btnDoubt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoubt.Location = new System.Drawing.Point(79, 265);
+            this.btnDoubt.Name = "btnDoubt";
+            this.btnDoubt.Size = new System.Drawing.Size(841, 52);
+            this.btnDoubt.TabIndex = 4;
+            this.btnDoubt.Text = "Dúvidas";
+            this.btnDoubt.UseVisualStyleBackColor = false;
+            this.btnDoubt.Click += new System.EventHandler(this.btnDoubt_Click);
             // 
             // panel2
             // 
@@ -158,7 +163,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnDoubt);
             this.panel1.Controls.Add(this.btnStatistics);
             this.panel1.Controls.Add(this.btnUserChanges);
             this.panel1.Controls.Add(this.btnProfileInfos);
@@ -198,7 +203,7 @@
         private System.Windows.Forms.Button btnProfileInfos;
         private System.Windows.Forms.Button btnUserChanges;
         private System.Windows.Forms.Button btnStatistics;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDoubt;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;

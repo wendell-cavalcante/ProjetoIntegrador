@@ -105,6 +105,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\CardCreate.cs" />
+    <Compile Include="Cards\CardSave.cs" />
     <Compile Include="Cards\CardsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +168,12 @@
     </Compile>
     <Compile Include="Screens\SettingsScreen.Designer.cs">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ShowCardsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ShowCardsScreen.Designer.cs">
+      <DependentUpon>ShowCardsScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\StatistcsScreen.cs">
       <SubType>Form</SubType>

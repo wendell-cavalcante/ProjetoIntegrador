@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIProjetpCards.Login___Criar_Conta;
 
 namespace PIProjetpCards.Cards
 {
@@ -115,5 +116,25 @@ namespace PIProjetpCards.Cards
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.ParentForm.Hide();
+        }
+
+        private void btnSaveCard_Click(object sender, EventArgs e)
+        {
+            string nameCard = txtNameCard.Text;
+            string answer = txtAnswer.Text;
+            string question = txtQuestion.Text;
+            string nameCategorie = txtCategorie.Text;
+            string subCategorie = txtSubCategorie.Text;
+
+
+            string idUser = UserSession.userIdLogado.ToString();
+
+            CardSave.cardCriado.CreateCard(nameCard, question, answer, nameCategorie, subCategorie, idUser);
+        }
     }
 }
