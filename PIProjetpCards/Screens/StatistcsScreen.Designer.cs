@@ -43,6 +43,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 492F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(993, 492);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -50,9 +51,9 @@
             // 
             this.statisticsUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.statisticsUser1.BackColor = System.Drawing.Color.Transparent;
-            this.statisticsUser1.Location = new System.Drawing.Point(3, 8);
+            this.statisticsUser1.Location = new System.Drawing.Point(88, 38);
             this.statisticsUser1.Name = "statisticsUser1";
-            this.statisticsUser1.Size = new System.Drawing.Size(987, 475);
+            this.statisticsUser1.Size = new System.Drawing.Size(816, 415);
             this.statisticsUser1.TabIndex = 0;
             // 
             // StatistcsScreen
@@ -62,6 +63,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(993, 492);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StatistcsScreen";
             this.ShowIcon = false;
             this.Text = "Estatísticas";
