@@ -119,12 +119,6 @@
     <Compile Include="Cards\CardsUser.Designer.cs">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="HelpÚser\HelpUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="HelpÚser\HelpUser.Designer.cs">
-      <DependentUpon>HelpUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login &amp; Criar Conta\LoginUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -223,9 +217,6 @@
     <EmbeddedResource Include="Cards\CardsUser.resx">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HelpÚser\HelpUser.resx">
-      <DependentUpon>HelpUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login &amp; Criar Conta\LoginUser.resx">
       <DependentUpon>LoginUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,9 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StatisticsUser\StatisticsUser.resx">
-      <DependentUpon>StatisticsUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
