@@ -205,12 +205,6 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatisticsUser\StatisticsUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="StatisticsUser\StatisticsUser.Designer.cs">
-      <DependentUpon>StatisticsUser.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Bloco de notas\BlocodeNotas.resx">
       <DependentUpon>BlocodeNotas.cs</DependentUpon>
     </EmbeddedResource>
