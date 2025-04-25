@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,24 +12,22 @@ namespace PIProjetpCards.Screens
 {
     public partial class NotesScreen : Form
     {
-        private string caminhoAtual;
-
-        public string TextBox { get; private set; }
-
-        private bool textoModificado;
-
-        public object Notes { get; private set; }
-
         public NotesScreen()
         {
             InitializeComponent();
-
-
-
-
-
-
-
+            this.FormClosing += applicationClose;
+        }
+        private void applicationClose(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultadoAcao = MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultadoAcao == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Application.ExitThread();
+            }
         }
     }
 }
