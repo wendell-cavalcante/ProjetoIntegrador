@@ -1,5 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIProjetpCards.Login___Criar_Conta;
 
@@ -11,10 +17,8 @@ namespace PIProjetpCards.Cards
         {
             InitializeComponent();
         }
-
         private void CardsUser_Load(object sender, EventArgs e)
         {
-            // Configurações iniciais dos placeholders
             txtNameCard.Text = "Nome do cartão";
             txtCategorie.Text = "Nome da Categoria";
             txtSubCategorie.Text = "Nome da Subcategoria";
@@ -22,8 +26,7 @@ namespace PIProjetpCards.Cards
             txtAnswer.Text = "Escreva a sua resposta";
         }
 
-        // Eventos para o campo "Nome do cartão"
-        private void txtNameCard_Enter(object sender, EventArgs e)
+        private void txtNameCard_MouseEnter(object sender, EventArgs e)
         {
             if (txtNameCard.Text == "Nome do cartão")
             {
@@ -32,7 +35,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtNameCard_Leave(object sender, EventArgs e)
+        private void txtNameCard_MouseLeave(object sender, EventArgs e)
         {
             if (txtNameCard.Text == "")
             {
@@ -41,8 +44,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        // Eventos para o campo "Categoria"
-        private void txtCategorie_Enter(object sender, EventArgs e)
+        private void txtCategorie_MouseEnter(object sender, EventArgs e)
         {
             if (txtCategorie.Text == "Nome da Categoria")
             {
@@ -51,7 +53,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtCategorie_Leave(object sender, EventArgs e)
+        private void txtCategorie_MouseLeave(object sender, EventArgs e)
         {
             if (txtCategorie.Text == "")
             {
@@ -60,8 +62,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        // Eventos para o campo "Subcategoria"
-        private void txtSubCategorie_Enter(object sender, EventArgs e)
+        private void txtSubCategorie_MouseEnter(object sender, EventArgs e)
         {
             if (txtSubCategorie.Text == "Nome da Subcategoria")
             {
@@ -70,7 +71,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtSubCategorie_Leave(object sender, EventArgs e)
+        private void txtSubCategorie_MouseLeave(object sender, EventArgs e)
         {
             if (txtSubCategorie.Text == "")
             {
@@ -79,8 +80,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        // Eventos para o campo "Pergunta"
-        private void txtQuestion_Enter(object sender, EventArgs e)
+        private void txtQuestion_MouseEnter(object sender, EventArgs e)
         {
             if (txtQuestion.Text == "Escreva a sua pergunta")
             {
@@ -89,7 +89,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtQuestion_Leave(object sender, EventArgs e)
+        private void txtQuestion_MouseLeave(object sender, EventArgs e)
         {
             if (txtQuestion.Text == "")
             {
@@ -98,8 +98,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        // Eventos para o campo "Resposta"
-        private void txtAnswer_Enter(object sender, EventArgs e)
+        private void txtAnswer_MouseEnter(object sender, EventArgs e)
         {
             if (txtAnswer.Text == "Escreva a sua resposta")
             {
@@ -108,7 +107,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtAnswer_Leave(object sender, EventArgs e)
+        private void txtAnswer_MouseLeave(object sender, EventArgs e)
         {
             if (txtAnswer.Text == "")
             {
@@ -117,7 +116,6 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        // Botão "Voltar"
         private void btnBack_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();
@@ -125,24 +123,14 @@ namespace PIProjetpCards.Cards
             this.ParentForm.Hide();
         }
 
-        // Botão "Salvar"
         private void btnSaveCard_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtNameCard.Text) || txtNameCard.Text == "Nome do cartão" ||
-                string.IsNullOrWhiteSpace(txtCategorie.Text) || txtCategorie.Text == "Nome da Categoria" ||
-                string.IsNullOrWhiteSpace(txtSubCategorie.Text) || txtSubCategorie.Text == "Nome da Subcategoria" ||
-                string.IsNullOrWhiteSpace(txtQuestion.Text) || txtQuestion.Text == "Escreva a sua pergunta" ||
-                string.IsNullOrWhiteSpace(txtAnswer.Text) || txtAnswer.Text == "Escreva a sua resposta")
-            {
-                MessageBox.Show("Por favor, preencha todos os campos corretamente.");
-                return;
-            }
-
             string nameCard = txtNameCard.Text;
             string answer = txtAnswer.Text;
             string question = txtQuestion.Text;
             string nameCategorie = txtCategorie.Text;
             string subCategorie = txtSubCategorie.Text;
+
 
             string idUser = UserSession.userIdLogado.ToString();
 
