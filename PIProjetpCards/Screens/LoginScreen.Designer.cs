@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.loginUser2 = new PIProjetpCards.Login___Criar_Conta.LoginUser();
-            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.loginUser1 = new PIProjetpCards.Login___Criar_Conta.LoginUser();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // tableLayoutPanel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.loginUser2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(952, 600);
-            this.panel1.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.loginUser1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 600);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // loginUser2
+            // loginUser1
             // 
-            this.loginUser2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.loginUser2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.loginUser2.Location = new System.Drawing.Point(330, 77);
-            this.loginUser2.Name = "loginUser2";
-            this.loginUser2.Size = new System.Drawing.Size(292, 447);
-            this.loginUser2.TabIndex = 1;
-            this.loginUser2.Load += new System.EventHandler(this.loginUser2_Load_1);
+            this.loginUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loginUser1.BackColor = System.Drawing.Color.Transparent;
+            this.loginUser1.Location = new System.Drawing.Point(61, 39);
+            this.loginUser1.Name = "loginUser1";
+            this.loginUser1.Size = new System.Drawing.Size(829, 521);
+            this.loginUser1.TabIndex = 1;
             // 
             // LoginScreen
             // 
@@ -59,7 +61,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(952, 600);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginScreen";
@@ -67,15 +69,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        
-        private System.Windows.Forms.Panel panel1;
-        private Login___Criar_Conta.LoginUser loginUser2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Login___Criar_Conta.LoginUser loginUser1;
     }
 }
