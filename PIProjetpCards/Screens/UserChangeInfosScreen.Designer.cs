@@ -55,7 +55,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1125, 637);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1125, 749);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -96,9 +96,9 @@
             // 
             this.changeUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.changeUser1.BackColor = System.Drawing.Color.Transparent;
-            this.changeUser1.Location = new System.Drawing.Point(82, 69);
+            this.changeUser1.Location = new System.Drawing.Point(82, 97);
             this.changeUser1.Name = "changeUser1";
-            this.changeUser1.Size = new System.Drawing.Size(961, 565);
+            this.changeUser1.Size = new System.Drawing.Size(961, 632);
             this.changeUser1.TabIndex = 2;
             // 
             // UserChangeInfosScreen
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(1125, 637);
+            this.ClientSize = new System.Drawing.Size(1125, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UserChangeInfosScreen";
