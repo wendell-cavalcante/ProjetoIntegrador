@@ -105,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloco de Notas\BlocodeNotas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bloco de Notas\BlocodeNotas.Designer.cs">
+      <DependentUpon>BlocodeNotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cards\CardCreate.cs" />
     <Compile Include="Cards\CardSave.cs" />
     <Compile Include="Cards\CardsUser.cs">
@@ -199,6 +205,9 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bloco de Notas\BlocodeNotas.resx">
+      <DependentUpon>BlocodeNotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cards\CardsUser.resx">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </EmbeddedResource>
