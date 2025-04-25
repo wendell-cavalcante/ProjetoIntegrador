@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ShowCardsScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(69)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "ShowCardsScreen";
             this.Text = "ShowCards";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

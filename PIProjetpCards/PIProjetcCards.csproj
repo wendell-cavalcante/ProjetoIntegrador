@@ -253,6 +253,9 @@
     <EmbeddedResource Include="Screens\SettingsScreen.resx">
       <DependentUpon>SettingsScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ShowCardsScreen.resx">
+      <DependentUpon>ShowCardsScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\StatistcsScreen.resx">
       <DependentUpon>StatistcsScreen.cs</DependentUpon>
     </EmbeddedResource>
