@@ -96,9 +96,9 @@
             // 
             this.changeUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.changeUser1.BackColor = System.Drawing.Color.Transparent;
-            this.changeUser1.Location = new System.Drawing.Point(235, 137);
+            this.changeUser1.Location = new System.Drawing.Point(82, 69);
             this.changeUser1.Name = "changeUser1";
-            this.changeUser1.Size = new System.Drawing.Size(654, 428);
+            this.changeUser1.Size = new System.Drawing.Size(961, 565);
             this.changeUser1.TabIndex = 2;
             // 
             // UserChangeInfosScreen
