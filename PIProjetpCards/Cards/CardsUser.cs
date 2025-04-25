@@ -26,7 +26,7 @@ namespace PIProjetpCards.Cards
             txtAnswer.Text = "Escreva a sua resposta";
         }
 
-        private void txtNameCard_MouseEnter(object sender, EventArgs e)
+        private void txtNameCard_Enter(object sender, EventArgs e)
         {
             if (txtNameCard.Text == "Nome do cartão")
             {
@@ -35,7 +35,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtNameCard_MouseLeave(object sender, EventArgs e)
+        private void txtNameCard_Leave(object sender, EventArgs e)
         {
             if (txtNameCard.Text == "")
             {
@@ -44,7 +44,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtCategorie_MouseEnter(object sender, EventArgs e)
+        private void txtCategorie_Enter(object sender, EventArgs e)
         {
             if (txtCategorie.Text == "Nome da Categoria")
             {
@@ -53,7 +53,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtCategorie_MouseLeave(object sender, EventArgs e)
+        private void txtCategorie_Leave(object sender, EventArgs e)
         {
             if (txtCategorie.Text == "")
             {
@@ -62,7 +62,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtSubCategorie_MouseEnter(object sender, EventArgs e)
+        private void txtSubCategorie_Enter(object sender, EventArgs e)
         {
             if (txtSubCategorie.Text == "Nome da Subcategoria")
             {
@@ -71,7 +71,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtSubCategorie_MouseLeave(object sender, EventArgs e)
+        private void txtSubCategorie_Leave(object sender, EventArgs e)
         {
             if (txtSubCategorie.Text == "")
             {
@@ -80,7 +80,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtQuestion_MouseEnter(object sender, EventArgs e)
+        private void txtQuestion_Enter(object sender, EventArgs e)
         {
             if (txtQuestion.Text == "Escreva a sua pergunta")
             {
@@ -89,7 +89,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtQuestion_MouseLeave(object sender, EventArgs e)
+        private void txtQuestion_Leave(object sender, EventArgs e)
         {
             if (txtQuestion.Text == "")
             {
@@ -98,7 +98,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtAnswer_MouseEnter(object sender, EventArgs e)
+        private void txtAnswer_Enter(object sender, EventArgs e)
         {
             if (txtAnswer.Text == "Escreva a sua resposta")
             {
@@ -107,7 +107,7 @@ namespace PIProjetpCards.Cards
             }
         }
 
-        private void txtAnswer_MouseLeave(object sender, EventArgs e)
+        private void txtAnswer_Leave(object sender, EventArgs e)
         {
             if (txtAnswer.Text == "")
             {
