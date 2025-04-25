@@ -84,12 +84,12 @@
             this.txtTexts.BackColor = System.Drawing.SystemColors.Window;
             this.txtTexts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTexts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTexts.Location = new System.Drawing.Point(245, 274);
+            this.txtTexts.Location = new System.Drawing.Point(235, 312);
             this.txtTexts.Multiline = true;
             this.txtTexts.Name = "txtTexts";
             this.txtTexts.ReadOnly = true;
             this.txtTexts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTexts.Size = new System.Drawing.Size(497, 210);
+            this.txtTexts.Size = new System.Drawing.Size(581, 247);
             this.txtTexts.TabIndex = 63;
             this.txtTexts.TabStop = false;
             this.txtTexts.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -100,9 +100,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 203);
+            this.comboBox1.Location = new System.Drawing.Point(235, 241);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(497, 28);
+            this.comboBox1.Size = new System.Drawing.Size(581, 28);
             this.comboBox1.TabIndex = 64;
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
@@ -111,9 +111,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(245, -42);
+            this.pictureBox1.Location = new System.Drawing.Point(220, -42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(497, 261);
+            this.pictureBox1.Size = new System.Drawing.Size(581, 298);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
@@ -122,9 +122,9 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(176, 131);
+            this.pictureBox2.Location = new System.Drawing.Point(126, 173);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(625, 410);
+            this.pictureBox2.Size = new System.Drawing.Size(787, 477);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 68;
             this.pictureBox2.TabStop = false;
