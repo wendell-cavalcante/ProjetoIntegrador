@@ -83,7 +83,7 @@
             this.txtTexts.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTexts.BackColor = System.Drawing.SystemColors.Window;
             this.txtTexts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTexts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTexts.Location = new System.Drawing.Point(235, 312);
             this.txtTexts.Multiline = true;
             this.txtTexts.Name = "txtTexts";
@@ -98,7 +98,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(235, 241);
             this.comboBox1.Name = "comboBox1";
