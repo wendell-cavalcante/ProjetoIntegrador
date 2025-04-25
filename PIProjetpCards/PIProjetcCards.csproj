@@ -138,6 +138,12 @@
     <Compile Include="MySQL\UserChange\ChangeUsercontroller.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
+    <Compile Include="NotePd\BlocodeNotas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotePd\BlocodeNotas.Designer.cs">
+      <DependentUpon>BlocodeNotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\CardsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeUser\ChangeUser.resx">
       <DependentUpon>ChangeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePd\BlocodeNotas.resx">
+      <DependentUpon>BlocodeNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\CardsScreen.resx">
       <DependentUpon>CardsScreen.cs</DependentUpon>

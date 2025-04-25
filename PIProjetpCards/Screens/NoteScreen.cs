@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PIProjetpCards.NoteUser
+namespace PIProjetpCards.Screens
 {
-    public partial class NotesUserControll : UserControl
+    public partial class NoteScreen : Form
     {
-        public NotesUserControll()
+        public NoteScreen()
         {
             InitializeComponent();
         }
