@@ -18,7 +18,7 @@ namespace PIProjetpCards.ManagerCardUser
                 {
                     connection.Open();
 
-                    string query = "SELECT nameCard, questions, answers FROM cards WHERE idUser = @idUser";
+                    string query = "SELECT nameCard, questions, answers FROM cards WHERE idUser = @idUser (apagar)";
 
                 }
                 catch 
