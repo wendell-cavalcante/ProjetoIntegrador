@@ -79,5 +79,12 @@ namespace PIProjetpCards.HelpÚser
             settingsScreen.Show();
             this.ParentForm.Hide();
         }
+
+        private void btnBack_Click_2(object sender, EventArgs e)
+        {
+            SettingsScreen settingsScreen = new SettingsScreen();
+            settingsScreen.Show();
+            this.ParentForm.Hide();
+        }
     }
 }

@@ -24,13 +24,6 @@ namespace PIProjetpCards.Screens
         public NotesScreen()
         {
             InitializeComponent();
-
-
-
-
-
-
-
         }
     }
 }
