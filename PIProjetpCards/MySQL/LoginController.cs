@@ -47,8 +47,7 @@ namespace PIProjepCards.MySQL
                         }
                         else
                         {
-                            MessageBox.Show("Verifique se preencheu todos os dados corretamente e tente novamente.");
-                            return "error";
+                            return "Verifique se preencheu todos os dados corretamente e tente novamente.";
                         }
                     }
                 }

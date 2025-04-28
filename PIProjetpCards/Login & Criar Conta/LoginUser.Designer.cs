@@ -101,6 +101,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(208, 24);
             this.txtEmail.TabIndex = 77;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtMultiline_KeyPress);
             // 
             // pictureBox4
             // 
@@ -183,6 +184,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(208, 24);
             this.txtPassword.TabIndex = 78;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtMultiline_KeyPress);
             // 
             // txtUsername
             // 
@@ -194,6 +196,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(208, 24);
             this.txtUsername.TabIndex = 76;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtMultiline_KeyPress);
             // 
             // btnLogin
             // 
@@ -253,7 +256,7 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "LoginUser";
-            this.Size = new System.Drawing.Size(1236, 580);
+            this.Size = new System.Drawing.Size(823, 580);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
