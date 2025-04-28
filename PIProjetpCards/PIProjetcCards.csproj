@@ -199,6 +199,12 @@
     <Compile Include="Screens\UserChangeInfosScreen.Designer.cs">
       <DependentUpon>UserChangeInfosScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\UserInfosScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\UserInfosScreen.Designer.cs">
+      <DependentUpon>UserInfosScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingsUser\SettingsUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -210,6 +216,12 @@
     </Compile>
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfos\UserInfosControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInfos\UserInfosControl.Designer.cs">
+      <DependentUpon>UserInfosControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bloco de notas\BlocodeNotas.resx">
       <DependentUpon>BlocodeNotas.cs</DependentUpon>
@@ -262,11 +274,17 @@
     <EmbeddedResource Include="Screens\UserChangeInfosScreen.resx">
       <DependentUpon>UserChangeInfosScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UserInfosScreen.resx">
+      <DependentUpon>UserInfosScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SettingsUser\SettingsUser.resx">
       <DependentUpon>SettingsUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfos\UserInfosControl.resx">
+      <DependentUpon>UserInfosControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
