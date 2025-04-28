@@ -211,6 +211,12 @@
     <Compile Include="SettingsUser\SettingsUser.Designer.cs">
       <DependentUpon>SettingsUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowCards\ShowCardsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowCards\ShowCardsControl.Designer.cs">
+      <DependentUpon>ShowCardsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SideBarUser\SideBarUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsUser\SettingsUser.resx">
       <DependentUpon>SettingsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCards\ShowCardsControl.resx">
+      <DependentUpon>ShowCardsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
