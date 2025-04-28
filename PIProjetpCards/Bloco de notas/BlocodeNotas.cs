@@ -25,7 +25,6 @@ namespace PIProjetpCards.Bloco_de_Notas
 
         bool close = false;
 
-
         private void NovoBn_Click(object sender, EventArgs e)
         {
             NotesScreen notesScreen = new NotesScreen();
@@ -59,11 +58,9 @@ namespace PIProjetpCards.Bloco_de_Notas
 
         private void SairBn_Click(object sender, EventArgs e)
         {
-            NotesScreen notesScreen = new NotesScreen();
-            notesScreen.Close();
-
-           
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.ParentForm.Hide();
         }
-
     }
 }

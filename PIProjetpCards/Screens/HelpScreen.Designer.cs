@@ -64,7 +64,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HelpScreen";
-            this.Text = "HelpScreen";
+            this.Text = "Duvídas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
