@@ -23,5 +23,18 @@ namespace PIProjetpCards.ShowCards
             mainMenu.Show();
             this.ParentForm.Hide();
         }
+
+        private void ShowCardsControl_Load(object sender, EventArgs e)
+        {
+            // Popula o ComboBox apenas uma vez
+            string[] materias = {
+        "Matemática", "Português", "História", "Geografia",
+        "Ciências", "Física", "Química", "Biologia", "Inglês",
+        "Artes", "Educação Física", "Filosofia", "Sociologia",
+        "Redação", "Literatura" };
+
+            categorieComboBox.Items.AddRange(materias);
+            categorieComboBox.SelectedIndex = 0; // Opcional: seleciona o primeiro item
+        }
     }
 }
