@@ -8,14 +8,21 @@ namespace PIProjetpCards.ShowCards
     public partial class ShowCardsControl : UserControl
     {
         private readonly CardRepository _repository = new CardRepository();
+        private List<Card> _currentCards = new List<Card>();
 
         public ShowCardsControl()
         {
             InitializeComponent();
         }
 
-        // Carrega categorias ao iniciar
+        // Carrega categorias e configura controles
         private void ShowCardsControl_Load(object sender, EventArgs e)
+        {
+            LoadCategories();
+            ConfigureControls();
+        }
+
+        private void LoadCategories()
         {
             string[] categories = {
                 "Matemática", "Português", "História", "Geografia",
@@ -25,10 +32,17 @@ namespace PIProjetpCards.ShowCards
             };
 
             categorieComboBox.Items.AddRange(categories);
-            categorieComboBox.SelectedIndex = 0; // Seleciona a primeira categoria
+            categorieComboBox.SelectedIndex = 0;
         }
 
-        // Atualiza cards quando a categoria é alterada
+        private void ConfigureControls()
+        {
+            // Configura ListBox para seleção
+            listBoxCards.DisplayMember = "Name";
+            listBoxCards.ValueMember = "Name";
+        }
+
+        // Atualiza cards ao mudar a categoria
         private void categorieComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadCardsForSelectedCategory();
@@ -41,35 +55,33 @@ namespace PIProjetpCards.ShowCards
                 string category = categorieComboBox.SelectedItem.ToString();
                 string userId = UserSession.userIdLogado.ToString();
 
-                var cards = _repository.GetCardsByCategory(category, userId);
-                DisplayCards(cards);
+                _currentCards = _repository.GetCardsByCategory(category, userId);
+                UpdateCardsList();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao carregar cards: {ex.Message}");
+                MessageBox.Show($"Erro: {ex.Message}");
             }
         }
 
-        // Exibe os cards no TextBox
-        private void DisplayCards(List<Card> cards)
+        // Atualiza a lista de cards
+        private void UpdateCardsList()
         {
-            txtCardsList.Clear();
+            listBoxCards.DataSource = null; // Força atualização
+            listBoxCards.DataSource = _currentCards;
+        }
 
-            if (cards.Count == 0)
+        // Quando um card é selecionado na lista
+        private void listBoxCards_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxCards.SelectedItem is Card selectedCard)
             {
-                txtCardsList.Text = "Nenhum card encontrado nesta categoria.";
-                return;
-            }
-
-            foreach (var card in cards)
-            {
-                txtCardsList.AppendText($"► {card.Name}{Environment.NewLine}");
-                txtCardsList.AppendText($"   Pergunta: {card.Question}{Environment.NewLine}");
-                txtCardsList.AppendText($"   Resposta: {card.Answer}{Environment.NewLine}{Environment.NewLine}");
+                txtQuestion.Text = selectedCard.Question;
+                txtAnswer.Text = selectedCard.Answer;
             }
         }
 
-        // Botão de voltar (mantido)
+        // Botão de voltar
         private void btnBack_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();

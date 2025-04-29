@@ -35,9 +35,9 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.PictureBox();
-            this.txtCardsList = new System.Windows.Forms.TextBox();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.listBoxCards = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -119,17 +119,6 @@
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // txtCardsList
-            // 
-            this.txtCardsList.Location = new System.Drawing.Point(68, 177);
-            this.txtCardsList.Multiline = true;
-            this.txtCardsList.Name = "txtCardsList";
-            this.txtCardsList.ReadOnly = true;
-            this.txtCardsList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCardsList.Size = new System.Drawing.Size(407, 329);
-            this.txtCardsList.TabIndex = 0;
-            this.txtCardsList.TabStop = false;
-            // 
             // txtQuestion
             // 
             this.txtQuestion.Location = new System.Drawing.Point(514, 177);
@@ -152,14 +141,22 @@
             this.txtAnswer.TabIndex = 86;
             this.txtAnswer.TabStop = false;
             // 
+            // listBoxCards
+            // 
+            this.listBoxCards.FormattingEnabled = true;
+            this.listBoxCards.Location = new System.Drawing.Point(68, 177);
+            this.listBoxCards.Name = "listBoxCards";
+            this.listBoxCards.Size = new System.Drawing.Size(407, 329);
+            this.listBoxCards.TabIndex = 87;
+            // 
             // ShowCardsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.listBoxCards);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.txtQuestion);
-            this.Controls.Add(this.txtCardsList);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSelect);
@@ -184,8 +181,8 @@
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.PictureBox btnBack;
-        private System.Windows.Forms.TextBox txtCardsList;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.ListBox listBoxCards;
     }
 }
