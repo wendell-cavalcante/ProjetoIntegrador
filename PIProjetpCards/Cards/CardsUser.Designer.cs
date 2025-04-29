@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardsUser));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNameCard = new System.Windows.Forms.TextBox();
@@ -43,36 +40,12 @@
             this.categorieComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Location = new System.Drawing.Point(20, 182);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(744, 1);
-            this.panel2.TabIndex = 58;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Location = new System.Drawing.Point(21, 619);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(744, 1);
-            this.panel1.TabIndex = 57;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Location = new System.Drawing.Point(21, 464);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(744, 1);
-            this.panel3.TabIndex = 56;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label6.Location = new System.Drawing.Point(16, 328);
+            this.label6.Location = new System.Drawing.Point(19, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 29);
             this.label6.TabIndex = 55;
@@ -83,7 +56,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 75);
+            this.label5.Location = new System.Drawing.Point(19, 75);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(189, 29);
             this.label5.TabIndex = 54;
@@ -92,10 +65,10 @@
             // txtNameCard
             // 
             this.txtNameCard.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNameCard.Location = new System.Drawing.Point(20, 124);
+            this.txtNameCard.Location = new System.Drawing.Point(23, 124);
             this.txtNameCard.Multiline = true;
             this.txtNameCard.Name = "txtNameCard";
-            this.txtNameCard.Size = new System.Drawing.Size(743, 52);
+            this.txtNameCard.Size = new System.Drawing.Size(173, 21);
             this.txtNameCard.TabIndex = 53;
             this.txtNameCard.Enter += new System.EventHandler(this.txtNameCard_Enter);
             this.txtNameCard.Leave += new System.EventHandler(this.txtNameCard_Leave);
@@ -103,10 +76,11 @@
             // txtQuestion
             // 
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtQuestion.Location = new System.Drawing.Point(21, 373);
+            this.txtQuestion.Location = new System.Drawing.Point(24, 257);
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
-            this.txtQuestion.Size = new System.Drawing.Size(744, 85);
+            this.txtQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtQuestion.Size = new System.Drawing.Size(243, 85);
             this.txtQuestion.TabIndex = 49;
             this.txtQuestion.Enter += new System.EventHandler(this.txtQuestion_Enter);
             this.txtQuestion.Leave += new System.EventHandler(this.txtQuestion_Leave);
@@ -116,7 +90,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label3.Location = new System.Drawing.Point(16, 200);
+            this.label3.Location = new System.Drawing.Point(298, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 29);
             this.label3.TabIndex = 48;
@@ -125,10 +99,11 @@
             // txtAnswer
             // 
             this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAnswer.Location = new System.Drawing.Point(21, 528);
+            this.txtAnswer.Location = new System.Drawing.Point(303, 257);
             this.txtAnswer.Multiline = true;
             this.txtAnswer.Name = "txtAnswer";
-            this.txtAnswer.Size = new System.Drawing.Size(744, 85);
+            this.txtAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtAnswer.Size = new System.Drawing.Size(243, 85);
             this.txtAnswer.TabIndex = 47;
             this.txtAnswer.Enter += new System.EventHandler(this.txtAnswer_Enter);
             this.txtAnswer.Leave += new System.EventHandler(this.txtAnswer_Leave);
@@ -138,7 +113,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label2.Location = new System.Drawing.Point(16, 479);
+            this.label2.Location = new System.Drawing.Point(298, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 29);
             this.label2.TabIndex = 46;
@@ -153,9 +128,9 @@
             this.btnSaveCard.ForeColor = System.Drawing.Color.White;
             this.btnSaveCard.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCard.Image")));
             this.btnSaveCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveCard.Location = new System.Drawing.Point(21, 645);
+            this.btnSaveCard.Location = new System.Drawing.Point(20, 364);
             this.btnSaveCard.Name = "btnSaveCard";
-            this.btnSaveCard.Size = new System.Drawing.Size(744, 52);
+            this.btnSaveCard.Size = new System.Drawing.Size(526, 52);
             this.btnSaveCard.TabIndex = 44;
             this.btnSaveCard.Text = "Salvar Cartão";
             this.btnSaveCard.UseVisualStyleBackColor = false;
@@ -166,9 +141,9 @@
             this.categorieComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.categorieComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.categorieComboBox.FormattingEnabled = true;
-            this.categorieComboBox.Location = new System.Drawing.Point(20, 249);
+            this.categorieComboBox.Location = new System.Drawing.Point(303, 124);
             this.categorieComboBox.Name = "categorieComboBox";
-            this.categorieComboBox.Size = new System.Drawing.Size(209, 21);
+            this.categorieComboBox.Size = new System.Drawing.Size(173, 21);
             this.categorieComboBox.TabIndex = 59;
             this.categorieComboBox.TabStop = false;
             // 
@@ -178,9 +153,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.categorieComboBox);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtNameCard);
@@ -198,9 +170,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNameCard;
