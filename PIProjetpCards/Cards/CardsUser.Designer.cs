@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardsUser));
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -37,8 +36,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNameCard = new System.Windows.Forms.TextBox();
-            this.txtSubCategorie = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtCategorie = new System.Windows.Forms.TextBox();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,14 +48,6 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.LightGray;
-            this.panel5.Location = new System.Drawing.Point(414, 304);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(350, 1);
-            this.panel5.TabIndex = 60;
             // 
             // panel4
             // 
@@ -124,28 +113,6 @@
             this.txtNameCard.TabIndex = 53;
             this.txtNameCard.Enter += new System.EventHandler(this.txtNameCard_Enter);
             this.txtNameCard.Leave += new System.EventHandler(this.txtNameCard_Leave);
-            // 
-            // txtSubCategorie
-            // 
-            this.txtSubCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSubCategorie.Location = new System.Drawing.Point(414, 245);
-            this.txtSubCategorie.Multiline = true;
-            this.txtSubCategorie.Name = "txtSubCategorie";
-            this.txtSubCategorie.Size = new System.Drawing.Size(350, 52);
-            this.txtSubCategorie.TabIndex = 52;
-            this.txtSubCategorie.Enter += new System.EventHandler(this.txtSubCategorie_Enter);
-            this.txtSubCategorie.Leave += new System.EventHandler(this.txtSubCategorie_Leave);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 18F);
-            this.label4.Location = new System.Drawing.Point(410, 200);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 29);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Subcategoria:";
             // 
             // txtCategorie
             // 
@@ -257,7 +224,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -265,8 +231,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtNameCard);
-            this.Controls.Add(this.txtSubCategorie);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCategorie);
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.label3);
@@ -287,8 +251,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -296,8 +258,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNameCard;
-        private System.Windows.Forms.TextBox txtSubCategorie;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCategorie;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label label3;

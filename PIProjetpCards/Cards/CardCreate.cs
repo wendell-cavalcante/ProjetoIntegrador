@@ -8,70 +8,58 @@ namespace PIProjetpCards.Cards
     {
         private string connectionString = "server=localhost;database=flashcards;uid=root;";
 
-        public void CreateCard(string name, string question, string answer, string nameCategorie, string subCategorie, string idUser)
+        public void CreateCard(string name, string question, string answer, string nameCategorie, string idUser)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
-           
             {
+                connection.Open();
+                MySqlTransaction transaction = null;
+
                 try
                 {
-                    connection.Open();
-                    MySqlTransaction transaction = connection.BeginTransaction();
+                    transaction = connection.BeginTransaction();
 
-                    // Verificar se o card já existe
+                    // Verificar se o card já existe (mantido)
                     string checkCardQuery = "SELECT COUNT(*) FROM cards WHERE nameCard = @nameCard AND idUser = @idUser";
-                    MySqlCommand checkCardCommand = new MySqlCommand(checkCardQuery, connection);
+                    MySqlCommand checkCardCommand = new MySqlCommand(checkCardQuery, connection, transaction);
                     checkCardCommand.Parameters.AddWithValue("@nameCard", name);
-                    checkCardCommand.Parameters.AddWithValue("@idUser", idUser);
+                    checkCardCommand.Parameters.AddWithValue("@idUser", Convert.ToInt32(idUser));
 
                     int cardExists = Convert.ToInt32(checkCardCommand.ExecuteScalar());
 
                     if (cardExists > 0)
                     {
                         MessageBox.Show("Já existe um cartão com esse nome para este usuário.");
+                        transaction.Rollback();
                         return;
                     }
 
-                    // Verificar se a categoria e subcategoria já existem
-                    string checkCategoryQuery = "SELECT COUNT(*) FROM categories WHERE nameCategorie = @catName AND nameSubCategorie = @subCatName AND idUser = @idUser";
-                    MySqlCommand checkCategoryCommand = new MySqlCommand(checkCategoryQuery, connection);
-                    checkCategoryCommand.Parameters.AddWithValue("@catName", nameCategorie);
-                    checkCategoryCommand.Parameters.AddWithValue("@subCatName", subCategorie);
-                    checkCategoryCommand.Parameters.AddWithValue("@idUser", idUser);
+                    // Removida a verificação de categoria duplicada
 
-                    int categoryExists = Convert.ToInt32(checkCategoryCommand.ExecuteScalar());
-
-                    if (categoryExists > 0)
-                    {
-                        MessageBox.Show("Essa categoria e subcategoria já existem para este usuário.");
-                        return;
-                    }
-
-                    // Inserir categoria
-                    string insertCategoryQuery = "INSERT INTO categories (nameCategorie, nameSubCategorie, idUser) VALUES (@catName, @subCatName, @idUser); SELECT LAST_INSERT_ID();";
-                    MySqlCommand insertCategoryCmd = new MySqlCommand(insertCategoryQuery, connection);
+                    // Inserir categoria (sempre cria nova, mesmo com nome repetido)
+                    string insertCategoryQuery = "INSERT INTO categories (nameCategorie, idUser) VALUES (@catName, @idUser); SELECT LAST_INSERT_ID();";
+                    MySqlCommand insertCategoryCmd = new MySqlCommand(insertCategoryQuery, connection, transaction);
                     insertCategoryCmd.Parameters.AddWithValue("@catName", nameCategorie);
-                    insertCategoryCmd.Parameters.AddWithValue("@subCatName", subCategorie);
-                    insertCategoryCmd.Parameters.AddWithValue("@idUser", idUser);
-                    insertCategoryCmd.ExecuteNonQuery();
+                    insertCategoryCmd.Parameters.AddWithValue("@idUser", Convert.ToInt32(idUser));
 
-                    int lastIdCard = Convert.ToInt32(insertCategoryCmd.LastInsertedId);
+                    int lastIdCard = Convert.ToInt32(insertCategoryCmd.ExecuteScalar());
 
                     // Inserir cartão
-                    string insertCardQuery = $"INSERT INTO cards (nameCard, questions, answers, idUser, idCategoria) VALUES (@nameCard, @questions, @answers, @idUser, {lastIdCard}); ";
+                    string insertCardQuery = "INSERT INTO cards (nameCard, questions, answers, idUser, idCategories) VALUES (@nameCard, @questions, @answers, @idUser, @idCategories)";
                     MySqlCommand insertCardCmd = new MySqlCommand(insertCardQuery, connection, transaction);
                     insertCardCmd.Parameters.AddWithValue("@nameCard", name);
                     insertCardCmd.Parameters.AddWithValue("@questions", question);
                     insertCardCmd.Parameters.AddWithValue("@answers", answer);
-                    insertCardCmd.Parameters.AddWithValue("@idUser", idUser);
+                    insertCardCmd.Parameters.AddWithValue("@idUser", Convert.ToInt32(idUser));
+                    insertCardCmd.Parameters.AddWithValue("@idCategories", lastIdCard);
                     insertCardCmd.ExecuteNonQuery();
 
-                    
-
+                    transaction.Commit();
                     MessageBox.Show("Cartão salvo com sucesso!");
                 }
                 catch (Exception ex)
                 {
+                    transaction?.Rollback();
                     MessageBox.Show($"Erro ao salvar o cartão: {ex.Message}");
                 }
             }

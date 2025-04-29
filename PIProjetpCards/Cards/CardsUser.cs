@@ -21,7 +21,6 @@ namespace PIProjetpCards.Cards
         {
             txtNameCard.Text = "Nome do cartão";
             txtCategorie.Text = "Nome da Categoria";
-            txtSubCategorie.Text = "Nome da Subcategoria";
             txtQuestion.Text = "Escreva a sua pergunta";
             txtAnswer.Text = "Escreva a sua resposta";
         }
@@ -59,24 +58,6 @@ namespace PIProjetpCards.Cards
             {
                 txtCategorie.Text = "Nome da Categoria";
                 txtCategorie.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtSubCategorie_Enter(object sender, EventArgs e)
-        {
-            if (txtSubCategorie.Text == "Nome da Subcategoria")
-            {
-                txtSubCategorie.Text = "";
-                txtSubCategorie.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtSubCategorie_Leave(object sender, EventArgs e)
-        {
-            if (txtSubCategorie.Text == "")
-            {
-                txtSubCategorie.Text = "Nome da Subcategoria";
-                txtSubCategorie.ForeColor = Color.Black;
             }
         }
 
@@ -129,12 +110,11 @@ namespace PIProjetpCards.Cards
             string answer = txtAnswer.Text;
             string question = txtQuestion.Text;
             string nameCategorie = txtCategorie.Text;
-            string subCategorie = txtSubCategorie.Text;
 
 
             string idUser = UserSession.userIdLogado.ToString();
 
-            CardSave.cardCriado.CreateCard(nameCard, question, answer, nameCategorie, subCategorie, idUser);
+            CardSave.cardCriado.CreateCard(nameCard, question, answer, nameCategorie, idUser);
         }
     }
 }
