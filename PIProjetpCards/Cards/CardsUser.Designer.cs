@@ -29,33 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardsUser));
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNameCard = new System.Windows.Forms.TextBox();
-            this.txtCategorie = new System.Windows.Forms.TextBox();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnSaveCard = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.PictureBox();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
+            this.categorieComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.LightGray;
-            this.panel4.Location = new System.Drawing.Point(21, 304);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(350, 1);
-            this.panel4.TabIndex = 59;
             // 
             // panel2
             // 
@@ -114,17 +100,6 @@
             this.txtNameCard.Enter += new System.EventHandler(this.txtNameCard_Enter);
             this.txtNameCard.Leave += new System.EventHandler(this.txtNameCard_Leave);
             // 
-            // txtCategorie
-            // 
-            this.txtCategorie.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategorie.Location = new System.Drawing.Point(21, 246);
-            this.txtCategorie.Multiline = true;
-            this.txtCategorie.Name = "txtCategorie";
-            this.txtCategorie.Size = new System.Drawing.Size(350, 52);
-            this.txtCategorie.TabIndex = 50;
-            this.txtCategorie.Enter += new System.EventHandler(this.txtCategorie_Enter);
-            this.txtCategorie.Leave += new System.EventHandler(this.txtCategorie_Leave);
-            // 
             // txtQuestion
             // 
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -169,18 +144,6 @@
             this.label2.TabIndex = 46;
             this.label2.Text = "Resposta:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Impact", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(187, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 43);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Criar Novo cartão de Estudo";
-            // 
             // btnSaveCard
             // 
             this.btnSaveCard.BackColor = System.Drawing.Color.Indigo;
@@ -198,74 +161,54 @@
             this.btnSaveCard.UseVisualStyleBackColor = false;
             this.btnSaveCard.Click += new System.EventHandler(this.btnSaveCard_Click);
             // 
-            // panel6
+            // categorieComboBox
             // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.btnBack);
-            this.panel6.Location = new System.Drawing.Point(-2, 1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(798, 712);
-            this.panel6.TabIndex = 61;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(22, 16);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(24, 24);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnBack.TabIndex = 0;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.categorieComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categorieComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.categorieComboBox.FormattingEnabled = true;
+            this.categorieComboBox.Location = new System.Drawing.Point(20, 249);
+            this.categorieComboBox.Name = "categorieComboBox";
+            this.categorieComboBox.Size = new System.Drawing.Size(209, 21);
+            this.categorieComboBox.TabIndex = 59;
+            this.categorieComboBox.TabStop = false;
             // 
             // CardsUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.categorieComboBox);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtNameCard);
-            this.Controls.Add(this.txtCategorie);
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSaveCard);
-            this.Controls.Add(this.panel6);
             this.Name = "CardsUser";
-            this.Size = new System.Drawing.Size(803, 718);
+            this.Size = new System.Drawing.Size(1237, 718);
             this.Load += new System.EventHandler(this.CardsUser_Load);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNameCard;
-        private System.Windows.Forms.TextBox txtCategorie;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSaveCard;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.ComboBox categorieComboBox;
     }
 }

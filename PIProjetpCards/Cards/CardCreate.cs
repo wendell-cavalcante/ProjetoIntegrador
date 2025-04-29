@@ -19,7 +19,7 @@ namespace PIProjetpCards.Cards
                 {
                     transaction = connection.BeginTransaction();
 
-                    // Verificar se o card já existe (mantido)
+                    // Verificação do cartão
                     string checkCardQuery = "SELECT COUNT(*) FROM cards WHERE nameCard = @nameCard AND idUser = @idUser";
                     MySqlCommand checkCardCommand = new MySqlCommand(checkCardQuery, connection, transaction);
                     checkCardCommand.Parameters.AddWithValue("@nameCard", name);
@@ -34,24 +34,26 @@ namespace PIProjetpCards.Cards
                         return;
                     }
 
-                    // Removida a verificação de categoria duplicada
-
-                    // Inserir categoria (sempre cria nova, mesmo com nome repetido)
+                    // Insere nova categoria sempre
                     string insertCategoryQuery = "INSERT INTO categories (nameCategorie, idUser) VALUES (@catName, @idUser); SELECT LAST_INSERT_ID();";
                     MySqlCommand insertCategoryCmd = new MySqlCommand(insertCategoryQuery, connection, transaction);
                     insertCategoryCmd.Parameters.AddWithValue("@catName", nameCategorie);
                     insertCategoryCmd.Parameters.AddWithValue("@idUser", Convert.ToInt32(idUser));
 
-                    int lastIdCard = Convert.ToInt32(insertCategoryCmd.ExecuteScalar());
+                    int newCategoryId = Convert.ToInt32(insertCategoryCmd.ExecuteScalar());
 
-                    // Inserir cartão
-                    string insertCardQuery = "INSERT INTO cards (nameCard, questions, answers, idUser, idCategories) VALUES (@nameCard, @questions, @answers, @idUser, @idCategories)";
+                    // Insere o cartão
+                    string insertCardQuery = @"INSERT INTO cards 
+                        (nameCard, questions, answers, idUser, idCategories) 
+                        VALUES (@nameCard, @questions, @answers, @idUser, @idCategories)";
+
                     MySqlCommand insertCardCmd = new MySqlCommand(insertCardQuery, connection, transaction);
                     insertCardCmd.Parameters.AddWithValue("@nameCard", name);
                     insertCardCmd.Parameters.AddWithValue("@questions", question);
                     insertCardCmd.Parameters.AddWithValue("@answers", answer);
                     insertCardCmd.Parameters.AddWithValue("@idUser", Convert.ToInt32(idUser));
-                    insertCardCmd.Parameters.AddWithValue("@idCategories", lastIdCard);
+                    insertCardCmd.Parameters.AddWithValue("@idCategories", newCategoryId);
+
                     insertCardCmd.ExecuteNonQuery();
 
                     transaction.Commit();
@@ -60,7 +62,7 @@ namespace PIProjetpCards.Cards
                 catch (Exception ex)
                 {
                     transaction?.Rollback();
-                    MessageBox.Show($"Erro ao salvar o cartão: {ex.Message}");
+                    MessageBox.Show($"Erro ao salvar: {ex.Message}");
                 }
             }
         }

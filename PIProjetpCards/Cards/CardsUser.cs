@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIProjetpCards.Login___Criar_Conta;
 
@@ -17,14 +11,45 @@ namespace PIProjetpCards.Cards
         {
             InitializeComponent();
         }
+
         private void CardsUser_Load(object sender, EventArgs e)
         {
+            // Configura placeholders
             txtNameCard.Text = "Nome do cartão";
-            txtCategorie.Text = "Nome da Categoria";
             txtQuestion.Text = "Escreva a sua pergunta";
             txtAnswer.Text = "Escreva a sua resposta";
+            
+            // Carrega categorias
+            LoadCategories();
         }
 
+        private void LoadCategories()
+        {
+            // Lista completa de categorias
+            string[] categories = {
+                "Matemática",
+                "Português",
+                "História",
+                "Geografia",
+                "Ciências",
+                "Física",
+                "Química",
+                "Biologia",
+                "Inglês",
+                "Artes",
+                "Educação Física",
+                "Filosofia",
+                "Sociologia",
+                "Redação",
+                "Literatura"
+            };
+
+            categorieComboBox.Items.AddRange(categories);
+            categorieComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            categorieComboBox.SelectedIndex = 0;
+        }
+
+        // Métodos de Placeholder para os TextBoxes
         private void txtNameCard_Enter(object sender, EventArgs e)
         {
             if (txtNameCard.Text == "Nome do cartão")
@@ -40,24 +65,6 @@ namespace PIProjetpCards.Cards
             {
                 txtNameCard.Text = "Nome do cartão";
                 txtNameCard.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtCategorie_Enter(object sender, EventArgs e)
-        {
-            if (txtCategorie.Text == "Nome da Categoria")
-            {
-                txtCategorie.Text = "";
-                txtCategorie.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtCategorie_Leave(object sender, EventArgs e)
-        {
-            if (txtCategorie.Text == "")
-            {
-                txtCategorie.Text = "Nome da Categoria";
-                txtCategorie.ForeColor = Color.Black;
             }
         }
 
@@ -106,15 +113,40 @@ namespace PIProjetpCards.Cards
 
         private void btnSaveCard_Click(object sender, EventArgs e)
         {
+            // Validação do nome do cartão
+            if (string.IsNullOrWhiteSpace(txtNameCard.Text) || 
+                txtNameCard.Text == "Nome do cartão")
+            {
+                MessageBox.Show("Digite um nome válido para o cartão!");
+                return;
+            }
+
+            // Coleta dos dados
             string nameCard = txtNameCard.Text;
-            string answer = txtAnswer.Text;
             string question = txtQuestion.Text;
-            string nameCategorie = txtCategorie.Text;
+            string answer = txtAnswer.Text;
+            string category = categorieComboBox.SelectedItem.ToString();
+            string userId = UserSession.userIdLogado?.ToString();
 
+            // Criação do cartão
+            try
+            {
+                CardSave.cardCriado.CreateCard(nameCard, question, answer, category, userId);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao salvar: {ex.Message}");
+            }
+        }
 
-            string idUser = UserSession.userIdLogado.ToString();
-
-            CardSave.cardCriado.CreateCard(nameCard, question, answer, nameCategorie, idUser);
+        private void ClearFields()
+        {
+            // Reseta todos os campos
+            txtNameCard.Text = "Nome do cartão";
+            txtQuestion.Text = "Escreva a sua pergunta";
+            txtAnswer.Text = "Escreva a sua resposta";
+            categorieComboBox.SelectedIndex = 0;
         }
     }
 }
