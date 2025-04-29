@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowCardsControl));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.categorieComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.PictureBox();
+            this.txtQuestion = new System.Windows.Forms.TextBox();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.listBoxCards = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -50,15 +52,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Location = new System.Drawing.Point(68, 177);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 329);
-            this.panel1.TabIndex = 1;
-            // 
             // categorieComboBox
             // 
             this.categorieComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -69,6 +62,7 @@
             this.categorieComboBox.Size = new System.Drawing.Size(173, 21);
             this.categorieComboBox.TabIndex = 2;
             this.categorieComboBox.TabStop = false;
+            this.categorieComboBox.SelectedIndexChanged += new System.EventHandler(this.categorieComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -125,17 +119,49 @@
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // txtQuestion
+            // 
+            this.txtQuestion.Location = new System.Drawing.Point(514, 177);
+            this.txtQuestion.Multiline = true;
+            this.txtQuestion.Name = "txtQuestion";
+            this.txtQuestion.ReadOnly = true;
+            this.txtQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtQuestion.Size = new System.Drawing.Size(367, 107);
+            this.txtQuestion.TabIndex = 85;
+            this.txtQuestion.TabStop = false;
+            // 
+            // txtAnswer
+            // 
+            this.txtAnswer.Location = new System.Drawing.Point(514, 325);
+            this.txtAnswer.Multiline = true;
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.ReadOnly = true;
+            this.txtAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtAnswer.Size = new System.Drawing.Size(367, 107);
+            this.txtAnswer.TabIndex = 86;
+            this.txtAnswer.TabStop = false;
+            // 
+            // listBoxCards
+            // 
+            this.listBoxCards.FormattingEnabled = true;
+            this.listBoxCards.Location = new System.Drawing.Point(68, 177);
+            this.listBoxCards.Name = "listBoxCards";
+            this.listBoxCards.Size = new System.Drawing.Size(407, 329);
+            this.listBoxCards.TabIndex = 87;
+            // 
             // ShowCardsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.listBoxCards);
+            this.Controls.Add(this.txtAnswer);
+            this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.categorieComboBox);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ShowCardsControl";
             this.Size = new System.Drawing.Size(1316, 659);
@@ -150,11 +176,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox categorieComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.TextBox txtQuestion;
+        private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.ListBox listBoxCards;
     }
 }
