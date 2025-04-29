@@ -11,10 +11,12 @@ namespace PIProjetpCards.Cards
         public void CreateCard(string name, string question, string answer, string nameCategorie, string subCategorie, string idUser)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
+           
             {
                 try
                 {
                     connection.Open();
+                    MySqlTransaction transaction = connection.BeginTransaction();
 
                     // Verificar se o card já existe
                     string checkCardQuery = "SELECT COUNT(*) FROM cards WHERE nameCard = @nameCard AND idUser = @idUser";
@@ -45,22 +47,26 @@ namespace PIProjetpCards.Cards
                         return;
                     }
 
+                    // Inserir categoria
+                    string insertCategoryQuery = "INSERT INTO categories (nameCategorie, nameSubCategorie, idUser) VALUES (@catName, @subCatName, @idUser); SELECT LAST_INSERT_ID();";
+                    MySqlCommand insertCategoryCmd = new MySqlCommand(insertCategoryQuery, connection);
+                    insertCategoryCmd.Parameters.AddWithValue("@catName", nameCategorie);
+                    insertCategoryCmd.Parameters.AddWithValue("@subCatName", subCategorie);
+                    insertCategoryCmd.Parameters.AddWithValue("@idUser", idUser);
+                    insertCategoryCmd.ExecuteNonQuery();
+
+                    int lastIdCard = Convert.ToInt32(insertCategoryCmd.LastInsertedId);
+
                     // Inserir cartão
-                    string insertCardQuery = "INSERT INTO cards (nameCard, questions, answers, idUser) VALUES (@nameCard, @questions, @answers, @idUser)";
-                    MySqlCommand insertCardCmd = new MySqlCommand(insertCardQuery, connection);
+                    string insertCardQuery = $"INSERT INTO cards (nameCard, questions, answers, idUser, idCategoria) VALUES (@nameCard, @questions, @answers, @idUser, {lastIdCard}); ";
+                    MySqlCommand insertCardCmd = new MySqlCommand(insertCardQuery, connection, transaction);
                     insertCardCmd.Parameters.AddWithValue("@nameCard", name);
                     insertCardCmd.Parameters.AddWithValue("@questions", question);
                     insertCardCmd.Parameters.AddWithValue("@answers", answer);
                     insertCardCmd.Parameters.AddWithValue("@idUser", idUser);
                     insertCardCmd.ExecuteNonQuery();
 
-                    // Inserir categoria
-                    string insertCategoryQuery = "INSERT INTO categories (nameCategorie, nameSubCategorie, idUser) VALUES (@catName, @subCatName, @idUser)";
-                    MySqlCommand insertCategoryCmd = new MySqlCommand(insertCategoryQuery, connection);
-                    insertCategoryCmd.Parameters.AddWithValue("@catName", nameCategorie);
-                    insertCategoryCmd.Parameters.AddWithValue("@subCatName", subCategorie);
-                    insertCategoryCmd.Parameters.AddWithValue("@idUser", idUser);
-                    insertCategoryCmd.ExecuteNonQuery();
+                    
 
                     MessageBox.Show("Cartão salvo com sucesso!");
                 }
