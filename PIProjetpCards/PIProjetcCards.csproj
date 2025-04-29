@@ -211,6 +211,7 @@
     <Compile Include="SettingsUser\SettingsUser.Designer.cs">
       <DependentUpon>SettingsUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowCards\CardsShowMySql.cs" />
     <Compile Include="ShowCards\ShowCardsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
