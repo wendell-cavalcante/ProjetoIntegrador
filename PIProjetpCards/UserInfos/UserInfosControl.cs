@@ -27,7 +27,7 @@ namespace PIProjetpCards.UserInfos
 
         private string connectionString = "server=localhost;database=flashcards;uid=root;";
 
-        private void CarregarInformacoesUsuarioLogado()
+        public void CarregarInformacoesUsuarioLogado()
         {
             if (UserSession.userIdLogado.HasValue) // Verifica se userIdLogado tem um valor
             {

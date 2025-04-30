@@ -15,15 +15,22 @@ namespace PIProjetpCards.ShowCards
             {
                 conn.Open();
                 string query = @"
-                    SELECT c.nameCard, c.questions, c.answers 
+                    SELECT 
+                        c.nameCard, 
+                        c.questions, 
+                        c.answers 
                     FROM cards c
-                    INNER JOIN categories cat ON c.idCategories = cat.idCategories
-                    WHERE cat.nameCategorie = @category AND c.idUser = @userId";
+                    INNER JOIN categories cat 
+                        ON c.idCategories = cat.idCategories
+                    WHERE 
+                        cat.nameCategorie = @category 
+                        AND c.idUser = @userId";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@category", category);
-                    cmd.Parameters.AddWithValue("@userId", userId);
+                    // Parâmetros tipados corretamente
+                    cmd.Parameters.Add("@category", MySqlDbType.VarChar).Value = category;
+                    cmd.Parameters.Add("@userId", MySqlDbType.Int32).Value = int.Parse(userId);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -31,9 +38,10 @@ namespace PIProjetpCards.ShowCards
                         {
                             cards.Add(new Card
                             {
-                                Name = reader["nameCard"].ToString(),
-                                Question = reader["questions"].ToString(),
-                                Answer = reader["answers"].ToString()
+                                // Tratamento contra valores NULL
+                                Name = reader["nameCard"]?.ToString() ?? "Sem nome",
+                                Question = reader["questions"]?.ToString() ?? "Pergunta não cadastrada",
+                                Answer = reader["answers"]?.ToString() ?? "Resposta não cadastrada"
                             });
                         }
                     }
@@ -50,4 +58,5 @@ namespace PIProjetpCards.ShowCards
         public string Question { get; set; }
         public string Answer { get; set; }
     }
+
 }
