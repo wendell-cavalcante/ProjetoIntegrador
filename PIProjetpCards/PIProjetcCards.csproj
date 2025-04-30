@@ -224,6 +224,12 @@
     <Compile Include="SideBarUser\SideBarUser.Designer.cs">
       <DependentUpon>SideBarUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistics\StatisticsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistics\StatisticsControl.Designer.cs">
+      <DependentUpon>StatisticsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInfos\UserInfosControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -292,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SideBarUser\SideBarUser.resx">
       <DependentUpon>SideBarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\StatisticsControl.resx">
+      <DependentUpon>StatisticsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfos\UserInfosControl.resx">
       <DependentUpon>UserInfosControl.cs</DependentUpon>

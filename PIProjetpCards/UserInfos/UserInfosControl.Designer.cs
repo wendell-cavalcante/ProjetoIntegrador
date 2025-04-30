@@ -116,7 +116,7 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(53)))), ((int)(((byte)(168)))));
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(34, 23);
+            this.btnBack.Location = new System.Drawing.Point(33, 27);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(24, 24);
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
