@@ -38,8 +38,8 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.77189F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.2281F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.79022F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.20978F));
             this.tableLayoutPanel1.Controls.Add(this.sideBarUser2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -55,7 +55,7 @@
             this.sideBarUser2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarUser2.Location = new System.Drawing.Point(3, 3);
             this.sideBarUser2.Name = "sideBarUser2";
-            this.sideBarUser2.Size = new System.Drawing.Size(150, 743);
+            this.sideBarUser2.Size = new System.Drawing.Size(154, 743);
             this.sideBarUser2.TabIndex = 0;
             // 
             // MainMenu
@@ -65,6 +65,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(491, 749);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.Text = "Menu";
