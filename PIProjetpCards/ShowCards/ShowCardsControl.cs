@@ -69,6 +69,7 @@ namespace PIProjetpCards.ShowCards
         {
             listBoxCards.DataSource = null; // Força atualização
             listBoxCards.DataSource = _currentCards;
+            ConfigureControls();
         }
 
         // Quando um card é selecionado na lista
