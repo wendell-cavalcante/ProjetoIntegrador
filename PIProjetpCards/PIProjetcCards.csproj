@@ -230,6 +230,7 @@
     <Compile Include="Statistics\StatisticsControl.Designer.cs">
       <DependentUpon>StatisticsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistics\StatisticsUser.cs" />
     <Compile Include="UserInfos\UserInfosControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
