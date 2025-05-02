@@ -101,6 +101,15 @@ namespace PIProjetpCards.MySQL.UserChange
                 txtNewPassword.ForeColor = Color.Black;
             }
         }
+        private void ClearFields()
+        {
+            // Reseta todos os campos
+            txtPassword.Text = "Senha atual";
+            txtEmail.Text = "Email";
+            txtUser.Text = "Nome";
+            txtNewPassword.Text = "Nova senha";
+
+        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -111,12 +120,11 @@ namespace PIProjetpCards.MySQL.UserChange
             }
             else
             {
-                changeUser.ChangeUserInfos(txtPassword.Text, txtEmail.Text, txtUser.Text, txtNewPassword.Text);
-                txtEmail.Clear();
-                txtUser.Clear();
-                txtPassword.Clear();
-                txtNewPassword.Clear();
+                ClearFields();
+                MessageBox.Show("Alterações salvas com sucesso.");
             }
+
         }
+            
     }
 }

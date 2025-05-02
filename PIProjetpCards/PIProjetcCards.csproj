@@ -119,6 +119,18 @@
     <Compile Include="Cards\CardsUser.Designer.cs">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="CardView\AnswercardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardView\AnswercardView.Designer.cs">
+      <DependentUpon>AnswercardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardView\CardViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardView\CardViewControl.Designer.cs">
+      <DependentUpon>CardViewControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelpUser\HelpUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +160,12 @@
     </Compile>
     <Compile Include="Screens\CardsScreen.Designer.cs">
       <DependentUpon>CardsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CardViewScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\CardViewScreen.Designer.cs">
+      <DependentUpon>CardViewScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\HelpScreen.cs">
       <SubType>Form</SubType>
@@ -211,7 +229,6 @@
     <Compile Include="SettingsUser\SettingsUser.Designer.cs">
       <DependentUpon>SettingsUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShowCards\CardsShowMySql.cs" />
     <Compile Include="ShowCards\ShowCardsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -243,6 +260,12 @@
     <EmbeddedResource Include="Cards\CardsUser.resx">
       <DependentUpon>CardsUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CardView\AnswercardView.resx">
+      <DependentUpon>AnswercardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardView\CardViewControl.resx">
+      <DependentUpon>CardViewControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HelpUser\HelpUser.resx">
       <DependentUpon>HelpUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\CardsScreen.resx">
       <DependentUpon>CardsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CardViewScreen.resx">
+      <DependentUpon>CardViewScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\HelpScreen.resx">
       <DependentUpon>HelpScreen.cs</DependentUpon>
