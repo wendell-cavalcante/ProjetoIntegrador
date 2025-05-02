@@ -38,6 +38,8 @@
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.listBoxCards = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +92,7 @@
             this.btnSelect.TabIndex = 82;
             this.btnSelect.Text = "Selecionar";
             this.btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // btnEdit
             // 
@@ -105,6 +108,7 @@
             this.btnEdit.TabIndex = 83;
             this.btnEdit.Text = "Editar";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnBack
             // 
@@ -148,12 +152,37 @@
             this.listBoxCards.Name = "listBoxCards";
             this.listBoxCards.Size = new System.Drawing.Size(407, 329);
             this.listBoxCards.TabIndex = 87;
+            this.listBoxCards.SelectedIndexChanged += new System.EventHandler(this.listBoxCards_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(512, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.TabIndex = 88;
+            this.label2.Text = "Pergunta";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(512, 297);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 25);
+            this.label3.TabIndex = 89;
+            this.label3.Text = "Resposta";
             // 
             // ShowCardsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.listBoxCards);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.txtQuestion);
@@ -165,7 +194,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "ShowCardsControl";
             this.Size = new System.Drawing.Size(1316, 659);
-            this.Load += new System.EventHandler(this.ShowCardsControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
@@ -184,5 +212,7 @@
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.ListBox listBoxCards;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
