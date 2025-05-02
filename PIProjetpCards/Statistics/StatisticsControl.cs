@@ -16,12 +16,14 @@ namespace PIProjetpCards.Statistics
 {
     public partial class StatisticsControl : UserControl
     {
+        private string connectionString = "server=localhost;database=flashcards;uid=root;";
+        private StatisticsUser statisticsUser; // Instância da classe StatisticsUser
+
         public StatisticsControl()
         {
             InitializeComponent();
+            statisticsUser = new StatisticsUser(); // Inicializa a instância
         }
-
-        private string connectionString = "server=localhost;database=flashcards;uid=root;";
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -33,6 +35,7 @@ namespace PIProjetpCards.Statistics
         private void StatisticsControl_Load(object sender, EventArgs e)
         {
             CarregarInformacoesUsuarioLogado();
+            CarregarEstatisticasUsuario(); // Chama a nova função para carregar as estatísticas
         }
 
         public void CarregarInformacoesUsuarioLogado()
@@ -77,6 +80,52 @@ namespace PIProjetpCards.Statistics
                     {
                         MessageBox.Show(ex.Message);
                     }
+            }
+        }
+
+        private void CarregarEstatisticasUsuario()
+        {
+            if (UserSession.userIdLogado.HasValue)
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+
+                        // Opção 1: Usando GetAnswerCount para acertos e erros separadamente
+                        int correctCount = statisticsUser.GetAnswerCount(connection, 1);
+                        int incorrectCount = statisticsUser.GetAnswerCount(connection, 0);
+
+                        lblCorrects.Text = correctCount.ToString();
+                        lblErrors.Text = incorrectCount.ToString();
+
+                        // Opção 2: Usando GetUserStatistics para obter ambos ao mesmo tempo
+                        // Tuple<int, int> stats = statisticsUser.GetUserStatistics(connection);
+                        // if (stats.Item1 != -1 && stats.Item2 != -1) // Verifica se não houve erro
+                        // {
+                        //     lblCorrect.Text = stats.Item1.ToString();
+                        //     lblErrors.Text = stats.Item2.ToString();
+                        // }
+                        // else
+                        // {
+                        //     MessageBox.Show("Erro ao carregar as estatísticas.");
+                        // }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show($"Erro ao carregar as estatísticas: {ex.Message}");
+                        lblCorrects.Text = "Erro";
+                        lblErrors.Text = "Erro";
+                    }
+                    finally
+                    {
+                        if (connection.State == ConnectionState.Open)
+                        {
+                            connection.Close();
+                        }
+                    }
+                }
             }
         }
     }

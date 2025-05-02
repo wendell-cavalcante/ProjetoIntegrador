@@ -38,6 +38,8 @@
             this.lblCardsStudied = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.lblCorrects = new System.Windows.Forms.Label();
+            this.lblErrors = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
@@ -46,7 +48,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-331, -73);
+            this.pictureBox1.Location = new System.Drawing.Point(-328, -86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1449, 647);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,11 +146,35 @@
             this.lblUserName.TabIndex = 93;
             this.lblUserName.Text = "label3";
             // 
+            // lblCorrects
+            // 
+            this.lblCorrects.AutoSize = true;
+            this.lblCorrects.BackColor = System.Drawing.Color.White;
+            this.lblCorrects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrects.Location = new System.Drawing.Point(414, 270);
+            this.lblCorrects.Name = "lblCorrects";
+            this.lblCorrects.Size = new System.Drawing.Size(57, 20);
+            this.lblCorrects.TabIndex = 94;
+            this.lblCorrects.Text = "label2";
+            // 
+            // lblErrors
+            // 
+            this.lblErrors.AutoSize = true;
+            this.lblErrors.BackColor = System.Drawing.Color.White;
+            this.lblErrors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrors.Location = new System.Drawing.Point(414, 358);
+            this.lblErrors.Name = "lblErrors";
+            this.lblErrors.Size = new System.Drawing.Size(57, 20);
+            this.lblErrors.TabIndex = 95;
+            this.lblErrors.Text = "label2";
+            // 
             // StatisticsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.lblErrors);
+            this.Controls.Add(this.lblCorrects);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblCardsStudied);
@@ -179,5 +205,7 @@
         private System.Windows.Forms.Label lblCardsStudied;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblCorrects;
+        private System.Windows.Forms.Label lblErrors;
     }
 }
