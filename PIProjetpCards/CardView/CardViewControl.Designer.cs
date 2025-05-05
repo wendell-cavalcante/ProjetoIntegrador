@@ -32,7 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtResposta = new System.Windows.Forms.TextBox();
             this.btnAnswer = new System.Windows.Forms.Button();
-            this.lblPerguntaCard = new System.Windows.Forms.Label();
+            this.btnError = new System.Windows.Forms.Button();
+            this.btnCorrect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             // txtResposta
             // 
-            this.txtResposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtResposta.Location = new System.Drawing.Point(41, 212);
             this.txtResposta.Multiline = true;
             this.txtResposta.Name = "txtResposta";
@@ -63,29 +64,57 @@
             this.btnAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnswer.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnswer.ForeColor = System.Drawing.Color.White;
-            this.btnAnswer.Location = new System.Drawing.Point(85, 516);
+            this.btnAnswer.Location = new System.Drawing.Point(85, 471);
             this.btnAnswer.Name = "btnAnswer";
-            this.btnAnswer.Size = new System.Drawing.Size(242, 35);
+            this.btnAnswer.Size = new System.Drawing.Size(242, 45);
             this.btnAnswer.TabIndex = 83;
             this.btnAnswer.Text = "Ver Resposta";
             this.btnAnswer.UseVisualStyleBackColor = false;
-            this.btnAnswer.Click += new System.EventHandler(this.btnVerResposta_Click);
+            this.btnAnswer.Click += new System.EventHandler(this.btnAnswer_Click);
             // 
-            // lblPerguntaCard
+            // btnError
             // 
-            this.lblPerguntaCard.AutoSize = true;
-            this.lblPerguntaCard.Location = new System.Drawing.Point(48, 224);
-            this.lblPerguntaCard.Name = "lblPerguntaCard";
-            this.lblPerguntaCard.Size = new System.Drawing.Size(35, 13);
-            this.lblPerguntaCard.TabIndex = 84;
-            this.lblPerguntaCard.Text = "label1";
+            this.btnError.BackColor = System.Drawing.Color.Indigo;
+            this.btnError.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnError.FlatAppearance.BorderSize = 0;
+            this.btnError.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnError.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnError.ForeColor = System.Drawing.Color.White;
+            this.btnError.Image = ((System.Drawing.Image)(resources.GetObject("btnError.Image")));
+            this.btnError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnError.Location = new System.Drawing.Point(213, 526);
+            this.btnError.Name = "btnError";
+            this.btnError.Size = new System.Drawing.Size(145, 45);
+            this.btnError.TabIndex = 86;
+            this.btnError.Text = "Errou";
+            this.btnError.UseVisualStyleBackColor = false;
+            this.btnError.Click += new System.EventHandler(this.btnError_Click);
+            // 
+            // btnCorrect
+            // 
+            this.btnCorrect.BackColor = System.Drawing.Color.Indigo;
+            this.btnCorrect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCorrect.FlatAppearance.BorderSize = 0;
+            this.btnCorrect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCorrect.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCorrect.ForeColor = System.Drawing.Color.White;
+            this.btnCorrect.Image = ((System.Drawing.Image)(resources.GetObject("btnCorrect.Image")));
+            this.btnCorrect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCorrect.Location = new System.Drawing.Point(52, 526);
+            this.btnCorrect.Name = "btnCorrect";
+            this.btnCorrect.Size = new System.Drawing.Size(145, 45);
+            this.btnCorrect.TabIndex = 87;
+            this.btnCorrect.Text = "Acertou";
+            this.btnCorrect.UseVisualStyleBackColor = false;
+            this.btnCorrect.Click += new System.EventHandler(this.btnCorrect_Click);
             // 
             // CardViewControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.lblPerguntaCard);
+            this.Controls.Add(this.btnCorrect);
+            this.Controls.Add(this.btnError);
             this.Controls.Add(this.btnAnswer);
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.pictureBox1);
@@ -102,6 +131,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtResposta;
         private System.Windows.Forms.Button btnAnswer;
-        private System.Windows.Forms.Label lblPerguntaCard;
+        private System.Windows.Forms.Button btnError;
+        private System.Windows.Forms.Button btnCorrect;
     }
 }

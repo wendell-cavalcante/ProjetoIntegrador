@@ -127,9 +127,8 @@ namespace PIProjetpCards.ShowCards
 
                 // Criar e exibir um Form para hospedar o UserControl
                 Form displayForm = new Form();
-                displayForm.Text = selectedCard.Name; // Opcional: definir o título do Form
                 displayForm.Controls.Add(displayControl);
-                displayForm.ShowDialog(); // Ou displayForm.Show()
+                displayForm.Show(); // Ou displayForm.Show()
             }
             else
             {
