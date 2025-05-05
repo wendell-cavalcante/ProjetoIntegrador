@@ -105,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloco de notas\Bloco de notas Natan\Notepads_Natan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bloco de notas\Bloco de notas Natan\Notepads_Natan.Designer.cs">
+      <DependentUpon>Notepads_Natan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bloco de notas\BlocodeNotas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     <Compile Include="UserInfos\UserInfosControl.Designer.cs">
       <DependentUpon>UserInfosControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bloco de notas\Bloco de notas Natan\Notepads_Natan.resx">
+      <DependentUpon>Notepads_Natan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bloco de notas\BlocodeNotas.resx">
       <DependentUpon>BlocodeNotas.cs</DependentUpon>
     </EmbeddedResource>
