@@ -131,6 +131,12 @@
     <Compile Include="CardView\CardViewControl.Designer.cs">
       <DependentUpon>CardViewControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlashTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashTeste.Designer.cs">
+      <DependentUpon>FlashTeste.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelpUser\HelpUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     <Compile Include="MySQL\UserChange\ChangeUsercontroller.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
+    <Compile Include="Screens\BackSide.xaml.cs">
+      <DependentUpon>BackSide.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\CardsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +175,12 @@
     </Compile>
     <Compile Include="Screens\CardViewScreen.Designer.cs">
       <DependentUpon>CardViewScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FlashCards.xaml.cs">
+      <DependentUpon>FlashCards.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FrontSide.xaml.cs">
+      <DependentUpon>FrontSide.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screens\HelpScreen.cs">
       <SubType>Form</SubType>
@@ -266,6 +281,9 @@
     <EmbeddedResource Include="CardView\CardViewControl.resx">
       <DependentUpon>CardViewControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlashTeste.resx">
+      <DependentUpon>FlashTeste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HelpUser\HelpUser.resx">
       <DependentUpon>HelpUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,7 +368,22 @@
     <Content Include=".gitignore" />
     <Content Include="assets\definicoes.png" />
     <Content Include="assets\saida %281%29.png" />
+    <Content Include="Images\RightImage.png" />
+    <Content Include="Images\WrongImage.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Screens\BackSide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\FlashCards.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\FrontSide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
