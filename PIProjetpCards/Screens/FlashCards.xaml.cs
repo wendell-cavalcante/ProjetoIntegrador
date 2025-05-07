@@ -21,8 +21,10 @@ namespace PIProjetpCards.Screens
         public FlashCards()
         {
             InitializeComponent();
+            Back_Side.SetParent(this);
             ShowCard(0);
             AtualizarContadores();
+
 
 
         }

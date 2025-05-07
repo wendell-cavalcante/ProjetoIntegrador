@@ -19,6 +19,7 @@ namespace PIProjetpCards.Screens
 
     public partial class BackSide : UserControl
     {
+        private FlashCards _parent;
         public BackSide()
         {
             InitializeComponent();
@@ -30,40 +31,41 @@ namespace PIProjetpCards.Screens
             set => TxtBackSide.Text = value;
         }
 
+        public void SetParent(FlashCards parent)
+        {
+            _parent = parent;
+        }
+
         // Adicione os seguintes métodos ao arquivo code-behind (BackSide.xaml.cs)
 
-        private void AvancarCard()
-        {
-            if (Window.GetWindow(this) is MainWindow main)
-            {
-                main.AvancarParaProximoCard();
+        //private void AvancarCard()
+        //{
+        //    if (Window.GetWindow(this) is MainWindow main)
+        //    {
+        //        main.AvancarParaProximoCard();
 
-                // Voltar para o FrontSide
-                main.Flip_Card.IsChecked = false;
-            }
-        }
+        //        // Voltar para o FrontSide
+        //        main.Flip_Card.IsChecked = false;
+        //    }
+        //}
 
         private void BtnWrong_Click(object sender, RoutedEventArgs e)
         {
-            if (Window.GetWindow(this) is MainWindow main)
+            if (_parent != null)
             {
-                // 1. Voltar para frente ANTES de mudar o conteúdo
-                main.Flip_Card.IsChecked = false;
-
-                // 2. Avançar card
-                main.RegistrarErro();
-                main.AvancarParaProximoCard();
+                _parent.RegistrarErro();
+                _parent.Flip_Card.IsChecked = false;
+                _parent.AvancarParaProximoCard();
             }
         }
 
         private void BtnRight_Click(object sender, RoutedEventArgs e)
         {
-            if (Window.GetWindow(this) is MainWindow main)
+            if (_parent != null)
             {
-                main.Flip_Card.IsChecked = false;
-
-                main.RegistrarAcerto();
-                main.AvancarParaProximoCard();
+                _parent.RegistrarAcerto();
+                _parent.Flip_Card.IsChecked = false;
+                _parent.AvancarParaProximoCard();
             }
         }
 
