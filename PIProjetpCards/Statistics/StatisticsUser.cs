@@ -110,7 +110,6 @@ namespace PIProjetpCards.Statistics
 
             return Tuple.Create(correctAnswers, incorrectAnswers);
         }
-
         public int GetTotalAnswers(MySqlConnection connection)
         {
             int totalAnswers = 0;
@@ -138,7 +137,6 @@ namespace PIProjetpCards.Statistics
                     connection.Close();
                 }
             }
-
             return totalAnswers;
         }
     }

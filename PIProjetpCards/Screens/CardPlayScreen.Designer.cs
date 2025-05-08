@@ -1,6 +1,6 @@
 ﻿namespace PIProjetpCards.Screens
 {
-    partial class NotesScreen
+    partial class CardPlayScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.blocodeNotas1 = new PIProjetpCards.Bloco_de_Notas.BlocodeNotas();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.flashCards1 = new PIProjetpCards.Screens.FlashCards();
             this.SuspendLayout();
             // 
-            // blocodeNotas1
+            // elementHost1
             // 
-            this.blocodeNotas1.BackColor = System.Drawing.Color.DimGray;
-            this.blocodeNotas1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.blocodeNotas1.Location = new System.Drawing.Point(0, 0);
-            this.blocodeNotas1.Name = "blocodeNotas1";
-            this.blocodeNotas1.Size = new System.Drawing.Size(757, 749);
-            this.blocodeNotas1.TabIndex = 0;
+            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.elementHost1.Location = new System.Drawing.Point(0, 0);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(800, 450);
+            this.elementHost1.TabIndex = 0;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = this.flashCards1;
             // 
-            // NotesScreen
+            // CardPlayScreen
             // 
-            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(757, 749);
-            this.Controls.Add(this.blocodeNotas1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(69)))), ((int)(((byte)(141)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.elementHost1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "NotesScreen";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bloco de notas";
+            this.Name = "CardPlayScreen";
+            this.Text = "CardPlayScreen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bloco_de_Notas.BlocodeNotas blocodeNotas1;
+        private System.Windows.Forms.Integration.ElementHost elementHost1;
+        private FlashCards flashCards1;
     }
 }

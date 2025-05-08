@@ -30,12 +30,6 @@ namespace PIProjetpCards.ShowCards
                 currentUserId = UserSession.userIdLogado.Value;
                 LoadCategories();
             }
-            else
-            {
-                // Lide com o caso em que o usuário não está logado
-                MessageBox.Show("Usuário não logado. Impossível carregar os dados.");
-                // Você pode desabilitar controles ou navegar para a tela de login aqui
-            }
         }
 
         private void LoadCategories()
