@@ -58,14 +58,14 @@
         </Border>
 
         <Button x:Name="BtnWrong"
-        Margin="90,600,500,105"
+        Margin="90,663,532,117"
         Click="BtnWrong_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
                         <!-- Fundo branco e borda vermelha -->
                         <Border x:Name="border" Background="White"
-                        BorderBrush="Red" BorderThickness="2"
+                        BorderBrush="Black" BorderThickness="2"
                         CornerRadius="55"/>
 
                         <!-- Camada que "sobe" ao clicar -->
@@ -113,11 +113,11 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image Height="100" Width="100" Source="/Images/WrongImage.png"/>
+            <Image x:Name="wrong" Height="100" Width="100" Source="/Images/circulo-x.png"/>
         </Button>
 
         <Button x:Name="BtnRight"
-        Margin="500,600,90,105"
+        Margin="532,663,90,117"
         Click="BtnRight_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -125,7 +125,7 @@
 
                         <!-- Fundo branco e borda verde -->
                         <Border x:Name="border" Background="White"
-                        BorderBrush="Green" BorderThickness="2"
+                        BorderBrush="Black" BorderThickness="2"
                         CornerRadius="55"/>
 
                         <!-- Camada que "sobe" ao clicar -->
@@ -173,7 +173,7 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image Height="100" Width="100" Source="/Images/RightImage.png"/>
+            <Image x:Name="correct" Height="100" Width="100" Source="/Images/verifique-o-circulo.png" d:IsHidden="True"/>
         </Button>
 
 

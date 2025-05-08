@@ -98,7 +98,7 @@
                             <!--// Verso //-->
 
                             <local:BackSide x:Name="Back_Side" 
-                             Opacity="0"/> 
+                             Opacity="0"/>
 
                         </Grid>
 
@@ -285,15 +285,7 @@
         </StackPanel>
 
 
-        <!--// Botão Sair //-->
 
-        <Button x:Name="ExitBtn" Content="SAIR" Cursor="Hand" Margin="677,21,32,743" Click="Button_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="20" />
-                </Style>
-            </Button.Resources>
-        </Button>
 
         <StackPanel Orientation="Horizontal"
             HorizontalAlignment="Center"
@@ -304,7 +296,7 @@
             <TextBlock x:Name="lblAcertos"
                FontSize="16"
                FontWeight="Bold"
-               Foreground="Green"
+               Foreground="DarkBlue"
                Margin="10"/>
             <TextBlock x:Name="lblErros"
                FontSize="16"
@@ -312,6 +304,14 @@
                Foreground="Red"
                Margin="10"/>
         </StackPanel>
+        <Button Content="Voltar" Margin="0,4,4,0" Height="53" Width="136" FontFamily="Arial Black" FontSize="16" Background="White" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
 
 
     </Grid>

@@ -123,12 +123,6 @@ namespace PIProjetpCards.Screens
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            // Se necessário, dispare um evento para o Windows Forms tratar o fechamento
-            MessageBox.Show("Este botão deveria fechar a janela, mas estamos em um UserControl.");
-        }
-
 
         private void Anterior_Click(object sender, RoutedEventArgs e)
         {
@@ -168,6 +162,14 @@ namespace PIProjetpCards.Screens
             AtualizarContadores();
 
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ShowCardsScreen showCardsScreen = new ShowCardsScreen();
+            showCardsScreen.Show();
+            CardPlayScreen cardPlayScreen = new CardPlayScreen();
+            cardPlayScreen.Hide();
         }
     }
 }
