@@ -50,9 +50,9 @@
             // 
             this.cardViewControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cardViewControl1.BackColor = System.Drawing.Color.Transparent;
-            this.cardViewControl1.Location = new System.Drawing.Point(204, 3);
+            this.cardViewControl1.Location = new System.Drawing.Point(204, 18);
             this.cardViewControl1.Name = "cardViewControl1";
-            this.cardViewControl1.Size = new System.Drawing.Size(391, 652);
+            this.cardViewControl1.Size = new System.Drawing.Size(391, 622);
             this.cardViewControl1.TabIndex = 0;
             // 
             // CardViewScreen
@@ -62,8 +62,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(69)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(800, 658);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CardViewScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CardViewScreen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
