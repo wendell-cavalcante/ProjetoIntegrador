@@ -168,6 +168,11 @@ namespace PIProjetpCards.Screens
             CardPlayScreen cardPlayScreen = new CardPlayScreen();
             cardPlayScreen.Hide();
         }
+
+        internal void SetCard(ShowCards.Card selectedCard)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

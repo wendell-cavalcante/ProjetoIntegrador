@@ -27,8 +27,8 @@ namespace PIProjetpCards.Screens
 
         public string Resposta
         {
-            get => TxtBackSide.Text;
-            set => TxtBackSide.Text = value;
+            get => txtBackSide.Text;
+            set => txtBackSide.Text = value;
         }
 
         public void SetParent(FlashCards parent)
