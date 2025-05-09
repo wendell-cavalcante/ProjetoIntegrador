@@ -50,6 +50,7 @@
             // 
             this.cardViewControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cardViewControl1.BackColor = System.Drawing.Color.Transparent;
+            this.cardViewControl1.IdUser = 0;
             this.cardViewControl1.Location = new System.Drawing.Point(204, 18);
             this.cardViewControl1.Name = "cardViewControl1";
             this.cardViewControl1.Size = new System.Drawing.Size(391, 622);

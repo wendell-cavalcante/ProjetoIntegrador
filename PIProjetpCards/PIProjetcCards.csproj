@@ -369,9 +369,7 @@
     <Content Include="assets\definicoes.png" />
     <Content Include="assets\saida %281%29.png" />
     <Content Include="Images\circulo-x.png" />
-    <Content Include="Images\RightImage.png" />
     <Content Include="Images\verifique-o-circulo.png" />
-    <Content Include="Images\WrongImage.png" />
     <Content Include="Screens\circulo-x.png" />
   </ItemGroup>
   <ItemGroup>

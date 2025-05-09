@@ -173,7 +173,7 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image x:Name="correct" Height="100" Width="100" Source="/Images/verifique-o-circulo.png" d:IsHidden="True"/>
+            <Image x:Name="correct" Height="100" Width="100" Source="/Images/verifique-o-circulo.png"/>
         </Button>
 
 
