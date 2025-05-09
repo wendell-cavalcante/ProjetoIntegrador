@@ -148,5 +148,12 @@ namespace PIProjetpCards.Cards
             txtAnswer.Text = "Escreva a sua resposta";
             categorieComboBox.SelectedIndex = 0;
         }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.ParentForm.Hide();
+        }
     }
 }

@@ -50,9 +50,9 @@
             // 
             this.cardsUser1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cardsUser1.BackColor = System.Drawing.Color.Transparent;
-            this.cardsUser1.Location = new System.Drawing.Point(283, 15);
+            this.cardsUser1.Location = new System.Drawing.Point(207, 61);
             this.cardsUser1.Name = "cardsUser1";
-            this.cardsUser1.Size = new System.Drawing.Size(803, 718);
+            this.cardsUser1.Size = new System.Drawing.Size(956, 626);
             this.cardsUser1.TabIndex = 0;
             // 
             // CardsScreen

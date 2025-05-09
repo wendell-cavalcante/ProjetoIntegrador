@@ -269,6 +269,7 @@
     <Compile Include="UserInfos\UserInfosControl.Designer.cs">
       <DependentUpon>UserInfosControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelCards\FlashCardsViewModel.cs" />
     <EmbeddedResource Include="Bloco de notas\BlocodeNotas.resx">
       <DependentUpon>BlocodeNotas.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,9 +370,7 @@
     <Content Include="assets\definicoes.png" />
     <Content Include="assets\saida %281%29.png" />
     <Content Include="Images\circulo-x.png" />
-    <Content Include="Images\RightImage.png" />
     <Content Include="Images\verifique-o-circulo.png" />
-    <Content Include="Images\WrongImage.png" />
     <Content Include="Screens\circulo-x.png" />
   </ItemGroup>
   <ItemGroup>

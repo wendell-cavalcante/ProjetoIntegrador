@@ -1,42 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PIProjetpCards.Screens
 {
-    /// <summary>
-    /// Interação lógica para FrontSide.xam
-    /// </summary>
     public partial class FrontSide : UserControl
     {
+        // 1. Definição da DependencyProperty
+        public static readonly DependencyProperty CurrentCardProperty =
+            DependencyProperty.Register(
+                name: "CurrentCard",
+                propertyType: typeof(Card),
+                ownerType: typeof(FrontSide),
+                typeMetadata: new FrameworkPropertyMetadata(
+                    defaultValue: null,
+                    FrameworkPropertyMetadataOptions.BindsTwoWayByDefault
+                )
+            );
+
+        // 2. Propriedade para binding
+        public Card CurrentCard
+        {
+            get => (Card)GetValue(CurrentCardProperty);
+            set => SetValue(CurrentCardProperty, value);
+        }
+
         public FrontSide()
         {
             InitializeComponent();
+
+            // 3. Garante que o DataContext não seja sobrescrito
+            this.DataContext = this;
         }
         public string Pergunta
         {
-            get => txtFrontSide.Text;
+            get => txtFrontSide.Text; // Supondo que o TextBox se chama "txtFrontSide"
             set => txtFrontSide.Text = value;
         }
-        private void TextBox_StylusButtonUp(object sender, StylusButtonEventArgs e)
-        {
-
-        }
-
-        private void txtFrontSide_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
+
+    // 4. Classe Card (se não existir em outro arquivo)
+    public class Card
+    {
+        public string Question { get; set; }
+        public string Answer { get; set; }
+    }
+
 }

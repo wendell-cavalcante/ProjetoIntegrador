@@ -44,7 +44,7 @@
 
             </Border.Background>
 
-            <TextBox x:Name="TxtBackSide" 
+            <TextBox x:Name="txtBackSide" 
                      HorizontalAlignment="Center"
                      Height="500" Margin="0,55,0,0" 
                      FontSize="30"
@@ -173,7 +173,7 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image x:Name="correct" Height="100" Width="100" Source="/Images/verifique-o-circulo.png" d:IsHidden="True"/>
+            <Image x:Name="correct" Height="100" Width="100" Source="/Images/verifique-o-circulo.png"/>
         </Button>
 
 
