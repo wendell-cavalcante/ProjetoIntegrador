@@ -24,9 +24,6 @@ namespace PIProjetpCards.Screens
             Back_Side.SetParent(this);
             ShowCard(0);
             AtualizarContadores();
-
-
-
         }
 
         public class Card

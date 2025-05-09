@@ -44,7 +44,7 @@
 
             </Border.Background>
 
-            <TextBox x:Name="TxtBackSide" 
+            <TextBox x:Name="txtBackSide" 
                      HorizontalAlignment="Center"
                      Height="500" Margin="0,55,0,0" 
                      FontSize="30"

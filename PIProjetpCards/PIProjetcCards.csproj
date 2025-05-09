@@ -269,6 +269,7 @@
     <Compile Include="UserInfos\UserInfosControl.Designer.cs">
       <DependentUpon>UserInfosControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelCards\FlashCardsViewModel.cs" />
     <EmbeddedResource Include="Bloco de notas\BlocodeNotas.resx">
       <DependentUpon>BlocodeNotas.cs</DependentUpon>
     </EmbeddedResource>
