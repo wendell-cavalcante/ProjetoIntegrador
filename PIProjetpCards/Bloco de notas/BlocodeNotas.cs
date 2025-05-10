@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIProjetpCards.Screens;
 using System.IO;
+using System.Diagnostics;
 
 namespace PIProjetpCards.Bloco_de_Notas
 {
@@ -61,6 +62,28 @@ namespace PIProjetpCards.Bloco_de_Notas
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
             this.ParentForm.Hide();
+        }
+
+        private void pESQUISARNAWEBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string termo = textBox1.Text.Trim();
+
+            if (!string.IsNullOrEmpty(termo))
+            {
+                // Monta a URL de pesquisa no Google
+                string url = "https://www.google.com/search?q=" + Uri.EscapeDataString(termo);
+
+                // Abre o navegador padrão com a URL
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Digite algo para pesquisar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
