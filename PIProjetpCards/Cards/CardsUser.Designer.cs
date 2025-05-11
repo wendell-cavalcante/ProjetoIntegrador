@@ -1,4 +1,4 @@
-﻿namespace PIProjetpCards.Cards
+namespace PIProjetpCards.Cards
 {
     partial class CardsUser
     {

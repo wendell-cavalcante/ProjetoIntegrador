@@ -24,6 +24,7 @@ namespace PIProjetpCards.Screens
             set => SetValue(CurrentCardProperty, value);
         }
 
+
         public FrontSide()
         {
             InitializeComponent();

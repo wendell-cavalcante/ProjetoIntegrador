@@ -116,12 +116,12 @@ namespace PIProjetpCards.ShowCards
         {
             if (selectedCard != null)
             {
-                CardViewControl displayControl = new CardViewControl();
+                FlashCards displayControl = new FlashCards();
                 displayControl.SetCard(selectedCard);
 
                 // Criar e exibir um Form para hospedar o UserControl
-                Form displayForm = new Form();
-                displayForm.Controls.Add(displayControl);
+                CardPlayScreen displayForm = new CardPlayScreen();
+              //  displayForm.Controls.Add(displayControl);
                 displayForm.Show(); // Ou displayForm.Show()
             }
             else
@@ -132,16 +132,9 @@ namespace PIProjetpCards.ShowCards
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (selectedCard != null)
-            {
-                // TODO: Implementar a funcionalidade de edição.
-                // Isso pode envolver abrir uma nova tela de edição ou habilitar a edição na visualização atual.
-                MessageBox.Show($"Funcionalidade de edição para o card: {selectedCard.Name} será implementada em breve.");
-            }
-            else
-            {
-                MessageBox.Show("Por favor, selecione um card para editar.");
-            }
+            CardPlayScreen cardPlayScreen = new CardPlayScreen();
+            cardPlayScreen.Show();
+            this.ParentForm.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
