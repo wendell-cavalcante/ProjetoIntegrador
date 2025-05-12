@@ -28,18 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cardViewControl1 = new PIProjetpCards.CardView.CardViewControl();
             this.SuspendLayout();
-            // 
-            // cardViewControl1
-            // 
-            this.cardViewControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cardViewControl1.BackColor = System.Drawing.Color.Transparent;
-            this.cardViewControl1.IdUser = 0;
-            this.cardViewControl1.Location = new System.Drawing.Point(206, 24);
-            this.cardViewControl1.Name = "cardViewControl1";
-            this.cardViewControl1.Size = new System.Drawing.Size(379, 506);
-            this.cardViewControl1.TabIndex = 0;
             // 
             // CardPlayScreen
             // 
@@ -47,7 +36,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(69)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(800, 645);
-            this.Controls.Add(this.cardViewControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CardPlayScreen";
             this.Text = "CardPlayScreen";
@@ -57,7 +45,5 @@
         }
 
         #endregion
-
-        private CardView.CardViewControl cardViewControl1;
     }
 }
