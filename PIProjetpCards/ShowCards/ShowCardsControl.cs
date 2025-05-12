@@ -20,6 +20,7 @@ namespace PIProjetpCards.ShowCards
         private Card selectedCard = null;
         private int currentUserId;
         private string connectionString = "server=localhost;database=flashcards;uid=root;"; // TODO: Substitua pela sua string de conexão real
+        private const string MensagemPadrao = "Marque a caixa para ver suas perguntas e respostas";
 
         public ShowCardsControl()
         {
@@ -30,6 +31,10 @@ namespace PIProjetpCards.ShowCards
                 currentUserId = UserSession.userIdLogado.Value;
                 LoadCategories();
             }
+
+            // Inicialmente, exibe a mensagem padrão nos TextBoxes
+            txtQuestion.Text = MensagemPadrao;
+            txtAnswer.Text = MensagemPadrao;
         }
 
         private void LoadCategories()
@@ -93,9 +98,9 @@ namespace PIProjetpCards.ShowCards
                 MessageBox.Show($"Erro ao carregar cards: {ex.Message}");
             }
 
-            // Limpa os text boxes de detalhes quando a categoria muda
-            txtQuestion.Clear();
-            txtAnswer.Clear();
+            // Limpa os text boxes de detalhes quando a categoria muda e exibe a mensagem padrão
+            txtQuestion.Text = MensagemPadrao;
+            txtAnswer.Text = MensagemPadrao;
             selectedCard = null;
         }
 
@@ -104,11 +109,14 @@ namespace PIProjetpCards.ShowCards
             if (listBoxCards.SelectedItem != null)
             {
                 selectedCard = userCards.FirstOrDefault(card => card.Name == listBoxCards.SelectedItem.ToString());
-                if (selectedCard != null)
-                {
-                    txtQuestion.Text = selectedCard.Question;
-                    txtAnswer.Text = selectedCard.Answer;
-                }
+                // Atualiza os TextBoxes com base no estado do CheckBox
+                UpdateTextBoxes();
+            }
+            else
+            {
+                selectedCard = null;
+                txtQuestion.Text = MensagemPadrao;
+                txtAnswer.Text = MensagemPadrao;
             }
         }
 
@@ -144,6 +152,26 @@ namespace PIProjetpCards.ShowCards
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
             this.ParentForm.Hide();
+        }
+
+        private void showAnswerAndQuestion_CheckedChanged(object sender, EventArgs e)
+        {
+            // Chama a função para atualizar os TextBoxes com base no estado do CheckBox
+            UpdateTextBoxes();
+        }
+
+        private void UpdateTextBoxes()
+        {
+            if (showAnswerAndQuestion.Checked && selectedCard != null)
+            {
+                txtQuestion.Text = $"Pergunta: {selectedCard.Question}";
+                txtAnswer.Text = $"Resposta: {selectedCard.Answer}";
+            }
+            else
+            {
+                txtQuestion.Text = MensagemPadrao;
+                txtAnswer.Text = MensagemPadrao;
+            }
         }
     }
 

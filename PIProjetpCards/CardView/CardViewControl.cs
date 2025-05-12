@@ -20,6 +20,8 @@ namespace PIProjetpCards.CardView
             btnCorrect.Visible = false;
             btnError.Visible = false;
             Anchor = AnchorStyles.None;
+
+            txtResposta.KeyPress += TxtMultiline_KeyPress; 
         }
 
         public void SetCard(Card card)
@@ -154,6 +156,13 @@ namespace PIProjetpCards.CardView
             if (this.ParentForm != null)
             {
                 this.ParentForm.Hide();
+            }
+        }
+        private void TxtMultiline_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ignora a tecla Enter pressionada
             }
         }
     }

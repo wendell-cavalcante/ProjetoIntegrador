@@ -40,6 +40,7 @@
             this.listBoxCards = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.showAnswerAndQuestion = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -176,11 +177,24 @@
             this.label3.TabIndex = 89;
             this.label3.Text = "Resposta";
             // 
+            // showAnswerAndQuestion
+            // 
+            this.showAnswerAndQuestion.AutoSize = true;
+            this.showAnswerAndQuestion.BackColor = System.Drawing.Color.White;
+            this.showAnswerAndQuestion.Location = new System.Drawing.Point(517, 438);
+            this.showAnswerAndQuestion.Name = "showAnswerAndQuestion";
+            this.showAnswerAndQuestion.Size = new System.Drawing.Size(168, 17);
+            this.showAnswerAndQuestion.TabIndex = 90;
+            this.showAnswerAndQuestion.Text = "Mostrar perguntas e respostas";
+            this.showAnswerAndQuestion.UseVisualStyleBackColor = false;
+            this.showAnswerAndQuestion.CheckedChanged += new System.EventHandler(this.showAnswerAndQuestion_CheckedChanged);
+            // 
             // ShowCardsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.showAnswerAndQuestion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBoxCards);
@@ -214,5 +228,6 @@
         private System.Windows.Forms.ListBox listBoxCards;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox showAnswerAndQuestion;
     }
 }

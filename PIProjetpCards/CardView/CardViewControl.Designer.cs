@@ -53,6 +53,7 @@
             this.txtResposta.Location = new System.Drawing.Point(27, 99);
             this.txtResposta.Multiline = true;
             this.txtResposta.Name = "txtResposta";
+            this.txtResposta.ReadOnly = true;
             this.txtResposta.Size = new System.Drawing.Size(326, 236);
             this.txtResposta.TabIndex = 1;
             // 
