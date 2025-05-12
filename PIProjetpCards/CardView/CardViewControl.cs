@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using PIProjetpCards.Screens;
 using PIProjetpCards.ShowCards;
 
 namespace PIProjetpCards.CardView
@@ -144,7 +145,9 @@ namespace PIProjetpCards.CardView
             // Acessa o Form pai (CardPlayScreen) e o fecha
             if (this.ParentForm != null)
             {
-                this.ParentForm.Close();
+                this.ParentForm.Hide();
+               ShowCardsScreen showCardsScreen = new ShowCardsScreen();
+               showCardsScreen.Show();
             }
         }
 
@@ -156,6 +159,8 @@ namespace PIProjetpCards.CardView
             if (this.ParentForm != null)
             {
                 this.ParentForm.Hide();
+                ShowCardsScreen showCardsScreen = new ShowCardsScreen();
+                showCardsScreen.Show();
             }
         }
         private void TxtMultiline_KeyPress(object sender, KeyPressEventArgs e)
