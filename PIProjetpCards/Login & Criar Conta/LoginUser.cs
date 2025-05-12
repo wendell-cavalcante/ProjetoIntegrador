@@ -20,7 +20,7 @@ namespace PIProjetpCards.Login___Criar_Conta
 
             // Configuração inicial dos controles
             btnCreate.Visible = true;
-            lblnaoconta.Text = "Possui uma conta?";
+            lblnaoconta.Text = "Não possui uma conta?";
 
             // Adiciona o evento Leave para a TextBox de email
             txtEmail.Leave += TxtEmail_Leave;
@@ -98,14 +98,14 @@ namespace PIProjetpCards.Login___Criar_Conta
         // SEU LABEL ORIGINAL (MANTIDO EXATAMENTE COMO ESTAVA)
         private void label2_Click(object sender, EventArgs e)
         {
-            if (lblnaoconta.Text == "Possui uma conta?")
+            if (lblnaoconta.Text == "Não possui uma conta?")
             {
-                lblnaoconta.Text = "Não possui uma conta?";
+                lblnaoconta.Text = "Possui uma conta?";
                 btnCreate.Visible = false;
                 return;
             }
 
-            lblnaoconta.Text = "Possui uma conta?";
+            lblnaoconta.Text = "Não possui uma conta?";
             btnCreate.Visible = true;
         }
 

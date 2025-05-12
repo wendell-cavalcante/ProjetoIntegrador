@@ -19,6 +19,7 @@ namespace PIProjetpCards.CardView
             exibindoPergunta = true;
             btnCorrect.Visible = false;
             btnError.Visible = false;
+            Anchor = AnchorStyles.None;
         }
 
         public void SetCard(Card card)

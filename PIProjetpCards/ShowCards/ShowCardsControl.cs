@@ -116,17 +116,14 @@ namespace PIProjetpCards.ShowCards
         {
             if (selectedCard != null)
             {
-                FlashCards displayControl = new FlashCards();
+                CardViewControl displayControl = new CardViewControl();
                 displayControl.SetCard(selectedCard);
 
                 // Criar e exibir um Form para hospedar o UserControl
                 CardPlayScreen displayForm = new CardPlayScreen();
-              //  displayForm.Controls.Add(displayControl);
+                displayForm.Controls.Add(displayControl);
                 displayForm.Show(); // Ou displayForm.Show()
-            }
-            else
-            {
-                MessageBox.Show("Por favor, selecione um card na lista.");
+ 
             }
         }
 
