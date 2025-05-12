@@ -142,9 +142,7 @@ namespace PIProjetpCards.ShowCards
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            CardPlayScreen cardPlayScreen = new CardPlayScreen();
-            cardPlayScreen.Show();
-            this.ParentForm.Hide();
+            MessageBox.Show("Funcionalidade de edição ainda não implementada.");
         }
 
         private void btnBack_Click(object sender, EventArgs e)
