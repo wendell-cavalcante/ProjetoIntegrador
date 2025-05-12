@@ -137,14 +137,14 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(431, 354);
+            this.btnCreate.Location = new System.Drawing.Point(431, 355);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(236, 35);
             this.btnCreate.TabIndex = 81;
-            this.btnCreate.Text = "Criar Conta";
+            this.btnCreate.Text = "Login";
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Visible = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.btnCreate.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClear
             // 
@@ -206,13 +206,13 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(431, 354);
+            this.btnLogin.Location = new System.Drawing.Point(431, 355);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(236, 35);
             this.btnLogin.TabIndex = 82;
-            this.btnLogin.Text = "Log In";
+            this.btnLogin.Text = "Criar Conta";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // pictureBox3
             // 
@@ -241,16 +241,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.btnCreate);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.showPassword);
-            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblnaoconta);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

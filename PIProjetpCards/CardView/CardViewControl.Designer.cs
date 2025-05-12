@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-268, -80);
+            this.pictureBox1.Location = new System.Drawing.Point(-282, -193);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(944, 898);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,7 +50,7 @@
             // txtResposta
             // 
             this.txtResposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtResposta.Location = new System.Drawing.Point(41, 212);
+            this.txtResposta.Location = new System.Drawing.Point(27, 99);
             this.txtResposta.Multiline = true;
             this.txtResposta.Name = "txtResposta";
             this.txtResposta.Size = new System.Drawing.Size(326, 236);
@@ -64,7 +64,7 @@
             this.btnAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnswer.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnswer.ForeColor = System.Drawing.Color.White;
-            this.btnAnswer.Location = new System.Drawing.Point(85, 471);
+            this.btnAnswer.Location = new System.Drawing.Point(71, 358);
             this.btnAnswer.Name = "btnAnswer";
             this.btnAnswer.Size = new System.Drawing.Size(242, 45);
             this.btnAnswer.TabIndex = 83;
@@ -82,7 +82,7 @@
             this.btnError.ForeColor = System.Drawing.Color.White;
             this.btnError.Image = ((System.Drawing.Image)(resources.GetObject("btnError.Image")));
             this.btnError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnError.Location = new System.Drawing.Point(213, 526);
+            this.btnError.Location = new System.Drawing.Point(199, 413);
             this.btnError.Name = "btnError";
             this.btnError.Size = new System.Drawing.Size(145, 45);
             this.btnError.TabIndex = 86;
@@ -100,7 +100,7 @@
             this.btnCorrect.ForeColor = System.Drawing.Color.White;
             this.btnCorrect.Image = ((System.Drawing.Image)(resources.GetObject("btnCorrect.Image")));
             this.btnCorrect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCorrect.Location = new System.Drawing.Point(52, 526);
+            this.btnCorrect.Location = new System.Drawing.Point(38, 413);
             this.btnCorrect.Name = "btnCorrect";
             this.btnCorrect.Size = new System.Drawing.Size(145, 45);
             this.btnCorrect.TabIndex = 87;
@@ -119,7 +119,7 @@
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.pictureBox1);
             this.Name = "CardViewControl";
-            this.Size = new System.Drawing.Size(391, 622);
+            this.Size = new System.Drawing.Size(379, 506);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

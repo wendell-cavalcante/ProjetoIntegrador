@@ -114,19 +114,21 @@ namespace PIProjetpCards.ShowCards
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            if (selectedCard != null)
+            if (selectedCard != null && UserSession.userIdLogado.HasValue)
             {
-                FlashCards displayControl = new FlashCards();
+                CardViewControl displayControl = new CardViewControl();
                 displayControl.SetCard(selectedCard);
+                displayControl.IdUser = UserSession.userIdLogado.Value; // Define o ID do usuário logado!
 
                 // Criar e exibir um Form para hospedar o UserControl
                 CardPlayScreen displayForm = new CardPlayScreen();
-              //  displayForm.Controls.Add(displayControl);
+                displayForm.Controls.Add(displayControl);
                 displayForm.Show(); // Ou displayForm.Show()
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um card na lista.");
+                MessageBox.Show("Erro: Nenhum card selecionado ou usuário não está logado.");
+                // Adicione aqui qualquer tratamento adicional, como logar o erro ou informar o usuário
             }
         }
 

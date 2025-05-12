@@ -19,6 +19,7 @@ namespace PIProjetpCards.CardView
             exibindoPergunta = true;
             btnCorrect.Visible = false;
             btnError.Visible = false;
+            Anchor = AnchorStyles.None;
         }
 
         public void SetCard(Card card)
@@ -137,17 +138,23 @@ namespace PIProjetpCards.CardView
         private void btnCorrect_Click(object sender, EventArgs e)
         {
             AtualizarPontuacao(true);
-            MessageBox.Show("Acertou!");
-            SetCard(cardExibido);
-            btnAnswer_Click(sender, e);
+            MessageBox.Show("Acertou! Parabéns!");
+            // Acessa o Form pai (CardPlayScreen) e o fecha
+            if (this.ParentForm != null)
+            {
+                this.ParentForm.Close();
+            }
         }
 
         private void btnError_Click(object sender, EventArgs e)
         {
             AtualizarPontuacao(false);
-            MessageBox.Show("Errou!");
-            SetCard(cardExibido);
-            btnAnswer_Click(sender, e);
+            MessageBox.Show("Errou! Continue praticando!");
+            // Acessa o Form pai (CardPlayScreen) e o fecha
+            if (this.ParentForm != null)
+            {
+                this.ParentForm.Hide();
+            }
         }
     }
 }
