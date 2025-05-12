@@ -36,6 +36,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.pESQUISARNAWEBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.NovoBn,
             this.AbrirBn,
             this.SalvarBn,
-            this.SairBn});
+            this.SairBn,
+            this.pESQUISARNAWEBToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1373, 24);
@@ -93,11 +95,17 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(1373, 696);
             this.textBox1.TabIndex = 3;
-            
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // pESQUISARNAWEBToolStripMenuItem
+            // 
+            this.pESQUISARNAWEBToolStripMenuItem.Name = "pESQUISARNAWEBToolStripMenuItem";
+            this.pESQUISARNAWEBToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.pESQUISARNAWEBToolStripMenuItem.Text = "PESQUISAR NA WEB";
+            this.pESQUISARNAWEBToolStripMenuItem.Click += new System.EventHandler(this.pESQUISARNAWEBToolStripMenuItem_Click);
             // 
             // BlocodeNotas
             // 
@@ -125,5 +133,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem pESQUISARNAWEBToolStripMenuItem;
     }
 }

@@ -25,5 +25,10 @@ namespace PIProjetpCards.Screens
         {
             InitializeComponent();
         }
+
+        private void blocodeNotas1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
