@@ -9,7 +9,7 @@ namespace PIProjetpCards.Screens
         public static readonly DependencyProperty CurrentCardProperty =
             DependencyProperty.Register(
                 name: "CurrentCard",
-                propertyType: typeof(Card),
+                propertyType: typeof(CardShow),
                 ownerType: typeof(FrontSide),
                 typeMetadata: new FrameworkPropertyMetadata(
                     defaultValue: null,
@@ -18,9 +18,9 @@ namespace PIProjetpCards.Screens
             );
 
         // 2. Propriedade para binding
-        public Card CurrentCard
+        public CardShow CurrentCard
         {
-            get => (Card)GetValue(CurrentCardProperty);
+            get => (CardShow)GetValue(CurrentCardProperty);
             set => SetValue(CurrentCardProperty, value);
         }
 
@@ -39,7 +39,7 @@ namespace PIProjetpCards.Screens
     }
 
     // 4. Classe Card (se não existir em outro arquivo)
-    public class Card
+    public class CardShow
     {
         public string Question { get; set; }
         public string Answer { get; set; }
