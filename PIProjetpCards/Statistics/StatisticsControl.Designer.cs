@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCorrect = new System.Windows.Forms.Label();
             this.lblErros = new System.Windows.Forms.Label();
-            this.lblCardsStudied = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblCorrects = new System.Windows.Forms.Label();
@@ -91,7 +90,7 @@
             this.lblCorrect.BackColor = System.Drawing.Color.White;
             this.lblCorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrect.ForeColor = System.Drawing.Color.Indigo;
-            this.lblCorrect.Location = new System.Drawing.Point(407, 228);
+            this.lblCorrect.Location = new System.Drawing.Point(407, 136);
             this.lblCorrect.Name = "lblCorrect";
             this.lblCorrect.Size = new System.Drawing.Size(155, 42);
             this.lblCorrect.TabIndex = 89;
@@ -103,23 +102,11 @@
             this.lblErros.BackColor = System.Drawing.Color.White;
             this.lblErros.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErros.ForeColor = System.Drawing.Color.Indigo;
-            this.lblErros.Location = new System.Drawing.Point(407, 316);
+            this.lblErros.Location = new System.Drawing.Point(407, 224);
             this.lblErros.Name = "lblErros";
             this.lblErros.Size = new System.Drawing.Size(117, 42);
             this.lblErros.TabIndex = 90;
             this.lblErros.Text = "Erros:";
-            // 
-            // lblCardsStudied
-            // 
-            this.lblCardsStudied.AutoSize = true;
-            this.lblCardsStudied.BackColor = System.Drawing.Color.White;
-            this.lblCardsStudied.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardsStudied.ForeColor = System.Drawing.Color.Indigo;
-            this.lblCardsStudied.Location = new System.Drawing.Point(407, 134);
-            this.lblCardsStudied.Name = "lblCardsStudied";
-            this.lblCardsStudied.Size = new System.Drawing.Size(312, 42);
-            this.lblCardsStudied.TabIndex = 91;
-            this.lblCardsStudied.Text = "Cards estudados:";
             // 
             // btnBack
             // 
@@ -151,7 +138,7 @@
             this.lblCorrects.AutoSize = true;
             this.lblCorrects.BackColor = System.Drawing.Color.White;
             this.lblCorrects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrects.Location = new System.Drawing.Point(414, 270);
+            this.lblCorrects.Location = new System.Drawing.Point(414, 178);
             this.lblCorrects.Name = "lblCorrects";
             this.lblCorrects.Size = new System.Drawing.Size(57, 20);
             this.lblCorrects.TabIndex = 94;
@@ -162,7 +149,7 @@
             this.lblErrors.AutoSize = true;
             this.lblErrors.BackColor = System.Drawing.Color.White;
             this.lblErrors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrors.Location = new System.Drawing.Point(414, 358);
+            this.lblErrors.Location = new System.Drawing.Point(414, 266);
             this.lblErrors.Name = "lblErrors";
             this.lblErrors.Size = new System.Drawing.Size(57, 20);
             this.lblErrors.TabIndex = 95;
@@ -177,7 +164,6 @@
             this.Controls.Add(this.lblCorrects);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lblCardsStudied);
             this.Controls.Add(this.lblErros);
             this.Controls.Add(this.lblCorrect);
             this.Controls.Add(this.panel1);
@@ -202,7 +188,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCorrect;
         private System.Windows.Forms.Label lblErros;
-        private System.Windows.Forms.Label lblCardsStudied;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblCorrects;

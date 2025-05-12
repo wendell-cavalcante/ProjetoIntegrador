@@ -35,7 +35,7 @@ namespace PIProjetpCards.Statistics
         private void StatisticsControl_Load(object sender, EventArgs e)
         {
             CarregarInformacoesUsuarioLogado();
-            CarregarEstatisticasUsuario(); // Chama a nova função para carregar as estatísticas
+            CarregarEstatisticasUsuario();
         }
 
         public void CarregarInformacoesUsuarioLogado()
@@ -87,45 +87,52 @@ namespace PIProjetpCards.Statistics
         {
             if (UserSession.userIdLogado.HasValue)
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                int userId = UserSession.userIdLogado.Value;
+                string connectionString = "server=localhost;database=flashcards;uid=root;"; // TODO: Substitua pela sua string de conexão real
+
+                try
                 {
-                    try
+                    using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
-
-                        // Opção 1: Usando GetAnswerCount para acertos e erros separadamente
-                        int correctCount = statisticsUser.GetAnswerCount(connection, 1);
-                        int incorrectCount = statisticsUser.GetAnswerCount(connection, 0);
-
-                        lblCorrects.Text = correctCount.ToString();
-                        lblErrors.Text = incorrectCount.ToString();
-
-                        // Opção 2: Usando GetUserStatistics para obter ambos ao mesmo tempo
-                        // Tuple<int, int> stats = statisticsUser.GetUserStatistics(connection);
-                        // if (stats.Item1 != -1 && stats.Item2 != -1) // Verifica se não houve erro
-                        // {
-                        //     lblCorrect.Text = stats.Item1.ToString();
-                        //     lblErrors.Text = stats.Item2.ToString();
-                        // }
-                        // else
-                        // {
-                        //     MessageBox.Show("Erro ao carregar as estatísticas.");
-                        // }
-                    }
-                    catch (MySqlException ex)
-                    {
-                        MessageBox.Show($"Erro ao carregar as estatísticas: {ex.Message}");
-                        lblCorrects.Text = "Erro";
-                        lblErrors.Text = "Erro";
-                    }
-                    finally
-                    {
-                        if (connection.State == ConnectionState.Open)
+                        string query = "SELECT correct, errors FROM statistics WHERE idUser = @idUser";
+                        using (MySqlCommand cmd = new MySqlCommand(query, connection))
                         {
-                            connection.Close();
+                            cmd.Parameters.AddWithValue("@idUser", userId);
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    int correctCount = Convert.ToInt32(reader["correct"]);
+                                    int errorCount = Convert.ToInt32(reader["errors"]);
+
+                                    // Atualiza o texto dos labels
+                                    lblCorrects.Text = $"{correctCount}";
+                                    lblErrors.Text = $"{errorCount}";
+                                }
+                                else
+                                {
+                                    // Caso não encontre estatísticas para o usuário (pode ser a primeira vez)
+                                    lblCorrects.Text = "0";
+                                    lblErrors.Text = "0";
+                                }
+                            }
                         }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao carregar estatísticas: {ex.Message}");
+                    // Ou logue o erro de uma forma mais apropriada
+                    lblCorrects.Text = "Acertos: -";
+                    lblErrors.Text = "Erros: -";
+                }
+            }
+            else
+            {
+                // Caso o ID do usuário não esteja definido na sessão
+                lblCorrects.Text = "Acertos: -";
+                lblErrors.Text = "Erros: -";
             }
         }
     }
