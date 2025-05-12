@@ -21,7 +21,7 @@ namespace PIProjetpCards.CardView
             btnError.Visible = false;
             Anchor = AnchorStyles.None;
 
-            txtResposta.KeyPress += TxtMultiline_KeyPress; // Adiciona o evento KeyPress para impedir quebras de linha
+            txtResposta.KeyPress += TxtMultiline_KeyPress; 
         }
 
         public void SetCard(Card card)

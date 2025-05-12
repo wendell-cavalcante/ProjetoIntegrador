@@ -20,7 +20,7 @@ namespace PIProjetpCards.ShowCards
         private Card selectedCard = null;
         private int currentUserId;
         private string connectionString = "server=localhost;database=flashcards;uid=root;"; // TODO: Substitua pela sua string de conexão real
-        private const string MensagemPadrao = "Selecione um card e marque a caixa para ver a pergunta e resposta.";
+        private const string MensagemPadrao = "Marque a caixa para ver suas perguntas e respostas";
 
         public ShowCardsControl()
         {
