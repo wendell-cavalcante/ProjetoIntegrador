@@ -1,7 +1,7 @@
-# 📚✨ Flash Cards: Sua Memória Fortalecida com Diversão!
+# 📚✨ Flash Cards
 
-**Revise, Memorize, Domine!**  
-*O jeito mais inteligente e divertido de transformar sua sessão de estudos em uma aventura!*
+**Revisão de estudos**  
+*O jeito mais inteligente e divertido de transformar sua sessão de estudos em um jogo!*
 
 ![Banner](https://via.placeholder.com/1200x400?text=Flash+Cards+🚀+Estude+com+Paixão,+Lembre+com+Facilidade!)
 
@@ -16,13 +16,12 @@
 ---
 
 ## 🎯 **Por que Flash Cards?**
-> *"A repetição é a mãe da retenção!"*  
-Estudos mostram que flashcards são **30% mais eficazes** para memorização do que métodos tradicionais.  
-Este projeto combina **ciência cognitiva** + **tecnologia** para você aprender **mais rápido**, **por mais tempo** e **sem tédio**!
+> *"Introdução"*  
+Trata-se de um programa de estudos, que utilizar flash cards (Cartas) com objetivo de auxiliar na fixação dos assuntos estudados, o principal público-alvo do programa são estudantes se estendendo para uso como bloco de notas para público geral.
 
 ---
 
-## 🚀 **Recursos que Vão Virar Seu Jogo**
+## 🚀 **Recursos que Vão Melhorr os seus Estudos**
 
 - 🕒 **Tempo de estudo**: O app estará sempre disponível para você estudar a qualquer hora!
 - 📝 **Crie sua área de etudo**: Gerencie sua área de estudo para definir seus temas: `$$E = mc^2$$`!
