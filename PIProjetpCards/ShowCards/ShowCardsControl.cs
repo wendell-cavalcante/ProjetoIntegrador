@@ -127,6 +127,7 @@ namespace PIProjetpCards.ShowCards
                 CardViewControl displayControl = new CardViewControl();
                 displayControl.SetCard(selectedCard);
                 displayControl.IdUser = UserSession.userIdLogado.Value; // Define o ID do usuário logado!
+                displayControl.Location = new Point(200, 69); // Define a posição do UserControl dentro do Form
 
                 // Criar e exibir um Form para hospedar o UserControl
                 CardPlayScreen displayForm = new CardPlayScreen();

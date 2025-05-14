@@ -34,7 +34,9 @@
             this.btnAnswer = new System.Windows.Forms.Button();
             this.btnError = new System.Windows.Forms.Button();
             this.btnCorrect = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -109,19 +111,34 @@
             this.btnCorrect.UseVisualStyleBackColor = false;
             this.btnCorrect.Click += new System.EventHandler(this.btnCorrect_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(369, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(24, 24);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnBack.TabIndex = 88;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // CardViewControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnCorrect);
             this.Controls.Add(this.btnError);
             this.Controls.Add(this.btnAnswer);
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.pictureBox1);
             this.Name = "CardViewControl";
-            this.Size = new System.Drawing.Size(379, 506);
+            this.Size = new System.Drawing.Size(400, 506);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +151,6 @@
         private System.Windows.Forms.Button btnAnswer;
         private System.Windows.Forms.Button btnError;
         private System.Windows.Forms.Button btnCorrect;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }
