@@ -125,12 +125,6 @@
     <Compile Include="CardView\CardViewControl.Designer.cs">
       <DependentUpon>CardViewControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="FlashTeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FlashTeste.Designer.cs">
-      <DependentUpon>FlashTeste.cs</DependentUpon>
-    </Compile>
     <Compile Include="HelpUser\HelpUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,9 +149,6 @@
     <Compile Include="MySQL\UserChange\ChangeUsercontroller.cs" />
     <Compile Include="MySQL\UserController.cs" />
     <Compile Include="MySQL\Usermodel.cs" />
-    <Compile Include="BeitinaCard\BackSide.xaml.cs">
-      <DependentUpon>BackSide.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Screens\CardPlayScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,12 +166,6 @@
     </Compile>
     <Compile Include="Screens\CardViewScreen.Designer.cs">
       <DependentUpon>CardViewScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BeitinaCard\FlashCards.xaml.cs">
-      <DependentUpon>FlashCards.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="BeitinaCard\FrontSide.xaml.cs">
-      <DependentUpon>FrontSide.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screens\HelpScreen.cs">
       <SubType>Form</SubType>
@@ -279,9 +264,6 @@
     <EmbeddedResource Include="CardView\CardViewControl.resx">
       <DependentUpon>CardViewControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FlashTeste.resx">
-      <DependentUpon>FlashTeste.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HelpUser\HelpUser.resx">
       <DependentUpon>HelpUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,21 +353,6 @@
     <Content Include="assets\saida %281%29.png" />
     <Content Include="Images\circulo-x.png" />
     <Content Include="Images\verifique-o-circulo.png" />
-    <Content Include="BeitinaCard\circulo-x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="BeitinaCard\BackSide.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="BeitinaCard\FlashCards.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="BeitinaCard\FrontSide.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
