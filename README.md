@@ -21,7 +21,7 @@ Trata-se de um programa de estudos, que utilizar flash cards (Cartas) com objeti
 ## 🚀 **Recursos que Vão Melhorr os seus Estudos**
 
 - 🕒 **Tempo de estudo**: O app estará sempre disponível para você estudar a qualquer hora!
-- 📝 **Crie sua área de etudo**: Gerencie sua área de estudo para definir seus temas: `$$E = mc^2$$`!
+- 📝 **Crie sua área de etudo**: Gerencie sua área de estudo para definir suas categoria e organizala.
 - 🌙 **Modo Noturno**: Estude à noite sem cansar a vista (em breve).
 - 📊 **Estatísticas Detalhadas**: Veja seu progresso em gráficos e ajuste seu ritmo.
 - 🌐 **Sync em Nuvem**: Acesse seus cards de estudos a qualquer momento.
