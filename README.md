@@ -7,7 +7,6 @@
   
 [![GitHub license](https://img.shields.io/github/license/wendell-cavalcante/ProjetoIntegrador?color=blue)](https://github.com/wendell-cavalcante/ProjetoIntegrador)
 [![GitHub stars](https://img.shields.io/github/stars/wendell-cavalcante/ProjetoIntegrador?style=social)](https://github.com/wendell-cavalcante/ProjetoIntegrador/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-bem-vindos!-green)](https://github.com/wendell-cavalcante/ProjetoIntegrador/pulls)
 
 </div>
 
