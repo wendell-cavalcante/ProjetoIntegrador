@@ -3,8 +3,6 @@
 **Revisão de estudos**  
 *O jeito mais inteligente e divertido de transformar sua sessão de estudos em um jogo!*
 
-![Banner](https://via.placeholder.com/1200x400?text=Flash+Cards+🚀+Estude+com+Paixão,+Lembre+com+Facilidade!)
-
 <div align="center">
   
 [![GitHub license](https://img.shields.io/github/license/wendell-cavalcante/ProjetoIntegrador?color=blue)](https://github.com/wendell-cavalcante/ProjetoIntegrador)
