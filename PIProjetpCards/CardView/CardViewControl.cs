@@ -170,5 +170,13 @@ namespace PIProjetpCards.CardView
                 e.Handled = true; // Ignora a tecla Enter pressionada
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ShowCardsScreen showCardsScreen = new ShowCardsScreen();
+            this.ParentForm.Hide();
+            showCardsScreen.Show();
+
+        }
     }
 }

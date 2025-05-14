@@ -11,6 +11,7 @@ using PIProjetpCards.UserInfos;
 using MySql.Data.MySqlClient;
 using PIProjetpCards.Login___Criar_Conta;
 using usermanager.Models;
+using PIProjetpCards.Screens;
 
 namespace PIProjetpCards.Statistics
 {
@@ -27,8 +28,8 @@ namespace PIProjetpCards.Statistics
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+            SettingsScreen settingsScreen = new SettingsScreen();
+            settingsScreen.Show();
             this.ParentForm.Hide();
         }
 
