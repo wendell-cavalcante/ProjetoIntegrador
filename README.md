@@ -18,7 +18,7 @@ Trata-se de um programa de estudos, que utilizar flash cards (Cartas) com objeti
 
 ---
 
-## 🚀 **Recursos que Vão Melhorr os seus Estudos**
+## 🚀 **Recursos que Vão Melhorar os seus Estudos**
 
 - 🕒 **Tempo de estudo**: O app estará sempre disponível para você estudar a qualquer hora!
 - 📝 **Crie sua área de etudo**: Gerencie sua área de estudo para definir suas categoria e organizala.
