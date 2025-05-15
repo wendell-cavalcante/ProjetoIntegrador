@@ -136,7 +136,7 @@ namespace PIProjetpCards.ShowCards
             }
             else
             {
-                MessageBox.Show("Erro: Nenhum card selecionado ou usuário não está logado.");
+                MessageBox.Show("Nenhum card está selecionado, selecione um para poder continuar");
                 // Adicione aqui qualquer tratamento adicional, como logar o erro ou informar o usuário
             }
         }
