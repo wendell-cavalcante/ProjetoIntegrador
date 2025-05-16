@@ -33,10 +33,10 @@
             this.AbrirBn = new System.Windows.Forms.ToolStripMenuItem();
             this.SalvarBn = new System.Windows.Forms.ToolStripMenuItem();
             this.SairBn = new System.Windows.Forms.ToolStripMenuItem();
+            this.pESQUISARNAWEBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.pESQUISARNAWEBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.pESQUISARNAWEBToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1373, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(716, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,6 +86,13 @@
             this.SairBn.Text = "SAIR";
             this.SairBn.Click += new System.EventHandler(this.SairBn_Click);
             // 
+            // pESQUISARNAWEBToolStripMenuItem
+            // 
+            this.pESQUISARNAWEBToolStripMenuItem.Name = "pESQUISARNAWEBToolStripMenuItem";
+            this.pESQUISARNAWEBToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.pESQUISARNAWEBToolStripMenuItem.Text = "PESQUISAR NA WEB";
+            this.pESQUISARNAWEBToolStripMenuItem.Click += new System.EventHandler(this.pESQUISARNAWEBToolStripMenuItem_Click);
+            // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -93,19 +100,12 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(1373, 696);
+            this.textBox1.Size = new System.Drawing.Size(716, 1095);
             this.textBox1.TabIndex = 3;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // pESQUISARNAWEBToolStripMenuItem
-            // 
-            this.pESQUISARNAWEBToolStripMenuItem.Name = "pESQUISARNAWEBToolStripMenuItem";
-            this.pESQUISARNAWEBToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.pESQUISARNAWEBToolStripMenuItem.Text = "PESQUISAR NA WEB";
-            this.pESQUISARNAWEBToolStripMenuItem.Click += new System.EventHandler(this.pESQUISARNAWEBToolStripMenuItem_Click);
             // 
             // BlocodeNotas
             // 
@@ -115,7 +115,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "BlocodeNotas";
-            this.Size = new System.Drawing.Size(1373, 720);
+            this.Size = new System.Drawing.Size(716, 1119);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
