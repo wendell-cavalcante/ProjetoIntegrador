@@ -115,9 +115,9 @@ namespace PIProjetpCards.Cards
         {
             // Validação do nome do cartão
             if (string.IsNullOrWhiteSpace(txtNameCard.Text) || 
-                txtNameCard.Text == "Nome do cartão")
+                txtNameCard.Text == "Nome do cartão" || txtAnswer.Text == "Escreva a sua resposta" || txtQuestion.Text == "Escreva a sua pergunta")
             {
-                MessageBox.Show("Digite um nome válido para o cartão!");
+                MessageBox.Show("Preencha todos os campos");
                 return;
             }
 
